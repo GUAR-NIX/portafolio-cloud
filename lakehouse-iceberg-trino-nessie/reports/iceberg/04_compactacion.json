@@ -1,0 +1,78 @@
+{
+  "antes": {
+    "archivos": {
+      "archivos": 72,
+      "bytes": 306351359,
+      "filas": 23014078,
+      "archivos_menores_16mb": 72,
+      "mb_promedio": 4.25
+    },
+    "minio": {
+      "ubicacion": "s3://lakehouse/warehouse/wiki/pageviews_crudo_9d198960-a818-4042-8bdd-42f868e2b071",
+      "data": {
+        "objetos": 72,
+        "bytes": 306351359
+      },
+      "metadata": {
+        "objetos": 217,
+        "bytes": 780463
+      }
+    },
+    "filas": 23014078,
+    "vistas": 522589734
+  },
+  "despues_optimize": {
+    "archivos": {
+      "archivos": 3,
+      "bytes": 219057749,
+      "filas": 23014078,
+      "archivos_menores_16mb": 0,
+      "mb_promedio": 73.02
+    },
+    "minio": {
+      "ubicacion": "s3://lakehouse/warehouse/wiki/pageviews_crudo_9d198960-a818-4042-8bdd-42f868e2b071",
+      "data": {
+        "objetos": 75,
+        "bytes": 525409108
+      },
+      "metadata": {
+        "objetos": 292,
+        "bytes": 1364286
+      }
+    },
+    "filas": 23014078,
+    "vistas": 522589734,
+    "segundos": 21.8
+  },
+  "expire_snapshots_trino": {
+    "resultado": "TrinoQueryError(type=INTERNAL_ERROR, name=GENERIC_INTERNAL_ERROR, message=\"Cannot expire snapshots: GC is disabled (deleting files may corrupt other tables)\", query_id=20261027_194728_00032_457ym)"
+  },
+  "propiedades": {
+    "nessie.commit.id": "194b36d6690ea4c81f00d29443546b2b28d0a8bb8ac172508eb7babab267242b",
+    "gc.enabled": "false",
+    "nessie.catalog.content-id": "07663c84-fe80-46c7-8a8d-d85a3e372afd",
+    "nessie.commit.ref": "main"
+  },
+  "despues_nessie_gc": {
+    "archivos": {
+      "archivos": 3,
+      "bytes": 219057749,
+      "filas": 23014078,
+      "archivos_menores_16mb": 0,
+      "mb_promedio": 73.02
+    },
+    "minio": {
+      "ubicacion": "s3://lakehouse/warehouse/wiki/pageviews_crudo_9d198960-a818-4042-8bdd-42f868e2b071",
+      "data": {
+        "objetos": 3,
+        "bytes": 219057749
+      },
+      "metadata": {
+        "objetos": 75,
+        "bytes": 583823
+      }
+    },
+    "filas": 23014078,
+    "vistas": 522589734
+  }
+}

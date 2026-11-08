@@ -1,0 +1,8 @@
+23:39:45  Running with dbt=1.11.13
+23:39:45  Registered adapter: duckdb=1.11.0
+23:39:49  Found 10 models, 39 data tests, 3 sources, 504 macros
+23:39:54  Done. PASS=49 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=49
+## ruff
+All checks passed!
+## pytest
+============================= 16 passed in 16.37s ==============================

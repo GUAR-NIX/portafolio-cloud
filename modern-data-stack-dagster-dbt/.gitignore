@@ -1,0 +1,28 @@
+# Datos crudos (csv.gz de NOAA) y almacén DuckDB grande: no se versionan
+data/raw/
+*.duckdb
+*.duckdb.wal
+# dbt
+dbt_clima/target/
+dbt_clima/logs/
+dbt_clima/dbt_packages/
+# Terraform (proveedores descargados para validate)
+terraform/**/.terraform/
+terraform/**/.terraform.lock.hcl
+terraform/**/*.tfstate*
+# Entorno local
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+tools/
+*.egg-info/
+.pytest_tmp*/
+.ipynb_checkpoints/
+.vscode/
+Thumbs.db
+desktop.ini
+# Configuración local de dbt (id de usuario anónimo)
+dbt_clima/.user.yml

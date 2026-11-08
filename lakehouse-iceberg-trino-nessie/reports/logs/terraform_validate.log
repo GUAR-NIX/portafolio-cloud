@@ -1,0 +1,11 @@
+$ terraform fmt -check -recursive
+fmt: OK
+$ terraform init -backend=false
+- Installed hashicorp/aws v6.70.0 (signed by HashiCorp)
+Terraform has been successfully initialized!
+$ terraform validate
+Success! The configuration is valid.
+
+{
+  "terraform_version": "1.13.5",
+  "platform": "linux_amd64",

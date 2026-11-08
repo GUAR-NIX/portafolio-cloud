@@ -1,0 +1,305 @@
+{
+  "generado": "2026-10-25T23:34:57.173999Z",
+  "segundos_totales": 149.9,
+  "por_tipo_y_estado": {
+    "model:success": 10,
+    "test:pass": 37,
+    "test:warn": 2
+  },
+  "nodos": [
+    {
+      "id": "model.clima.stg_ghcn__estaciones",
+      "estado": "success",
+      "segundos": 0.55,
+      "fallos": null
+    },
+    {
+      "id": "model.clima.stg_ghcn__observaciones",
+      "estado": "success",
+      "segundos": 0.55,
+      "fallos": null
+    },
+    {
+      "id": "test.clima.not_null_stg_ghcn__estaciones_id_estacion.ad2dc67e1e",
+      "estado": "pass",
+      "segundos": 0.27,
+      "fallos": 0
+    },
+    {
+      "id": "model.clima.stg_ghcn__paises",
+      "estado": "success",
+      "segundos": 0.28,
+      "fallos": null
+    },
+    {
+      "id": "test.clima.rango_fisico_stg_ghcn__estaciones_latitud__90___90.3999aa0360",
+      "estado": "pass",
+      "segundos": 0.21,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.rango_fisico_stg_ghcn__estaciones_longitud__180___180.70bd4ca22b",
+      "estado": "pass",
+      "segundos": 0.23,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.unique_stg_ghcn__estaciones_id_estacion.6dad801796",
+      "estado": "pass",
+      "segundos": 0.44,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.accepted_values_stg_ghcn__observaciones_bandera_calidad__D__G__I__K__L__M__N__O__R__S__T__W__X__Z.1254239448",
+      "estado": "pass",
+      "segundos": 3.25,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.accepted_values_stg_ghcn__observaciones_elemento__TMAX__TMIN__PRCP.b87e707a84",
+      "estado": "pass",
+      "segundos": 2.7,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.not_null_stg_ghcn__observaciones_fecha.e29b8679a5",
+      "estado": "pass",
+      "segundos": 1.66,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.not_null_stg_ghcn__observaciones_id_estacion.4397e17810",
+      "estado": "pass",
+      "segundos": 1.73,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.not_null_stg_ghcn__paises_codigo_pais.4ebfe3fe04",
+      "estado": "pass",
+      "segundos": 0.27,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.unique_stg_ghcn__paises_codigo_pais.090b0eeade",
+      "estado": "pass",
+      "segundos": 0.23,
+      "fallos": 0
+    },
+    {
+      "id": "model.clima.int_estaciones",
+      "estado": "success",
+      "segundos": 2.13,
+      "fallos": null
+    },
+    {
+      "id": "test.clima.not_null_int_estaciones_id_estacion.9ac5584513",
+      "estado": "pass",
+      "segundos": 1.18,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.relationships_int_estaciones_codigo_pais__codigo_pais__ref_stg_ghcn__paises_.f7c73c42a6",
+      "estado": "pass",
+      "segundos": 0.9,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.unique_int_estaciones_id_estacion.2bc0b59e34",
+      "estado": "pass",
+      "segundos": 1.18,
+      "fallos": 0
+    },
+    {
+      "id": "model.clima.int_observaciones_diarias",
+      "estado": "success",
+      "segundos": 68.63,
+      "fallos": null
+    },
+    {
+      "id": "test.clima.cumple_expresion_int_observaciones_diarias_tmax_c_tmin_c_or_tmax_c_is_null_or_tmin_c_is_null.66ac5de816",
+      "estado": "pass",
+      "segundos": 1.54,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.not_null_int_observaciones_diarias_fecha.6f95811fc1",
+      "estado": "pass",
+      "segundos": 1.44,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.not_null_int_observaciones_diarias_id_estacion.f568200060",
+      "estado": "pass",
+      "segundos": 0.47,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.combinacion_unica_int_observaciones_diarias_id_estacion__fecha.71d1cbda3f",
+      "estado": "pass",
+      "segundos": 5.87,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.rango_fisico_int_observaciones_diarias_prcp_mm__1900__0.93b87fe317",
+      "estado": "pass",
+      "segundos": 2.21,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.rango_fisico_int_observaciones_diarias_tmax_c__60___90.25741db426",
+      "estado": "pass",
+      "segundos": 0.42,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.rango_fisico_int_observaciones_diarias_tmin_c__50___95.df78d3478b",
+      "estado": "pass",
+      "segundos": 0.17,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.relationships_int_observaciones_diarias_id_estacion__id_estacion__ref_int_estaciones_.4fd24fd469",
+      "estado": "warn",
+      "segundos": 2.03,
+      "fallos": 648
+    },
+    {
+      "id": "model.clima.mart_extremos_pais_anual",
+      "estado": "success",
+      "segundos": 48.94,
+      "fallos": null
+    },
+    {
+      "id": "test.clima.combinacion_unica_mart_extremos_pais_anual_codigo_pais__anio.e05f8edbf5",
+      "estado": "pass",
+      "segundos": 1.12,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.rango_fisico_mart_extremos_pais_anual_tmax_max_c__60___90.ba484eded1",
+      "estado": "pass",
+      "segundos": 0.81,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.rango_fisico_mart_extremos_pais_anual_tmin_min_c__50___95.ae994eb3e8",
+      "estado": "pass",
+      "segundos": 0.59,
+      "fallos": 0
+    },
+    {
+      "id": "model.clima.int_clima_mensual_estacion",
+      "estado": "success",
+      "segundos": 61.2,
+      "fallos": null
+    },
+    {
+      "id": "test.clima.accepted_values_int_clima_mensual_estacion_mes__False__1__2__3__4__5__6__7__8__9__10__11__12.8ff6034eba",
+      "estado": "pass",
+      "segundos": 0.26,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.combinacion_unica_int_clima_mensual_estacion_id_estacion__anio__mes.898d6303f0",
+      "estado": "pass",
+      "segundos": 0.55,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.rango_fisico_int_clima_mensual_estacion_dias_temp__31__0.bebe83ee63",
+      "estado": "pass",
+      "segundos": 0.3,
+      "fallos": 0
+    },
+    {
+      "id": "model.clima.int_normal_mensual_estacion",
+      "estado": "success",
+      "segundos": 0.36,
+      "fallos": null
+    },
+    {
+      "id": "test.clima.combinacion_unica_int_normal_mensual_estacion_id_estacion__mes.53d55e384c",
+      "estado": "pass",
+      "segundos": 0.18,
+      "fallos": 0
+    },
+    {
+      "id": "model.clima.mart_clima_mensual_estacion",
+      "estado": "success",
+      "segundos": 2.63,
+      "fallos": null
+    },
+    {
+      "id": "test.clima.not_null_mart_clima_mensual_estacion_id_estacion.b5d92a4f0a",
+      "estado": "pass",
+      "segundos": 0.61,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.combinacion_unica_mart_clima_mensual_estacion_id_estacion__anio__mes.f07cb2aff5",
+      "estado": "pass",
+      "segundos": 0.69,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.rango_fisico_mart_clima_mensual_estacion_anomalia_tmedia_c__25___25.efee37460f",
+      "estado": "pass",
+      "segundos": 0.18,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.rango_fisico_mart_clima_mensual_estacion_prcp_total_mm__15000__0.63aad13de3",
+      "estado": "pass",
+      "segundos": 0.17,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.rango_fisico_mart_clima_mensual_estacion_tmedia_c__50___80.90b8872017",
+      "estado": "pass",
+      "segundos": 0.14,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.relationships_mart_clima_mensual_estacion_id_estacion__id_estacion__ref_int_estaciones_.71c8412163",
+      "estado": "warn",
+      "segundos": 0.28,
+      "fallos": 26
+    },
+    {
+      "id": "model.clima.mart_clima_mensual_pais",
+      "estado": "success",
+      "segundos": 0.43,
+      "fallos": null
+    },
+    {
+      "id": "test.clima.conciliacion_mart_pais_vs_estaciones",
+      "estado": "pass",
+      "segundos": 0.2,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.combinacion_unica_mart_clima_mensual_pais_codigo_pais__anio__mes.a3a83f67a5",
+      "estado": "pass",
+      "segundos": 0.22,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.not_null_mart_clima_mensual_pais_codigo_pais.01d2689427",
+      "estado": "pass",
+      "segundos": 0.17,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.rango_fisico_mart_clima_mensual_pais_anomalia_tmedia_c__15___15.b7cea39b4d",
+      "estado": "pass",
+      "segundos": 0.16,
+      "fallos": 0
+    },
+    {
+      "id": "test.clima.relationships_mart_clima_mensual_pais_codigo_pais__codigo_pais__ref_stg_ghcn__paises_.fbba2d3f1c",
+      "estado": "pass",
+      "segundos": 0.22,
+      "fallos": 0
+    }
+  ]
+}

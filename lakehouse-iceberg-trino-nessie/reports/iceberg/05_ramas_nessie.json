@@ -1,0 +1,257 @@
+{
+  "dia": "2026-07-21",
+  "caso_falla": {
+    "caso": "con defectos",
+    "metricas_candidato": {
+      "horas": 21,
+      "filas": 6964952,
+      "claves_distintas": 6690745,
+      "vistas_no_positivas": 0,
+      "titulos_nulos": 0,
+      "no_articulos": 50,
+      "vistas_por_idioma": {
+        "es": 7050934,
+        "en": 120452112
+      }
+    },
+    "referencia_vistas_por_idioma": [
+      {
+        "es": 8017495,
+        "en": 138311252
+      },
+      {
+        "en": 158941576,
+        "es": 11399982
+      },
+      {
+        "es": 10576285,
+        "en": 147089155
+      }
+    ],
+    "controles": [
+      {
+        "nombre": "24 horas presentes",
+        "paso": false,
+        "detalle": "21 horas distintas"
+      },
+      {
+        "nombre": "sin duplicados (hora, dominio, título)",
+        "paso": false,
+        "detalle": "274,207 filas repetidas"
+      },
+      {
+        "nombre": "vistas > 0 y título no nulo",
+        "paso": true,
+        "detalle": "0 vistas ≤ 0, 0 títulos nulos"
+      },
+      {
+        "nombre": "sin páginas que no son artículos",
+        "paso": false,
+        "detalle": "50 filas de espacios de nombres o portadas"
+      },
+      {
+        "nombre": "volumen plausible (en)",
+        "paso": true,
+        "detalle": "120,452,112 vistas = 0.82× la mediana de referencia (147,089,155); rango aceptado 0.6–1.5×"
+      },
+      {
+        "nombre": "volumen plausible (es)",
+        "paso": true,
+        "detalle": "7,050,934 vistas = 0.67× la mediana de referencia (10,576,285); rango aceptado 0.6–1.5×"
+      },
+      {
+        "nombre": "idiomas completos",
+        "paso": true,
+        "detalle": "en y es"
+      }
+    ],
+    "aprobado": false,
+    "diferencias_main_dev": [
+      {
+        "clave": "wiki.pageviews_limpio",
+        "desde": "s3://lakehouse/warehouse/wiki/pageviews_limpio_c3518ceb-590e-4eeb-a3e2-14d20daf7087/metadata/00000-8b8b800b-de82-48d2-94cd-b2b850322b4e.metadata.json",
+        "hacia": "s3://lakehouse/warehouse/wiki/pageviews_limpio_c3518ceb-590e-4eeb-a3e2-14d20daf7087/metadata/00000-2b383a20-9c59-41c5-911e-6cc53fe0348a.metadata.json"
+      }
+    ],
+    "segundos_carga": 285.2,
+    "accion": "NO se fusiona; dev se reasigna a main (los datos malos nunca llegan a main)",
+    "main_antes": {
+      "hash": "194b36d6690ea4c81f00d29443546b2b28d0a8bb8ac172508eb7babab267242b",
+      "filas_dia": 0,
+      "filas_crudo_dia": 0
+    },
+    "main_despues": {
+      "hash": "194b36d6690ea4c81f00d29443546b2b28d0a8bb8ac172508eb7babab267242b",
+      "filas_dia": 0,
+      "filas_crudo_dia": 0
+    },
+    "dev_hash_descartado": "37ef90ca2be4851a2cc665c9c6603cdcdbff1bb6d354035ad46c9f6c27f7fdcd"
+  },
+  "caso_pasa": {
+    "caso": "correcto",
+    "metricas_candidato": {
+      "horas": 24,
+      "filas": 7603553,
+      "claves_distintas": 7603553,
+      "vistas_no_positivas": 0,
+      "titulos_nulos": 0,
+      "no_articulos": 0,
+      "vistas_por_idioma": {
+        "en": 132017739,
+        "es": 7946087
+      }
+    },
+    "referencia_vistas_por_idioma": [
+      {
+        "es": 8017495,
+        "en": 138311252
+      },
+      {
+        "es": 11399982,
+        "en": 158941576
+      },
+      {
+        "es": 10576285,
+        "en": 147089155
+      }
+    ],
+    "controles": [
+      {
+        "nombre": "24 horas presentes",
+        "paso": true,
+        "detalle": "24 horas distintas"
+      },
+      {
+        "nombre": "sin duplicados (hora, dominio, título)",
+        "paso": true,
+        "detalle": "0 filas repetidas"
+      },
+      {
+        "nombre": "vistas > 0 y título no nulo",
+        "paso": true,
+        "detalle": "0 vistas ≤ 0, 0 títulos nulos"
+      },
+      {
+        "nombre": "sin páginas que no son artículos",
+        "paso": true,
+        "detalle": "0 filas de espacios de nombres o portadas"
+      },
+      {
+        "nombre": "volumen plausible (en)",
+        "paso": true,
+        "detalle": "132,017,739 vistas = 0.90× la mediana de referencia (147,089,155); rango aceptado 0.6–1.5×"
+      },
+      {
+        "nombre": "volumen plausible (es)",
+        "paso": true,
+        "detalle": "7,946,087 vistas = 0.75× la mediana de referencia (10,576,285); rango aceptado 0.6–1.5×"
+      },
+      {
+        "nombre": "idiomas completos",
+        "paso": true,
+        "detalle": "en y es"
+      }
+    ],
+    "aprobado": true,
+    "diferencias_main_dev": [
+      {
+        "clave": "wiki.pageviews_crudo",
+        "desde": "s3://lakehouse/warehouse/wiki/pageviews_crudo_9d198960-a818-4042-8bdd-42f868e2b071/metadata/00000-e96bb155-a321-4c17-a30e-b9d2ffb54e91.metadata.json",
+        "hacia": "s3://lakehouse/warehouse/wiki/pageviews_crudo_9d198960-a818-4042-8bdd-42f868e2b071/metadata/00000-152ef404-a81e-4743-b36f-3e258426e256.metadata.json"
+      },
+      {
+        "clave": "wiki.pageviews_limpio",
+        "desde": "s3://lakehouse/warehouse/wiki/pageviews_limpio_c3518ceb-590e-4eeb-a3e2-14d20daf7087/metadata/00000-8b8b800b-de82-48d2-94cd-b2b850322b4e.metadata.json",
+        "hacia": "s3://lakehouse/warehouse/wiki/pageviews_limpio_c3518ceb-590e-4eeb-a3e2-14d20daf7087/metadata/00000-c3ad3ad6-91b9-490d-aaeb-78701cd5d946.metadata.json"
+      }
+    ],
+    "segundos_carga": 79.7,
+    "main_antes": {
+      "hash": "194b36d6690ea4c81f00d29443546b2b28d0a8bb8ac172508eb7babab267242b",
+      "filas_dia": 0,
+      "filas_crudo_dia": 0
+    },
+    "merge": {
+      "wasApplied": true,
+      "wasSuccessful": true,
+      "resultantTargetHash": "85df31936588c598d66ce7fd030ea2206d29203f7735d8f0854e765d5af42dc8",
+      "commonAncestor": "194b36d6690ea4c81f00d29443546b2b28d0a8bb8ac172508eb7babab267242b",
+      "targetBranch": "main",
+      "effectiveTargetHash": "194b36d6690ea4c81f00d29443546b2b28d0a8bb8ac172508eb7babab267242b",
+      "expectedHash": "194b36d6690ea4c81f00d29443546b2b28d0a8bb8ac172508eb7babab267242b",
+      "details": [
+        {
+          "key": {
+            "elements": [
+              "wiki",
+              "pageviews_limpio"
+            ]
+          },
+          "mergeBehavior": "NORMAL"
+        },
+        {
+          "key": {
+            "elements": [
+              "wiki",
+              "pageviews_crudo"
+            ]
+          },
+          "mergeBehavior": "NORMAL"
+        }
+      ]
+    },
+    "segundos_merge": 0.07,
+    "main_despues": {
+      "hash": "85df31936588c598d66ce7fd030ea2206d29203f7735d8f0854e765d5af42dc8",
+      "filas_dia": 7603553,
+      "filas_crudo_dia": 7662936
+    }
+  },
+  "historial_main": [
+    {
+      "hash": "85df31936588c598d66ce7fd030ea2206d29203f7735d8f0854e765d5af42dc8",
+      "message": "Día 2026-07-21 auditado en dev: 7 controles OK",
+      "commitTime": "2026-10-27T19:55:40.189878751Z"
+    },
+    {
+      "hash": "194b36d6690ea4c81f00d29443546b2b28d0a8bb8ac172508eb7babab267242b",
+      "message": "Update ICEBERG_TABLE wiki.pageviews_crudo",
+      "commitTime": "2026-10-27T19:47:26.059021567Z"
+    },
+    {
+      "hash": "8740f1fcc91a0f0aec57bdbd7e9b0e75fb3d6125158e327a34845da5baab0a3a",
+      "message": "Update ICEBERG_TABLE wiki.pageviews_limpio",
+      "commitTime": "2026-10-27T19:46:41.999368995Z"
+    },
+    {
+      "hash": "3642eb85649a6fd1d9c0ca85c7bafbff32a29579f225eff32af4794b1f363dee",
+      "message": "Update ICEBERG_TABLE wiki.pageviews_crudo",
+      "commitTime": "2026-10-27T19:46:40.868735499Z"
+    },
+    {
+      "hash": "00eca8f01ecb985e29a76f7ac18dc937d621780992314fdfb3d2cfcce46d3a99",
+      "message": "Update ICEBERG_TABLE wiki.pageviews_limpio",
+      "commitTime": "2026-10-27T19:46:27.208637750Z"
+    },
+    {
+      "hash": "2e2b16c6649b2d7ef9b0690254c46d18aab3c93085386041b2350e14c11f3922",
+      "message": "Update ICEBERG_TABLE wiki.pageviews_crudo",
+      "commitTime": "2026-10-27T19:46:25.896639846Z"
+    },
+    {
+      "hash": "5d2e7caab5b7714e8bff25bfc78cbb9bbfbe18ad5dcaea3f94ec8d26b95531ce",
+      "message": "Update ICEBERG_TABLE wiki.pageviews_limpio",
+      "commitTime": "2026-10-27T19:46:13.919351812Z"
+    },
+    {
+      "hash": "81df5ddb35ae3bbca15e8ec48f9bb1e685b62ef3bc368a246f4a8ebf5146dede",
+      "message": "Update ICEBERG_TABLE wiki.pageviews_crudo",
+      "commitTime": "2026-10-27T19:46:12.518745745Z"
+    }
+  ],
+  "ramas": {
+    "dev": "fe53b0733915206c6c7f2d8a44b1e4cce6045a262685de06e3d10a222ec556fd",
+    "main": "85df31936588c598d66ce7fd030ea2206d29203f7735d8f0854e765d5af42dc8",
+    "historia": "194b36d6690ea4c81f00d29443546b2b28d0a8bb8ac172508eb7babab267242b"
+  }
+}

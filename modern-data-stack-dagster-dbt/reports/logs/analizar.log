@@ -1,0 +1,19 @@
+{
+  "filas_crudas": 177494884,
+  "MB_csv": 6387.8,
+  "MB_csv_gz": 812.6,
+  "MB_parquet": 170.6,
+  "MB_duckdb": 2013.3
+} {
+  "paises": 14,
+  "diferencia_abs_mediana_c": 0.09,
+  "diferencia_abs_max_c": 0.7,
+  "peor_pais": {
+    "codigo_pais": "CH",
+    "pais": "China",
+    "anomalia_estaciones_c": "0.0015825000275074275",
+    "anomalia_ingenua_c": "0.7035231181863324",
+    "estaciones": "155.0",
+    "diferencia_abs_c": "0.701940618158825"
+  }
+}

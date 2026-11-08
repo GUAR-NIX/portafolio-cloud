@@ -1,0 +1,28 @@
+{
+  "primera_carga": {
+    "recibidos": 2080,
+    "validos": 2080,
+    "invalidos": 0,
+    "insertados": 2080,
+    "duplicados": 0,
+    "alertas": 3,
+    "errores": []
+  },
+  "segunda_carga": {
+    "recibidos": 2080,
+    "validos": 2080,
+    "invalidos": 0,
+    "insertados": 0,
+    "duplicados": 2080,
+    "alertas": 0,
+    "errores": []
+  },
+  "eventos_finales": 2080,
+  "alertas_emitidas": 3,
+  "medicion_local": {
+    "latencia_primera_carga_ms": 22.122,
+    "latencia_repeticion_ms": 18.258,
+    "latencia_mediana_ms": 20.19,
+    "nota": "Lógica en proceso local; no incluye red ni arranque de Lambda."
+  }
+}

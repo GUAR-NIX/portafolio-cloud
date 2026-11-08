@@ -1,0 +1,51 @@
+{
+  "nota": "Primera corrida, antes del drenaje con Connection: close (preStop solo sleep 5). Sus CSV son rolling_sin_drenaje_*.csv; los 14 errores son ConnectionResetError.",
+  "fecha_utc": "2026-10-26T04:43:26+00:00",
+  "estrategia": "RollingUpdate maxSurge=1 maxUnavailable=0, preStop sleep 5 s, 2 réplicas",
+  "revision_restaurada": 9,
+  "version_inicial": "1.0.0",
+  "upgrade_segundos": 14.9,
+  "version_tras_upgrade": "1.0.1",
+  "rollback_segundos": 14.5,
+  "version_tras_rollback": "1.0.0",
+  "upgrade_inicio_segundo": 19.5,
+  "rollback_inicio_segundo": 56.0,
+  "carga": {
+    "escenario": "rolling",
+    "objetivo": "http://clima-ecuador-api:8000",
+    "usuarios": 30,
+    "duracion_segundos": 150,
+    "procesos_locust": 2,
+    "solicitudes": 37165,
+    "errores": 14,
+    "tasa_error_pct": 0.038,
+    "solicitudes_por_segundo": 247.7,
+    "latencia_p50_ms": 81,
+    "latencia_p95_ms": 170,
+    "latencia_p99_ms": 210,
+    "latencia_maxima_ms": 539.2,
+    "por_endpoint": {
+      "/ciudades": {
+        "solicitudes": 5345,
+        "errores": 2,
+        "p50_ms": 76,
+        "p95_ms": 170
+      },
+      "/clima": {
+        "solicitudes": 15911,
+        "errores": 5,
+        "p50_ms": 83,
+        "p95_ms": 170
+      },
+      "/indicadores/{ciudad}": {
+        "solicitudes": 15909,
+        "errores": 7,
+        "p50_ms": 80,
+        "p95_ms": 170
+      }
+    },
+    "advertencia_cpu_locust": false,
+    "inicio_carga_unix_nodo": 1792989653,
+    "fin_carga_unix_nodo": 1792989801
+  }
+}

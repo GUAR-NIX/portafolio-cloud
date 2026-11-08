@@ -1,0 +1,13 @@
+2026-10-20T04:50:42 INFO    DAG bundles loaded: dags-folder
+2026-10-20T04:50:42 INFO    Filling up the DagBag from /opt/airflow/proyecto/dags/construir_marts.py
+2026-10-20T04:50:55 INFO    Worker startup parse complete
+2026-10-20T04:50:55 ERROR   FALLA fct_clima_concilia_con_staging                valor=-13.0 rango=[0, 0]
+2026-10-20T04:50:55 INFO    OK   fct_clima_sin_duplicados                      valor=0.0 rango=[0, 0]
+2026-10-20T04:50:55 INFO    OK   fct_clima_sin_ciudades_huerfanas              valor=0.0 rango=[0, 0]
+2026-10-20T04:50:55 INFO    OK   mensual_suma_dias                             valor=0.0 rango=[0, 0]
+2026-10-20T04:50:55 INFO    OK   mensual_lluvia_cuadra                         valor=0.0 rango=[0, 0.5]
+2026-10-20T04:50:55 INFO    OK   indicadores_unicos_por_pais_anio              valor=0.0 rango=[0, 0]
+2026-10-20T04:50:55 INFO    OK   indicadores_concilian                         valor=0.0 rango=[0, 0]
+2026-10-20T04:50:55 ERROR   Task failed with exception
+    ErrorCalidad: 1 control(es) crítico(s) fallaron en marts/completo: [{"control": "fct_clima_concilia_con_staging", "valor": -13.0, "minimo": 0, "maximo": 0}]
+2026-10-20T04:50:55 ERROR   ALERTA · DAG construir_marts · tarea controles_calidad · run asset_triggered__2026-10-20T04:50:18.948970+00:00_X60z6qm7 · intento 1 · 1 control(es) crítico(s) fallaron en marts/completo: [{"control": "fct_clima_concilia_con_staging", "valor": -13.0, "minimo": 0, "maximo": 0}]

@@ -1,0 +1,59 @@
+name: airflow-apis-postgres
+
+on:
+  push:
+    paths: ["airflow-apis-postgres/**", ".github/workflows/airflow-apis-postgres.yml"]
+  pull_request:
+    paths: ["airflow-apis-postgres/**", ".github/workflows/airflow-apis-postgres.yml"]
+env:
+  AIRFLOW_VERSION: "3.3.2"
+  PYTHON_VERSION: "3.12"
+
+defaults:
+  run:
+    working-directory: airflow-apis-postgres
+
+jobs:
+  pruebas:
+    name: DAGs + SQL (Airflow 3.3.2, Postgres 16)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: datos
+          POSTGRES_PASSWORD: datos
+          POSTGRES_DB: datos_pruebas
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U datos" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATOS_PRUEBAS_URI: postgresql://datos:datos@localhost:5432/datos_pruebas
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__UNIT_TEST_MODE: "true"
+      PYTHONPATH: include
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: airflow-apis-postgres/requirements*.txt
+      - name: Instalar Airflow con su archivo de restricciones (igual que la imagen oficial)
+        run: |
+          pip install "apache-airflow[postgres]==${AIRFLOW_VERSION}" \
+            --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
+          pip install -r requirements-ci.txt
+      - name: Ruff
+        run: ruff check dags include scripts tests
+      - name: Base de metadatos de Airflow (SQLite, solo para las pruebas de DAG)
+        run: airflow db migrate
+      - name: Pytest
+        run: pytest -q -rs
+
+  compose:
+    name: docker compose config
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cp .env.example .env && docker compose config --quiet

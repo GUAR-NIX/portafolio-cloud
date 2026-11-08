@@ -1,0 +1,30 @@
+name: clima
+version: "1.0.0"
+config-version: 2
+profile: clima
+
+model-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+analysis-paths: ["analyses"]
+clean-targets: ["target"]
+
+vars:
+  # Normal de referencia: promedio 2022-2024 por estación y mes (NO es una normal OMS de 30 años).
+  anio_normal_inicio: 2022
+  anio_normal_fin: 2024
+  min_anios_normal: 2
+  # Un mes cuenta como completo si tiene al menos estos días con TMAX y TMIN válidas.
+  min_dias_mes: 20
+
+models:
+  clima:
+    staging:
+      +schema: staging
+      +materialized: view
+    intermediate:
+      +schema: intermediate
+      +materialized: table
+    marts:
+      +schema: marts
+      +materialized: table

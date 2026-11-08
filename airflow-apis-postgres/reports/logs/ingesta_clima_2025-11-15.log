@@ -1,0 +1,29 @@
+===== extraer_a_raw =====
+2026-10-20T05:02:50 INFO    DAG bundles loaded: dags-folder
+2026-10-20T05:02:50 INFO    Filling up the DagBag from /opt/airflow/proyecto/dags/ingesta_clima_ecuador.py
+2026-10-20T05:02:59 INFO    Worker startup parse complete
+2026-10-20T05:03:00 INFO    2025-11-15: archivo · 11,228 bytes · 0.88 s
+2026-10-20T05:03:00 INFO    Done. Returned value was: {'fecha': '2025-11-15', 'descargado': True, 'fuente': 'archivo'}
+2026-10-20T05:03:00 INFO    Pushing xcom
+===== cargar_staging =====
+2026-10-20T05:03:03 INFO    DAG bundles loaded: dags-folder
+2026-10-20T05:03:03 INFO    Filling up the DagBag from /opt/airflow/proyecto/dags/ingesta_clima_ecuador.py
+2026-10-20T05:03:13 INFO    Worker startup parse complete
+2026-10-20T05:03:14 INFO    2025-11-15: 13 filas en staging.clima_diario
+2026-10-20T05:03:14 INFO    Done. Returned value was: 2025-11-15
+2026-10-20T05:03:14 INFO    Pushing xcom
+===== controles_calidad =====
+2026-10-20T05:03:16 INFO    DAG bundles loaded: dags-folder
+2026-10-20T05:03:16 INFO    Filling up the DagBag from /opt/airflow/proyecto/dags/ingesta_clima_ecuador.py
+2026-10-20T05:03:24 INFO    Worker startup parse complete
+2026-10-20T05:03:24 INFO    OK    filas_por_dia                            valor=13.0 rango=[13, 13]
+2026-10-20T05:03:24 INFO    OK    ciudades_distintas                       valor=13.0 rango=[13, 13]
+2026-10-20T05:03:24 INFO    OK    nulos_en_temperatura_o_lluvia            valor=0.0 rango=[0, 0]
+2026-10-20T05:03:24 INFO    OK    temp_min_media_max_ordenadas             valor=0.0 rango=[0, 0]
+2026-10-20T05:03:24 INFO    OK    temperatura_en_rango_fisico              valor=0.0 rango=[0, 0]
+2026-10-20T05:03:24 INFO    OK    precipitacion_en_rango                   valor=0.0 rango=[0, 0]
+2026-10-20T05:03:24 INFO    OK    humedad_en_rango                         valor=0.0 rango=[0, 0]
+2026-10-20T05:03:24 INFO    OK    costa_mas_calida_que_quito               valor=13.2 rango=[3, None]
+2026-10-20T05:03:24 INFO    OK    dato_provisional                         valor=0.0 rango=[0, 0]
+2026-10-20T05:03:24 INFO    Done. Returned value was: {'fecha': '2025-11-15', 'controles': 9, 'advertencias': []}
+2026-10-20T05:03:24 INFO    Pushing xcom

@@ -1,0 +1,25 @@
+{
+  "filas": 118047,
+  "estaciones": 36,
+  "filas_con_qflag": 144,
+  "paises": [
+    "EC",
+    "CO",
+    "PE",
+    "BR",
+    "AR",
+    "MX",
+    "US",
+    "CA",
+    "SP",
+    "GM",
+    "AS",
+    "JA"
+  ],
+  "anios": [
+    2022,
+    2023,
+    2024,
+    2025
+  ]
+}

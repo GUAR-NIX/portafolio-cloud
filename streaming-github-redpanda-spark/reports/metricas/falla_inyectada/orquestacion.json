@@ -1,0 +1,22 @@
+{
+  "corrida": "falla_inyectada",
+  "desde": "2025-09-18T06:00:00Z",
+  "hasta": "2025-09-18T09:00:00Z",
+  "factor": 120,
+  "trigger_s": 3,
+  "kills": [
+    {
+      "falla": "plata:8",
+      "ts_kill": 1792591848.109574,
+      "ts_reanudado": 1792591884.078356,
+      "caida_s": 36.0
+    }
+  ],
+  "inicio": "2026-10-21T14:09:35.959970+00:00",
+  "ts_productor_inicio": 1792591795.945059,
+  "ts_productor_fin": 1792591906.8615124,
+  "ts_plata_alcanzada": 1792591931.8747747,
+  "fin": "2026-10-21T14:13:02.716643+00:00",
+  "exactamente_una_vez": true,
+  "terminada": true
+}

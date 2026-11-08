@@ -1,0 +1,231 @@
+{"capa": "bronce", "lote": 0, "filas": 0, "t_inicio": 1792597080.363, "t_escrito": 1792597080.729, "duracion_s": 0.366}
+{"capa": "plata", "lote": 0, "filas": 0, "t_inicio": 1792597087.618, "t_escrito": 1792597088.895, "duracion_s": 1.277}
+{"capa": "oro_actividad_5min", "lote": 0, "filas": 0, "t_inicio": 1792597087.661, "t_escrito": 1792597089.415, "duracion_s": 1.754}
+{"capa": "oro_repos_hora", "lote": 0, "filas": 0, "t_inicio": 1792597087.684, "t_escrito": 1792597089.87, "duracion_s": 2.186}
+{"capa": "oro_lenguajes_hora", "lote": 0, "filas": 0, "t_inicio": 1792597087.812, "t_escrito": 1792597089.94, "duracion_s": 2.128}
+{"capa": "bronce", "lote": 1, "filas": 13178, "t_inicio": 1792597092.139, "t_escrito": 1792597096.324, "duracion_s": 4.185, "lat_p50_s": 6.373, "lat_p95_s": 6.55, "lat_max_s": 6.569}
+{"capa": "bronce", "lote": 2, "filas": 13049, "t_inicio": 1792597097.065, "t_escrito": 1792597101.518, "duracion_s": 4.452, "lat_p50_s": 6.964, "lat_p95_s": 9.263, "lat_max_s": 9.514}
+{"capa": "plata", "lote": 1, "filas": 13059, "t_inicio": 1792597098.677, "t_escrito": 1792597103.726, "duracion_s": 5.049, "lat_p50_s": 13.775, "lat_p95_s": 13.952, "lat_max_s": 13.971}
+{"capa": "bronce", "lote": 3, "filas": 15156, "t_inicio": 1792597102.712, "t_escrito": 1792597108.071, "duracion_s": 5.359, "lat_p50_s": 8.486, "lat_p95_s": 10.835, "lat_max_s": 11.183}
+{"capa": "oro_lenguajes_hora", "lote": 1, "filas": 0, "t_inicio": 1792597110.774, "t_escrito": 1792597112.801, "duracion_s": 2.027}
+{"capa": "oro_actividad_5min", "lote": 1, "filas": 0, "t_inicio": 1792597110.855, "t_escrito": 1792597113.32, "duracion_s": 2.464}
+{"capa": "oro_repos_hora", "lote": 1, "filas": 0, "t_inicio": 1792597110.956, "t_escrito": 1792597114.577, "duracion_s": 3.621}
+{"capa": "plata", "lote": 2, "filas": 12905, "t_inicio": 1792597104.578, "t_escrito": 1792597114.704, "duracion_s": 10.126, "lat_p50_s": 20.164, "lat_p95_s": 22.449, "lat_max_s": 22.7}
+{"capa": "bronce", "lote": 4, "filas": 23304, "t_inicio": 1792597110.555, "t_escrito": 1792597117.475, "duracion_s": 6.921, "lat_p50_s": 11.09, "lat_p95_s": 14.622, "lat_max_s": 15.057}
+{"capa": "plata", "lote": 3, "filas": 14998, "t_inicio": 1792597116.676, "t_escrito": 1792597120.343, "duracion_s": 3.666, "lat_p50_s": 20.758, "lat_p95_s": 23.107, "lat_max_s": 23.455}
+{"capa": "bronce", "lote": 5, "filas": 20336, "t_inicio": 1792597117.941, "t_escrito": 1792597120.665, "duracion_s": 2.724, "lat_p50_s": 6.526, "lat_p95_s": 10.063, "lat_max_s": 10.347}
+{"capa": "oro_actividad_5min", "lote": 2, "filas": 0, "t_inicio": 1792597120.704, "t_escrito": 1792597121.955, "duracion_s": 1.251}
+{"capa": "oro_lenguajes_hora", "lote": 2, "filas": 0, "t_inicio": 1792597120.719, "t_escrito": 1792597122.9, "duracion_s": 2.181}
+{"capa": "oro_repos_hora", "lote": 2, "filas": 0, "t_inicio": 1792597120.746, "t_escrito": 1792597123.555, "duracion_s": 2.809}
+{"capa": "plata", "lote": 4, "filas": 43226, "t_inicio": 1792597121.076, "t_escrito": 1792597127.369, "duracion_s": 6.293, "lat_p50_s": 17.5, "lat_p95_s": 23.965, "lat_max_s": 24.951}
+{"capa": "bronce", "lote": 6, "filas": 8608, "t_inicio": 1792597121.35, "t_escrito": 1792597127.61, "duracion_s": 6.26, "lat_p50_s": 8.075, "lat_p95_s": 9.641, "lat_max_s": 9.849}
+{"capa": "oro_lenguajes_hora", "lote": 3, "filas": 0, "t_inicio": 1792597130.435, "t_escrito": 1792597132.099, "duracion_s": 1.664}
+{"capa": "oro_repos_hora", "lote": 3, "filas": 0, "t_inicio": 1792597130.453, "t_escrito": 1792597133.064, "duracion_s": 2.611}
+{"capa": "plata", "lote": 5, "filas": 8526, "t_inicio": 1792597128.068, "t_escrito": 1792597133.149, "duracion_s": 5.081, "lat_p50_s": 13.614, "lat_p95_s": 15.18, "lat_max_s": 15.381}
+{"capa": "bronce", "lote": 7, "filas": 19761, "t_inicio": 1792597127.982, "t_escrito": 1792597133.124, "duracion_s": 5.142, "lat_p50_s": 8.804, "lat_p95_s": 11.603, "lat_max_s": 11.939}
+{"capa": "oro_actividad_5min", "lote": 3, "filas": 15, "t_inicio": 1792597130.416, "t_escrito": 1792597133.532, "duracion_s": 3.116, "lat_p50_s": 41.744, "lat_p95_s": 42.11, "lat_max_s": 42.11, "picos": 0}
+{"capa": "bronce", "lote": 8, "filas": 16722, "t_inicio": 1792597133.751, "t_escrito": 1792597139.225, "duracion_s": 5.475, "lat_p50_s": 8.493, "lat_p95_s": 11.026, "lat_max_s": 11.377}
+{"capa": "plata", "lote": 6, "filas": 19568, "t_inicio": 1792597134.055, "t_escrito": 1792597139.373, "duracion_s": 5.317, "lat_p50_s": 15.053, "lat_p95_s": 17.852, "lat_max_s": 18.188}
+{"capa": "oro_lenguajes_hora", "lote": 4, "filas": 0, "t_inicio": 1792597140.522, "t_escrito": 1792597142.339, "duracion_s": 1.817}
+{"capa": "oro_repos_hora", "lote": 4, "filas": 0, "t_inicio": 1792597140.555, "t_escrito": 1792597143.585, "duracion_s": 3.031}
+{"capa": "bronce", "lote": 9, "filas": 16870, "t_inicio": 1792597139.65, "t_escrito": 1792597146.327, "duracion_s": 6.677, "lat_p50_s": 9.594, "lat_p95_s": 12.428, "lat_max_s": 12.762}
+{"capa": "plata", "lote": 7, "filas": 16556, "t_inicio": 1792597139.925, "t_escrito": 1792597146.382, "duracion_s": 6.457, "lat_p50_s": 15.649, "lat_p95_s": 18.183, "lat_max_s": 18.534}
+{"capa": "oro_lenguajes_hora", "lote": 5, "filas": 0, "t_inicio": 1792597150.556, "t_escrito": 1792597154.193, "duracion_s": 3.637}
+{"capa": "oro_repos_hora", "lote": 5, "filas": 0, "t_inicio": 1792597150.603, "t_escrito": 1792597154.22, "duracion_s": 3.617}
+{"capa": "oro_actividad_5min", "lote": 4, "filas": 45, "t_inicio": 1792597140.514, "t_escrito": 1792597146.481, "duracion_s": 5.967, "lat_p50_s": 42.393, "lat_p95_s": 49.809, "lat_max_s": 50.792, "picos": 0}
+{"capa": "plata", "lote": 8, "filas": 16708, "t_inicio": 1792597147.426, "t_escrito": 1792597155.044, "duracion_s": 7.617, "lat_p50_s": 18.31, "lat_p95_s": 21.145, "lat_max_s": 21.479}
+{"capa": "oro_repos_hora", "lote": 6, "filas": 0, "t_inicio": 1792597160.642, "t_escrito": 1792597163.426, "duracion_s": 2.784}
+{"capa": "oro_lenguajes_hora", "lote": 6, "filas": 0, "t_inicio": 1792597160.627, "t_escrito": 1792597164.534, "duracion_s": 3.907}
+{"capa": "bronce", "lote": 10, "filas": 19006, "t_inicio": 1792597147.005, "t_escrito": 1792597163.441, "duracion_s": 16.435, "lat_p50_s": 20.291, "lat_p95_s": 23.708, "lat_max_s": 23.909}
+{"capa": "plata", "lote": 9, "filas": 18814, "t_inicio": 1792597156.418, "t_escrito": 1792597165.21, "duracion_s": 8.792, "lat_p50_s": 22.059, "lat_p95_s": 25.477, "lat_max_s": 25.678}
+{"capa": "oro_actividad_5min", "lote": 5, "filas": 30, "t_inicio": 1792597155.807, "t_escrito": 1792597164.459, "duracion_s": 8.652, "lat_p50_s": 47.872, "lat_p95_s": 52.956, "lat_max_s": 53.419, "picos": 0}
+{"capa": "plata", "lote": 10, "filas": 0, "t_inicio": 1792597167.528, "t_escrito": 1792597169.683, "duracion_s": 2.155}
+{"capa": "oro_lenguajes_hora", "lote": 7, "filas": 0, "t_inicio": 1792597170.402, "t_escrito": 1792597172.523, "duracion_s": 2.122}
+{"capa": "bronce", "lote": 11, "filas": 51253, "t_inicio": 1792597165.233, "t_escrito": 1792597170.901, "duracion_s": 5.668, "lat_p50_s": 15.284, "lat_p95_s": 23.202, "lat_max_s": 24.103}
+{"capa": "oro_repos_hora", "lote": 7, "filas": 0, "t_inicio": 1792597170.405, "t_escrito": 1792597172.834, "duracion_s": 2.429}
+{"capa": "bronce", "lote": 12, "filas": 22972, "t_inicio": 1792597173.045, "t_escrito": 1792597178.519, "duracion_s": 5.474, "lat_p50_s": 9.889, "lat_p95_s": 13.151, "lat_max_s": 13.574}
+{"capa": "oro_actividad_5min", "lote": 6, "filas": 30, "t_inicio": 1792597170.113, "t_escrito": 1792597175.432, "duracion_s": 5.32, "lat_p50_s": 49.01, "lat_p95_s": 54.193, "lat_max_s": 54.329, "picos": 0}
+{"capa": "oro_repos_hora", "lote": 8, "filas": 0, "t_inicio": 1792597180.491, "t_escrito": 1792597183.066, "duracion_s": 2.575}
+{"capa": "oro_lenguajes_hora", "lote": 8, "filas": 0, "t_inicio": 1792597180.497, "t_escrito": 1792597183.209, "duracion_s": 2.712}
+{"capa": "plata", "lote": 11, "filas": 50743, "t_inicio": 1792597171.196, "t_escrito": 1792597184.653, "duracion_s": 13.456, "lat_p50_s": 29.036, "lat_p95_s": 36.966, "lat_max_s": 37.855}
+{"capa": "bronce", "lote": 13, "filas": 16446, "t_inicio": 1792597178.912, "t_escrito": 1792597186.201, "duracion_s": 7.289, "lat_p50_s": 10.472, "lat_p95_s": 13.07, "lat_max_s": 13.339}
+{"capa": "oro_actividad_5min", "lote": 7, "filas": 15, "t_inicio": 1792597182.749, "t_escrito": 1792597186.474, "duracion_s": 3.725, "lat_p50_s": 54.674, "lat_p95_s": 54.792, "lat_max_s": 54.792, "picos": 0}
+{"capa": "plata", "lote": 12, "filas": 39018, "t_inicio": 1792597186.532, "t_escrito": 1792597192.883, "duracion_s": 6.351, "lat_p50_s": 21.154, "lat_p95_s": 27.288, "lat_max_s": 27.938}
+{"capa": "oro_lenguajes_hora", "lote": 9, "filas": 145, "t_inicio": 1792597190.255, "t_escrito": 1792597194.592, "duracion_s": 4.336, "lat_p50_s": 57.126, "lat_p95_s": 96.822, "lat_max_s": 104.651}
+{"capa": "bronce", "lote": 14, "filas": 21664, "t_inicio": 1792597186.633, "t_escrito": 1792597194.63, "duracion_s": 7.997, "lat_p50_s": 12.034, "lat_p95_s": 15.452, "lat_max_s": 15.852}
+{"capa": "oro_actividad_5min", "lote": 8, "filas": 60, "t_inicio": 1792597191.549, "t_escrito": 1792597195.985, "duracion_s": 4.436, "lat_p50_s": 49.203, "lat_p95_s": 59.319, "lat_max_s": 59.517, "picos": 0}
+{"capa": "plata", "lote": 13, "filas": 21434, "t_inicio": 1792597194.613, "t_escrito": 1792597199.684, "duracion_s": 5.071, "lat_p50_s": 17.088, "lat_p95_s": 20.506, "lat_max_s": 20.906}
+{"capa": "bronce", "lote": 15, "filas": 23254, "t_inicio": 1792597195.307, "t_escrito": 1792597200.201, "duracion_s": 4.894, "lat_p50_s": 9.294, "lat_p95_s": 13.155, "lat_max_s": 13.701}
+{"capa": "oro_lenguajes_hora", "lote": 10, "filas": 0, "t_inicio": 1792597200.383, "t_escrito": 1792597201.701, "duracion_s": 1.319}
+{"capa": "oro_repos_hora", "lote": 9, "filas": 88060, "t_inicio": 1792597190.289, "t_escrito": 1792597194.698, "duracion_s": 4.41, "lat_p50_s": 73.179, "lat_p95_s": 103.11, "lat_max_s": 104.943, "picos": 0}
+{"capa": "bronce", "lote": 16, "filas": 14558, "t_inicio": 1792597200.592, "t_escrito": 1792597207.956, "duracion_s": 7.365, "lat_p50_s": 10.115, "lat_p95_s": 12.532, "lat_max_s": 12.816}
+{"capa": "plata", "lote": 14, "filas": 23018, "t_inicio": 1792597200.53, "t_escrito": 1792597208.069, "duracion_s": 7.539, "lat_p50_s": 17.162, "lat_p95_s": 21.023, "lat_max_s": 21.557}
+{"capa": "oro_repos_hora", "lote": 10, "filas": 0, "t_inicio": 1792597205.887, "t_escrito": 1792597208.246, "duracion_s": 2.359}
+{"capa": "oro_lenguajes_hora", "lote": 11, "filas": 0, "t_inicio": 1792597210.399, "t_escrito": 1792597212.351, "duracion_s": 1.953}
+{"capa": "oro_repos_hora", "lote": 11, "filas": 0, "t_inicio": 1792597210.41, "t_escrito": 1792597213.029, "duracion_s": 2.62}
+{"capa": "oro_actividad_5min", "lote": 9, "filas": 45, "t_inicio": 1792597200.382, "t_escrito": 1792597206.009, "duracion_s": 5.627, "lat_p50_s": 43.77, "lat_p95_s": 49.241, "lat_max_s": 50.19, "picos": 3}
+{"capa": "bronce", "lote": 17, "filas": 21822, "t_inicio": 1792597208.41, "t_escrito": 1792597214.216, "duracion_s": 5.805, "lat_p50_s": 9.675, "lat_p95_s": 13.407, "lat_max_s": 13.775}
+{"capa": "plata", "lote": 15, "filas": 14411, "t_inicio": 1792597208.675, "t_escrito": 1792597214.311, "duracion_s": 5.636, "lat_p50_s": 16.47, "lat_p95_s": 18.87, "lat_max_s": 19.171}
+{"capa": "bronce", "lote": 18, "filas": 17750, "t_inicio": 1792597214.653, "t_escrito": 1792597219.148, "duracion_s": 4.496, "lat_p50_s": 8.039, "lat_p95_s": 10.655, "lat_max_s": 10.924}
+{"capa": "plata", "lote": 16, "filas": 21616, "t_inicio": 1792597214.846, "t_escrito": 1792597219.294, "duracion_s": 4.448, "lat_p50_s": 14.767, "lat_p95_s": 18.485, "lat_max_s": 18.853}
+{"capa": "oro_lenguajes_hora", "lote": 12, "filas": 0, "t_inicio": 1792597220.442, "t_escrito": 1792597222.105, "duracion_s": 1.663}
+{"capa": "oro_repos_hora", "lote": 12, "filas": 0, "t_inicio": 1792597220.489, "t_escrito": 1792597223.154, "duracion_s": 2.665}
+{"capa": "oro_actividad_5min", "lote": 10, "filas": 15, "t_inicio": 1792597214.645, "t_escrito": 1792597219.086, "duracion_s": 4.441, "lat_p50_s": 47.29, "lat_p95_s": 48.091, "lat_max_s": 48.091, "picos": 0}
+{"capa": "bronce", "lote": 19, "filas": 12578, "t_inicio": 1792597219.543, "t_escrito": 1792597225.377, "duracion_s": 5.834, "lat_p50_s": 8.751, "lat_p95_s": 10.768, "lat_max_s": 10.903}
+{"capa": "plata", "lote": 17, "filas": 17572, "t_inicio": 1792597219.82, "t_escrito": 1792597225.463, "duracion_s": 5.643, "lat_p50_s": 14.354, "lat_p95_s": 16.97, "lat_max_s": 17.239}
+{"capa": "plata", "lote": 18, "filas": 12466, "t_inicio": 1792597226.056, "t_escrito": 1792597229.676, "duracion_s": 3.621, "lat_p50_s": 13.05, "lat_p95_s": 15.067, "lat_max_s": 15.202}
+{"capa": "oro_lenguajes_hora", "lote": 13, "filas": 0, "t_inicio": 1792597230.41, "t_escrito": 1792597231.92, "duracion_s": 1.51}
+{"capa": "oro_repos_hora", "lote": 13, "filas": 0, "t_inicio": 1792597230.412, "t_escrito": 1792597232.049, "duracion_s": 1.637}
+{"capa": "bronce", "lote": 20, "filas": 17260, "t_inicio": 1792597225.866, "t_escrito": 1792597233.98, "duracion_s": 8.114, "lat_p50_s": 11.406, "lat_p95_s": 14.174, "lat_max_s": 14.524}
+{"capa": "oro_actividad_5min", "lote": 11, "filas": 45, "t_inicio": 1792597225.657, "t_escrito": 1792597229.288, "duracion_s": 3.63, "lat_p50_s": 42.509, "lat_p95_s": 52.576, "lat_max_s": 52.844, "picos": 2}
+{"capa": "plata", "lote": 19, "filas": 17096, "t_inicio": 1792597230.802, "t_escrito": 1792597237.308, "duracion_s": 6.506, "lat_p50_s": 14.734, "lat_p95_s": 17.502, "lat_max_s": 17.852}
+{"capa": "bronce", "lote": 21, "filas": 25516, "t_inicio": 1792597234.387, "t_escrito": 1792597237.711, "duracion_s": 3.324, "lat_p50_s": 7.771, "lat_p95_s": 11.504, "lat_max_s": 11.972}
+{"capa": "plata", "lote": 20, "filas": 25271, "t_inicio": 1792597238.033, "t_escrito": 1792597245.264, "duracion_s": 7.231, "lat_p50_s": 15.324, "lat_p95_s": 19.057, "lat_max_s": 19.525}
+{"capa": "bronce", "lote": 22, "filas": 10781, "t_inicio": 1792597238.69, "t_escrito": 1792597246.226, "duracion_s": 7.536, "lat_p50_s": 9.837, "lat_p95_s": 11.703, "lat_max_s": 11.937}
+{"capa": "oro_actividad_5min", "lote": 12, "filas": 45, "t_inicio": 1792597237.67, "t_escrito": 1792597240.088, "duracion_s": 2.418, "lat_p50_s": 38.564, "lat_p95_s": 48.397, "lat_max_s": 48.564, "picos": 0}
+{"capa": "oro_lenguajes_hora", "lote": 14, "filas": 147, "t_inicio": 1792597240.359, "t_escrito": 1792597246.782, "duracion_s": 6.423, "lat_p50_s": 45.492, "lat_p95_s": 90.614, "lat_max_s": 98.965}
+{"capa": "oro_lenguajes_hora", "lote": 15, "filas": 0, "t_inicio": 1792597250.315, "t_escrito": 1792597251.926, "duracion_s": 1.611}
+{"capa": "bronce", "lote": 23, "filas": 23813, "t_inicio": 1792597247.009, "t_escrito": 1792597252.49, "duracion_s": 5.481, "lat_p50_s": 9.884, "lat_p95_s": 13.632, "lat_max_s": 14.067}
+{"capa": "oro_repos_hora", "lote": 14, "filas": 83658, "t_inicio": 1792597240.359, "t_escrito": 1792597246.519, "duracion_s": 6.16, "lat_p50_s": 69.538, "lat_p95_s": 96.387, "lat_max_s": 99.704, "picos": 0}
+{"capa": "plata", "lote": 21, "filas": 10681, "t_inicio": 1792597246.848, "t_escrito": 1792597256.984, "duracion_s": 10.136, "lat_p50_s": 20.59, "lat_p95_s": 22.461, "lat_max_s": 22.695}
+{"capa": "bronce", "lote": 24, "filas": 16726, "t_inicio": 1792597252.991, "t_escrito": 1792597257.156, "duracion_s": 4.165, "lat_p50_s": 7.294, "lat_p95_s": 9.998, "lat_max_s": 10.278}
+{"capa": "oro_repos_hora", "lote": 15, "filas": 0, "t_inicio": 1792597257.441, "t_escrito": 1792597259.55, "duracion_s": 2.109}
+{"capa": "oro_repos_hora", "lote": 16, "filas": 0, "t_inicio": 1792597260.252, "t_escrito": 1792597262.651, "duracion_s": 2.399}
+{"capa": "oro_lenguajes_hora", "lote": 16, "filas": 0, "t_inicio": 1792597260.336, "t_escrito": 1792597263.247, "duracion_s": 2.911}
+{"capa": "bronce", "lote": 25, "filas": 12769, "t_inicio": 1792597257.482, "t_escrito": 1792597265.116, "duracion_s": 7.634, "lat_p50_s": 10.007, "lat_p95_s": 12.055, "lat_max_s": 12.273}
+{"capa": "plata", "lote": 22, "filas": 40149, "t_inicio": 1792597257.512, "t_escrito": 1792597265.284, "duracion_s": 7.772, "lat_p50_s": 19.744, "lat_p95_s": 26.194, "lat_max_s": 26.861}
+{"capa": "oro_actividad_5min", "lote": 13, "filas": 30, "t_inicio": 1792597247.26, "t_escrito": 1792597256.666, "duracion_s": 9.406, "lat_p50_s": 44.875, "lat_p95_s": 50.01, "lat_max_s": 50.174, "picos": 1}
+{"capa": "oro_lenguajes_hora", "lote": 17, "filas": 0, "t_inicio": 1792597270.378, "t_escrito": 1792597272.344, "duracion_s": 1.966}
+{"capa": "oro_repos_hora", "lote": 17, "filas": 0, "t_inicio": 1792597270.403, "t_escrito": 1792597272.35, "duracion_s": 1.947}
+{"capa": "bronce", "lote": 26, "filas": 23849, "t_inicio": 1792597265.523, "t_escrito": 1792597272.521, "duracion_s": 6.999, "lat_p50_s": 11.109, "lat_p95_s": 14.759, "lat_max_s": 15.159}
+{"capa": "plata", "lote": 23, "filas": 12633, "t_inicio": 1792597265.958, "t_escrito": 1792597272.755, "duracion_s": 6.796, "lat_p50_s": 17.71, "lat_p95_s": 19.694, "lat_max_s": 19.912}
+{"capa": "bronce", "lote": 27, "filas": 21140, "t_inicio": 1792597273.023, "t_escrito": 1792597278.437, "duracion_s": 5.413, "lat_p50_s": 9.392, "lat_p95_s": 12.742, "lat_max_s": 13.059}
+{"capa": "plata", "lote": 24, "filas": 23602, "t_inicio": 1792597273.381, "t_escrito": 1792597278.46, "duracion_s": 5.079, "lat_p50_s": 17.048, "lat_p95_s": 20.698, "lat_max_s": 21.098}
+{"capa": "oro_repos_hora", "lote": 18, "filas": 0, "t_inicio": 1792597280.468, "t_escrito": 1792597282.508, "duracion_s": 2.04}
+{"capa": "oro_lenguajes_hora", "lote": 18, "filas": 0, "t_inicio": 1792597280.464, "t_escrito": 1792597282.916, "duracion_s": 2.452}
+{"capa": "oro_actividad_5min", "lote": 14, "filas": 30, "t_inicio": 1792597267.582, "t_escrito": 1792597272.975, "duracion_s": 5.393, "lat_p50_s": 51.218, "lat_p95_s": 56.851, "lat_max_s": 57.316, "picos": 1}
+{"capa": "bronce", "lote": 28, "filas": 16326, "t_inicio": 1792597278.8, "t_escrito": 1792597284.715, "duracion_s": 5.915, "lat_p50_s": 8.801, "lat_p95_s": 11.535, "lat_max_s": 11.849}
+{"capa": "plata", "lote": 25, "filas": 20967, "t_inicio": 1792597279.006, "t_escrito": 1792597285.173, "duracion_s": 6.167, "lat_p50_s": 16.128, "lat_p95_s": 19.478, "lat_max_s": 19.795}
+{"capa": "bronce", "lote": 29, "filas": 17761, "t_inicio": 1792597285.294, "t_escrito": 1792597289.528, "duracion_s": 4.234, "lat_p50_s": 7.66, "lat_p95_s": 10.477, "lat_max_s": 10.845}
+{"capa": "plata", "lote": 26, "filas": 16151, "t_inicio": 1792597285.92, "t_escrito": 1792597289.682, "duracion_s": 3.762, "lat_p50_s": 13.769, "lat_p95_s": 16.502, "lat_max_s": 16.816}
+{"capa": "oro_lenguajes_hora", "lote": 19, "filas": 0, "t_inicio": 1792597290.331, "t_escrito": 1792597292.905, "duracion_s": 2.573}
+{"capa": "oro_repos_hora", "lote": 19, "filas": 0, "t_inicio": 1792597290.34, "t_escrito": 1792597293.031, "duracion_s": 2.691}
+{"capa": "oro_actividad_5min", "lote": 15, "filas": 60, "t_inicio": 1792597284.463, "t_escrito": 1792597286.245, "duracion_s": 1.781, "lat_p50_s": 49.04, "lat_p95_s": 59.634, "lat_max_s": 59.989, "picos": 1}
+{"capa": "plata", "lote": 27, "filas": 17573, "t_inicio": 1792597290.175, "t_escrito": 1792597295.775, "duracion_s": 5.599, "lat_p50_s": 13.908, "lat_p95_s": 16.723, "lat_max_s": 17.092}
+{"capa": "bronce", "lote": 30, "filas": 13803, "t_inicio": 1792597289.886, "t_escrito": 1792597298.316, "duracion_s": 8.43, "lat_p50_s": 10.833, "lat_p95_s": 12.915, "lat_max_s": 13.166}
+{"capa": "oro_actividad_5min", "lote": 16, "filas": 30, "t_inicio": 1792597294.325, "t_escrito": 1792597296.908, "duracion_s": 2.583, "lat_p50_s": 45.312, "lat_p95_s": 50.618, "lat_max_s": 50.652, "picos": 0}
+{"capa": "plata", "lote": 28, "filas": 13679, "t_inicio": 1792597296.42, "t_escrito": 1792597299.758, "duracion_s": 3.338, "lat_p50_s": 12.275, "lat_p95_s": 14.357, "lat_max_s": 14.608}
+{"capa": "plata", "lote": 29, "filas": 0, "t_inicio": 1792597300.158, "t_escrito": 1792597300.838, "duracion_s": 0.68}
+{"capa": "oro_lenguajes_hora", "lote": 20, "filas": 154, "t_inicio": 1792597300.492, "t_escrito": 1792597305.603, "duracion_s": 5.111, "lat_p50_s": 43.574, "lat_p95_s": 92.429, "lat_max_s": 97.079}
+{"capa": "bronce", "lote": 31, "filas": 26416, "t_inicio": 1792597299.415, "t_escrito": 1792597305.708, "duracion_s": 6.294, "lat_p50_s": 10.941, "lat_p95_s": 15.573, "lat_max_s": 15.925}
+{"capa": "bronce", "lote": 32, "filas": 18438, "t_inicio": 1792597306.036, "t_escrito": 1792597309.889, "duracion_s": 3.853, "lat_p50_s": 7.488, "lat_p95_s": 10.288, "lat_max_s": 10.622}
+{"capa": "oro_lenguajes_hora", "lote": 21, "filas": 0, "t_inicio": 1792597310.236, "t_escrito": 1792597310.731, "duracion_s": 0.496}
+{"capa": "oro_actividad_5min", "lote": 17, "filas": 45, "t_inicio": 1792597300.52, "t_escrito": 1792597305.841, "duracion_s": 5.321, "lat_p50_s": 39.144, "lat_p95_s": 49.129, "lat_max_s": 49.345, "picos": 1}
+{"capa": "oro_repos_hora", "lote": 20, "filas": 76479, "t_inicio": 1792597300.476, "t_escrito": 1792597305.362, "duracion_s": 4.886, "lat_p50_s": 64.936, "lat_p95_s": 95.27, "lat_max_s": 98.555, "picos": 0}
+{"capa": "plata", "lote": 30, "filas": 26182, "t_inicio": 1792597308.312, "t_escrito": 1792597314.28, "duracion_s": 5.969, "lat_p50_s": 19.513, "lat_p95_s": 24.145, "lat_max_s": 24.497}
+{"capa": "bronce", "lote": 33, "filas": 11960, "t_inicio": 1792597310.361, "t_escrito": 1792597314.392, "duracion_s": 4.03, "lat_p50_s": 6.477, "lat_p95_s": 8.308, "lat_max_s": 8.492}
+{"capa": "oro_repos_hora", "lote": 21, "filas": 0, "t_inicio": 1792597314.74, "t_escrito": 1792597316.929, "duracion_s": 2.189}
+{"capa": "oro_repos_hora", "lote": 22, "filas": 0, "t_inicio": 1792597320.329, "t_escrito": 1792597321.319, "duracion_s": 0.99}
+{"capa": "bronce", "lote": 34, "filas": 11594, "t_inicio": 1792597314.798, "t_escrito": 1792597321.102, "duracion_s": 6.304, "lat_p50_s": 8.821, "lat_p95_s": 10.687, "lat_max_s": 10.889}
+{"capa": "oro_lenguajes_hora", "lote": 22, "filas": 0, "t_inicio": 1792597320.428, "t_escrito": 1792597321.943, "duracion_s": 1.516}
+{"capa": "plata", "lote": 31, "filas": 30083, "t_inicio": 1792597314.897, "t_escrito": 1792597321.417, "duracion_s": 6.52, "lat_p50_s": 16.683, "lat_p95_s": 21.6, "lat_max_s": 22.15}
+{"capa": "bronce", "lote": 35, "filas": 18154, "t_inicio": 1792597321.624, "t_escrito": 1792597325.84, "duracion_s": 4.216, "lat_p50_s": 7.859, "lat_p95_s": 10.808, "lat_max_s": 11.21}
+{"capa": "oro_actividad_5min", "lote": 18, "filas": 30, "t_inicio": 1792597314.458, "t_escrito": 1792597320.194, "duracion_s": 5.736, "lat_p50_s": 43.466, "lat_p95_s": 48.449, "lat_max_s": 49.132, "picos": 1}
+{"capa": "plata", "lote": 32, "filas": 11461, "t_inicio": 1792597322.358, "t_escrito": 1792597329.98, "duracion_s": 7.622, "lat_p50_s": 17.699, "lat_p95_s": 19.565, "lat_max_s": 19.767}
+{"capa": "oro_lenguajes_hora", "lote": 23, "filas": 0, "t_inicio": 1792597330.448, "t_escrito": 1792597332.484, "duracion_s": 2.036}
+{"capa": "bronce", "lote": 36, "filas": 13751, "t_inicio": 1792597326.803, "t_escrito": 1792597333.038, "duracion_s": 6.235, "lat_p50_s": 8.957, "lat_p95_s": 11.29, "lat_max_s": 11.525}
+{"capa": "oro_repos_hora", "lote": 23, "filas": 0, "t_inicio": 1792597330.49, "t_escrito": 1792597334.043, "duracion_s": 3.553}
+{"capa": "oro_actividad_5min", "lote": 19, "filas": 30, "t_inicio": 1792597327.914, "t_escrito": 1792597333.231, "duracion_s": 5.317, "lat_p50_s": 46.51, "lat_p95_s": 51.964, "lat_max_s": 51.964, "picos": 0}
+{"capa": "plata", "lote": 33, "filas": 31586, "t_inicio": 1792597333.285, "t_escrito": 1792597339.534, "duracion_s": 6.249, "lat_p50_s": 18.887, "lat_p95_s": 24.169, "lat_max_s": 24.904}
+{"capa": "bronce", "lote": 37, "filas": 18461, "t_inicio": 1792597333.515, "t_escrito": 1792597339.566, "duracion_s": 6.05, "lat_p50_s": 9.868, "lat_p95_s": 12.581, "lat_max_s": 12.986}
+{"capa": "oro_lenguajes_hora", "lote": 24, "filas": 0, "t_inicio": 1792597340.473, "t_escrito": 1792597344.687, "duracion_s": 4.214}
+{"capa": "oro_repos_hora", "lote": 24, "filas": 0, "t_inicio": 1792597340.477, "t_escrito": 1792597345.683, "duracion_s": 5.206}
+{"capa": "bronce", "lote": 38, "filas": 17279, "t_inicio": 1792597340.05, "t_escrito": 1792597348.21, "duracion_s": 8.161, "lat_p50_s": 11.446, "lat_p95_s": 14.496, "lat_max_s": 14.88}
+{"capa": "plata", "lote": 34, "filas": 18275, "t_inicio": 1792597340.239, "t_escrito": 1792597348.321, "duracion_s": 8.082, "lat_p50_s": 18.623, "lat_p95_s": 21.336, "lat_max_s": 21.741}
+{"capa": "oro_lenguajes_hora", "lote": 25, "filas": 0, "t_inicio": 1792597350.361, "t_escrito": 1792597353.037, "duracion_s": 2.675}
+{"capa": "oro_repos_hora", "lote": 25, "filas": 0, "t_inicio": 1792597350.436, "t_escrito": 1792597353.179, "duracion_s": 2.744}
+{"capa": "oro_actividad_5min", "lote": 20, "filas": 45, "t_inicio": 1792597339.842, "t_escrito": 1792597348.155, "duracion_s": 8.313, "lat_p50_s": 46.388, "lat_p95_s": 56.405, "lat_max_s": 56.538, "picos": 0}
+{"capa": "bronce", "lote": 39, "filas": 24168, "t_inicio": 1792597348.652, "t_escrito": 1792597354.376, "duracion_s": 5.723, "lat_p50_s": 10.036, "lat_p95_s": 14.035, "lat_max_s": 14.546}
+{"capa": "plata", "lote": 35, "filas": 17110, "t_inicio": 1792597348.943, "t_escrito": 1792597355.056, "duracion_s": 6.113, "lat_p50_s": 18.292, "lat_p95_s": 21.342, "lat_max_s": 21.726}
+{"capa": "plata", "lote": 36, "filas": 23968, "t_inicio": 1792597355.571, "t_escrito": 1792597359.744, "duracion_s": 4.173, "lat_p50_s": 15.42, "lat_p95_s": 19.401, "lat_max_s": 19.905}
+{"capa": "oro_repos_hora", "lote": 26, "filas": 0, "t_inicio": 1792597360.458, "t_escrito": 1792597362.825, "duracion_s": 2.366}
+{"capa": "oro_lenguajes_hora", "lote": 26, "filas": 0, "t_inicio": 1792597360.465, "t_escrito": 1792597362.884, "duracion_s": 2.419}
+{"capa": "oro_actividad_5min", "lote": 21, "filas": 30, "t_inicio": 1792597354.254, "t_escrito": 1792597358.139, "duracion_s": 3.885, "lat_p50_s": 46.525, "lat_p95_s": 51.472, "lat_max_s": 51.805, "picos": 0}
+{"capa": "bronce", "lote": 40, "filas": 18383, "t_inicio": 1792597355.231, "t_escrito": 1792597364.238, "duracion_s": 9.006, "lat_p50_s": 12.614, "lat_p95_s": 15.428, "lat_max_s": 15.681}
+{"capa": "plata", "lote": 37, "filas": 18175, "t_inicio": 1792597360.82, "t_escrito": 1792597367.897, "duracion_s": 7.077, "lat_p50_s": 16.273, "lat_p95_s": 19.088, "lat_max_s": 19.34}
+{"capa": "bronce", "lote": 41, "filas": 26202, "t_inicio": 1792597364.529, "t_escrito": 1792597368.023, "duracion_s": 3.494, "lat_p50_s": 8.215, "lat_p95_s": 12.448, "lat_max_s": 12.923}
+{"capa": "oro_actividad_5min", "lote": 22, "filas": 30, "t_inicio": 1792597364.546, "t_escrito": 1792597368.07, "duracion_s": 3.524, "lat_p50_s": 46.306, "lat_p95_s": 51.39, "lat_max_s": 51.488, "picos": 0}
+{"capa": "plata", "lote": 38, "filas": 25946, "t_inicio": 1792597368.369, "t_escrito": 1792597377.0, "duracion_s": 8.63, "lat_p50_s": 17.192, "lat_p95_s": 21.425, "lat_max_s": 21.893}
+{"capa": "bronce", "lote": 42, "filas": 11259, "t_inicio": 1792597368.343, "t_escrito": 1792597376.925, "duracion_s": 8.582, "lat_p50_s": 10.601, "lat_p95_s": 12.268, "lat_max_s": 12.501}
+{"capa": "oro_lenguajes_hora", "lote": 27, "filas": 144, "t_inicio": 1792597370.388, "t_escrito": 1792597377.788, "duracion_s": 7.4, "lat_p50_s": 58.408, "lat_p95_s": 103.593, "lat_max_s": 109.443}
+{"capa": "oro_lenguajes_hora", "lote": 28, "filas": 0, "t_inicio": 1792597380.468, "t_escrito": 1792597382.865, "duracion_s": 2.397}
+{"capa": "bronce", "lote": 43, "filas": 26463, "t_inicio": 1792597377.613, "t_escrito": 1792597384.908, "duracion_s": 7.295, "lat_p50_s": 12.099, "lat_p95_s": 16.133, "lat_max_s": 16.668}
+{"capa": "plata", "lote": 39, "filas": 11144, "t_inicio": 1792597377.761, "t_escrito": 1792597385.129, "duracion_s": 7.367, "lat_p50_s": 18.789, "lat_p95_s": 20.472, "lat_max_s": 20.705}
+{"capa": "oro_lenguajes_hora", "lote": 29, "filas": 0, "t_inicio": 1792597390.378, "t_escrito": 1792597391.905, "duracion_s": 1.527}
+{"capa": "bronce", "lote": 44, "filas": 20783, "t_inicio": 1792597385.37, "t_escrito": 1792597391.868, "duracion_s": 6.497, "lat_p50_s": 10.593, "lat_p95_s": 14.126, "lat_max_s": 14.428}
+{"capa": "oro_repos_hora", "lote": 27, "filas": 76576, "t_inicio": 1792597370.421, "t_escrito": 1792597377.139, "duracion_s": 6.718, "lat_p50_s": 77.822, "lat_p95_s": 106.744, "lat_max_s": 110.345, "picos": 1}
+{"capa": "plata", "lote": 40, "filas": 26225, "t_inicio": 1792597385.779, "t_escrito": 1792597392.326, "duracion_s": 6.547, "lat_p50_s": 19.517, "lat_p95_s": 23.551, "lat_max_s": 24.086}
+{"capa": "oro_repos_hora", "lote": 28, "filas": 0, "t_inicio": 1792597392.793, "t_escrito": 1792597395.011, "duracion_s": 2.217}
+{"capa": "oro_actividad_5min", "lote": 23, "filas": 45, "t_inicio": 1792597377.443, "t_escrito": 1792597387.537, "duracion_s": 10.094, "lat_p50_s": 51.826, "lat_p95_s": 60.973, "lat_max_s": 61.173, "picos": 2}
+{"capa": "bronce", "lote": 45, "filas": 19683, "t_inicio": 1792597392.539, "t_escrito": 1792597397.868, "duracion_s": 5.329, "lat_p50_s": 8.995, "lat_p95_s": 12.292, "lat_max_s": 12.628}
+{"capa": "plata", "lote": 41, "filas": 20576, "t_inicio": 1792597392.886, "t_escrito": 1792597397.993, "duracion_s": 5.107, "lat_p50_s": 16.703, "lat_p95_s": 20.219, "lat_max_s": 20.553}
+{"capa": "oro_lenguajes_hora", "lote": 30, "filas": 0, "t_inicio": 1792597400.413, "t_escrito": 1792597402.092, "duracion_s": 1.68}
+{"capa": "oro_repos_hora", "lote": 29, "filas": 0, "t_inicio": 1792597400.42, "t_escrito": 1792597402.26, "duracion_s": 1.839}
+{"capa": "bronce", "lote": 46, "filas": 16694, "t_inicio": 1792597398.162, "t_escrito": 1792597403.659, "duracion_s": 5.498, "lat_p50_s": 8.301, "lat_p95_s": 10.952, "lat_max_s": 11.236}
+{"capa": "plata", "lote": 42, "filas": 19465, "t_inicio": 1792597398.51, "t_escrito": 1792597406.961, "duracion_s": 8.452, "lat_p50_s": 18.088, "lat_p95_s": 21.385, "lat_max_s": 21.721}
+{"capa": "bronce", "lote": 47, "filas": 15938, "t_inicio": 1792597404.011, "t_escrito": 1792597407.01, "duracion_s": 2.999, "lat_p50_s": 6.355, "lat_p95_s": 8.636, "lat_max_s": 8.956}
+{"capa": "oro_lenguajes_hora", "lote": 31, "filas": 0, "t_inicio": 1792597410.282, "t_escrito": 1792597412.073, "duracion_s": 1.791}
+{"capa": "oro_repos_hora", "lote": 30, "filas": 0, "t_inicio": 1792597410.301, "t_escrito": 1792597412.451, "duracion_s": 2.151}
+{"capa": "oro_actividad_5min", "lote": 24, "filas": 45, "t_inicio": 1792597398.233, "t_escrito": 1792597403.676, "duracion_s": 5.443, "lat_p50_s": 52.806, "lat_p95_s": 61.985, "lat_max_s": 62.001, "picos": 1}
+{"capa": "bronce", "lote": 48, "filas": 9034, "t_inicio": 1792597407.34, "t_escrito": 1792597412.728, "duracion_s": 5.388, "lat_p50_s": 7.223, "lat_p95_s": 8.72, "lat_max_s": 8.874}
+{"capa": "plata", "lote": 43, "filas": 32314, "t_inicio": 1792597407.548, "t_escrito": 1792597412.808, "duracion_s": 5.26, "lat_p50_s": 14.951, "lat_p95_s": 19.799, "lat_max_s": 20.385}
+{"capa": "bronce", "lote": 49, "filas": 15603, "t_inicio": 1792597413.06, "t_escrito": 1792597416.865, "duracion_s": 3.805, "lat_p50_s": 6.911, "lat_p95_s": 9.246, "lat_max_s": 9.632}
+{"capa": "plata", "lote": 44, "filas": 8942, "t_inicio": 1792597413.269, "t_escrito": 1792597417.045, "duracion_s": 3.776, "lat_p50_s": 11.541, "lat_p95_s": 13.04, "lat_max_s": 13.191}
+{"capa": "oro_lenguajes_hora", "lote": 32, "filas": 0, "t_inicio": 1792597420.32, "t_escrito": 1792597422.278, "duracion_s": 1.958}
+{"capa": "oro_repos_hora", "lote": 31, "filas": 0, "t_inicio": 1792597420.346, "t_escrito": 1792597422.38, "duracion_s": 2.034}
+{"capa": "plata", "lote": 45, "filas": 15440, "t_inicio": 1792597417.497, "t_escrito": 1792597422.568, "duracion_s": 5.071, "lat_p50_s": 12.614, "lat_p95_s": 14.949, "lat_max_s": 15.331}
+{"capa": "oro_actividad_5min", "lote": 25, "filas": 60, "t_inicio": 1792597412.956, "t_escrito": 1792597416.635, "duracion_s": 3.679, "lat_p50_s": 44.943, "lat_p95_s": 59.956, "lat_max_s": 60.307, "picos": 2}
+{"capa": "bronce", "lote": 50, "filas": 11185, "t_inicio": 1792597417.183, "t_escrito": 1792597426.056, "duracion_s": 8.873, "lat_p50_s": 11.101, "lat_p95_s": 12.901, "lat_max_s": 13.085}
+{"capa": "plata", "lote": 46, "filas": 11061, "t_inicio": 1792597423.041, "t_escrito": 1792597427.28, "duracion_s": 4.239, "lat_p50_s": 12.325, "lat_p95_s": 14.125, "lat_max_s": 14.309}
+{"capa": "plata", "lote": 47, "filas": 0, "t_inicio": 1792597427.599, "t_escrito": 1792597427.972, "duracion_s": 0.373}
+{"capa": "bronce", "lote": 51, "filas": 26891, "t_inicio": 1792597426.788, "t_escrito": 1792597429.204, "duracion_s": 2.417, "lat_p50_s": 7.45, "lat_p95_s": 11.715, "lat_max_s": 12.134}
+{"capa": "oro_actividad_5min", "lote": 26, "filas": 60, "t_inicio": 1792597425.461, "t_escrito": 1792597427.64, "duracion_s": 2.179, "lat_p50_s": 40.867, "lat_p95_s": 50.899, "lat_max_s": 51.115, "picos": 0}
+{"capa": "bronce", "lote": 52, "filas": 7408, "t_inicio": 1792597429.477, "t_escrito": 1792597437.579, "duracion_s": 8.102, "lat_p50_s": 9.527, "lat_p95_s": 10.758, "lat_max_s": 10.904}
+{"capa": "oro_lenguajes_hora", "lote": 33, "filas": 142, "t_inicio": 1792597430.367, "t_escrito": 1792597437.699, "duracion_s": 7.332, "lat_p50_s": 59.242, "lat_p95_s": 103.283, "lat_max_s": 110.669}
+{"capa": "plata", "lote": 48, "filas": 26614, "t_inicio": 1792597431.236, "t_escrito": 1792597437.844, "duracion_s": 6.608, "lat_p50_s": 16.09, "lat_p95_s": 20.338, "lat_max_s": 20.774}
+{"capa": "oro_lenguajes_hora", "lote": 34, "filas": 0, "t_inicio": 1792597440.262, "t_escrito": 1792597442.311, "duracion_s": 2.05}
+{"capa": "bronce", "lote": 53, "filas": 23809, "t_inicio": 1792597438.007, "t_escrito": 1792597443.138, "duracion_s": 5.131, "lat_p50_s": 9.421, "lat_p95_s": 13.402, "lat_max_s": 13.787}
+{"capa": "plata", "lote": 49, "filas": 7333, "t_inicio": 1792597438.481, "t_escrito": 1792597443.221, "duracion_s": 4.741, "lat_p50_s": 15.169, "lat_p95_s": 16.4, "lat_max_s": 16.517}
+{"capa": "bronce", "lote": 54, "filas": 14947, "t_inicio": 1792597443.513, "t_escrito": 1792597448.985, "duracion_s": 5.472, "lat_p50_s": 8.465, "lat_p95_s": 10.917, "lat_max_s": 11.136}
+{"capa": "plata", "lote": 50, "filas": 23585, "t_inicio": 1792597443.798, "t_escrito": 1792597449.231, "duracion_s": 5.433, "lat_p50_s": 15.513, "lat_p95_s": 19.48, "lat_max_s": 19.88}
+{"capa": "oro_actividad_5min", "lote": 27, "filas": 30, "t_inicio": 1792597432.805, "t_escrito": 1792597437.999, "duracion_s": 5.194, "lat_p50_s": 36.376, "lat_p95_s": 41.392, "lat_max_s": 41.441, "picos": 1}
+{"capa": "oro_lenguajes_hora", "lote": 35, "filas": 0, "t_inicio": 1792597450.3, "t_escrito": 1792597452.014, "duracion_s": 1.715}
+{"capa": "oro_repos_hora", "lote": 32, "filas": 76212, "t_inicio": 1792597430.351, "t_escrito": 1792597436.993, "duracion_s": 6.642, "lat_p50_s": 77.435, "lat_p95_s": 107.011, "lat_max_s": 110.181, "picos": 1}
+{"capa": "oro_repos_hora", "lote": 33, "filas": 0, "t_inicio": 1792597452.456, "t_escrito": 1792597454.542, "duracion_s": 2.087}
+{"capa": "bronce", "lote": 55, "filas": 9440, "t_inicio": 1792597449.371, "t_escrito": 1792597455.585, "duracion_s": 6.214, "lat_p50_s": 10.433, "lat_p95_s": 11.934, "lat_max_s": 12.201}
+{"capa": "plata", "lote": 51, "filas": 14796, "t_inicio": 1792597449.716, "t_escrito": 1792597455.645, "duracion_s": 5.929, "lat_p50_s": 15.125, "lat_p95_s": 17.577, "lat_max_s": 17.796}
+{"capa": "oro_actividad_5min", "lote": 28, "filas": 15, "t_inicio": 1792597450.716, "t_escrito": 1792597455.7, "duracion_s": 4.984, "lat_p50_s": 48.928, "lat_p95_s": 49.128, "lat_max_s": 49.128, "picos": 0}
+{"capa": "oro_repos_hora", "lote": 34, "filas": 0, "t_inicio": 1792597460.492, "t_escrito": 1792597461.787, "duracion_s": 1.295}
+{"capa": "oro_lenguajes_hora", "lote": 36, "filas": 0, "t_inicio": 1792597460.511, "t_escrito": 1792597463.071, "duracion_s": 2.559}
+{"capa": "bronce", "lote": 56, "filas": 23, "t_inicio": 1792597455.886, "t_escrito": 1792597460.957, "duracion_s": 5.071, "lat_p50_s": 9.233, "lat_p95_s": 11.37, "lat_max_s": 11.399}
+{"capa": "plata", "lote": 52, "filas": 9341, "t_inicio": 1792597456.034, "t_escrito": 1792597463.066, "duracion_s": 7.033, "lat_p50_s": 17.914, "lat_p95_s": 19.415, "lat_max_s": 19.682}
+{"capa": "bronce", "lote": 57, "filas": 19, "t_inicio": 1792597463.415, "t_escrito": 1792597468.201, "duracion_s": 4.786, "lat_p50_s": 8.414, "lat_p95_s": 12.432, "lat_max_s": 12.432}
+{"capa": "oro_repos_hora", "lote": 35, "filas": 0, "t_inicio": 1792597470.316, "t_escrito": 1792597471.751, "duracion_s": 1.434}
+{"capa": "oro_lenguajes_hora", "lote": 37, "filas": 0, "t_inicio": 1792597470.322, "t_escrito": 1792597471.879, "duracion_s": 1.557}
+{"capa": "oro_actividad_5min", "lote": 29, "filas": 60, "t_inicio": 1792597460.507, "t_escrito": 1792597465.318, "duracion_s": 4.811, "lat_p50_s": 43.563, "lat_p95_s": 53.596, "lat_max_s": 53.98, "picos": 1}
+{"capa": "plata", "lote": 53, "filas": 23, "t_inicio": 1792597463.677, "t_escrito": 1792597471.943, "duracion_s": 8.265, "lat_p50_s": 20.219, "lat_p95_s": 22.356, "lat_max_s": 22.385}
+{"capa": "bronce", "lote": 58, "filas": 5, "t_inicio": 1792597468.459, "t_escrito": 1792597472.28, "duracion_s": 3.821, "lat_p50_s": 4.663, "lat_p95_s": 8.943, "lat_max_s": 8.943}
+{"capa": "bronce", "lote": 59, "filas": 6, "t_inicio": 1792597472.572, "t_escrito": 1792597477.034, "duracion_s": 4.462, "lat_p50_s": 5.871, "lat_p95_s": 6.712, "lat_max_s": 6.712}
+{"capa": "plata", "lote": 54, "filas": 24, "t_inicio": 1792597472.473, "t_escrito": 1792597477.22, "duracion_s": 4.747, "lat_p50_s": 17.407, "lat_p95_s": 21.404, "lat_max_s": 21.451}
+{"capa": "oro_actividad_5min", "lote": 30, "filas": 15, "t_inicio": 1792597472.324, "t_escrito": 1792597476.582, "duracion_s": 4.258, "lat_p50_s": 44.813, "lat_p95_s": 45.247, "lat_max_s": 45.247, "picos": 0}
+{"capa": "oro_lenguajes_hora", "lote": 38, "filas": 0, "t_inicio": 1792597480.408, "t_escrito": 1792597482.13, "duracion_s": 1.722}
+{"capa": "oro_repos_hora", "lote": 36, "filas": 0, "t_inicio": 1792597480.515, "t_escrito": 1792597482.33, "duracion_s": 1.815}
+{"capa": "oro_actividad_5min", "lote": 31, "filas": 0, "t_inicio": 1792597481.813, "t_escrito": 1792597482.834, "duracion_s": 1.021}
+{"capa": "plata", "lote": 55, "filas": 6, "t_inicio": 1792597478.007, "t_escrito": 1792597483.02, "duracion_s": 5.013, "lat_p50_s": 11.857, "lat_p95_s": 12.698, "lat_max_s": 12.698}
+{"capa": "bronce", "lote": 60, "filas": 10, "t_inicio": 1792597477.443, "t_escrito": 1792597485.37, "duracion_s": 7.926, "lat_p50_s": 11.404, "lat_p95_s": 12.507, "lat_max_s": 12.507}
+{"capa": "plata", "lote": 56, "filas": 10, "t_inicio": 1792597483.392, "t_escrito": 1792597485.792, "duracion_s": 2.4, "lat_p50_s": 11.826, "lat_p95_s": 12.929, "lat_max_s": 12.929}
+{"capa": "bronce", "lote": 61, "filas": 4, "t_inicio": 1792597485.687, "t_escrito": 1792597487.578, "duracion_s": 1.891, "lat_p50_s": 9.801, "lat_p95_s": 10.186, "lat_max_s": 10.186}
+{"capa": "plata", "lote": 57, "filas": 4, "t_inicio": 1792597488.171, "t_escrito": 1792597489.684, "duracion_s": 1.513, "lat_p50_s": 11.907, "lat_p95_s": 12.292, "lat_max_s": 12.292}
+{"capa": "oro_repos_hora", "lote": 37, "filas": 0, "t_inicio": 1792597490.251, "t_escrito": 1792597491.024, "duracion_s": 0.773}
+{"capa": "oro_lenguajes_hora", "lote": 39, "filas": 0, "t_inicio": 1792597490.251, "t_escrito": 1792597491.197, "duracion_s": 0.945}
+{"capa": "oro_actividad_5min", "lote": 32, "filas": 0, "t_inicio": 1792597490.258, "t_escrito": 1792597491.533, "duracion_s": 1.276}

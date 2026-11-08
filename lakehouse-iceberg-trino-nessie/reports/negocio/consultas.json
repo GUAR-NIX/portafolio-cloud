@@ -1,0 +1,672 @@
+{
+  "resumen_idioma": [
+    {
+      "idioma": "en",
+      "dia": "2026-07-18",
+      "vistas": 138311252,
+      "pct_movil": "79.2000000000000000"
+    },
+    {
+      "idioma": "en",
+      "dia": "2026-07-19",
+      "vistas": 158941576,
+      "pct_movil": "80.7000000000000000"
+    },
+    {
+      "idioma": "en",
+      "dia": "2026-07-20",
+      "vistas": 147089155,
+      "pct_movil": "73.0000000000000000"
+    },
+    {
+      "idioma": "en",
+      "dia": "2026-07-21",
+      "vistas": 132017739,
+      "pct_movil": "72.7000000000000000"
+    },
+    {
+      "idioma": "es",
+      "dia": "2026-07-18",
+      "vistas": 8017495,
+      "pct_movil": "91.3000000000000000"
+    },
+    {
+      "idioma": "es",
+      "dia": "2026-07-19",
+      "vistas": 11399982,
+      "pct_movil": "93.2000000000000000"
+    },
+    {
+      "idioma": "es",
+      "dia": "2026-07-20",
+      "vistas": 10576285,
+      "pct_movil": "85.9000000000000000"
+    },
+    {
+      "idioma": "es",
+      "dia": "2026-07-21",
+      "vistas": 7946087,
+      "pct_movil": "85.2000000000000000"
+    }
+  ],
+  "top10_dia_final": [
+    {
+      "idioma": "en",
+      "puesto": 1,
+      "titulo": "Lamine_Yamal",
+      "vistas": 1121535
+    },
+    {
+      "idioma": "en",
+      "puesto": 2,
+      "titulo": "The_Odyssey_(2026_film)",
+      "vistas": 1116586
+    },
+    {
+      "idioma": "en",
+      "puesto": 3,
+      "titulo": "2026_FIFA_World_Cup",
+      "vistas": 812499
+    },
+    {
+      "idioma": "en",
+      "puesto": 4,
+      "titulo": "Lionel_Messi",
+      "vistas": 735726
+    },
+    {
+      "idioma": "en",
+      "puesto": 5,
+      "titulo": "List_of_FIFA_World_Cup_finals",
+      "vistas": 652445
+    },
+    {
+      "idioma": "en",
+      "puesto": 6,
+      "titulo": "Shakira",
+      "vistas": 554136
+    },
+    {
+      "idioma": "en",
+      "puesto": 7,
+      "titulo": "FIFA_World_Cup",
+      "vistas": 486196
+    },
+    {
+      "idioma": "en",
+      "puesto": 8,
+      "titulo": "Nico_Williams",
+      "vistas": 400168
+    },
+    {
+      "idioma": "en",
+      "puesto": 9,
+      "titulo": "Ferran_Torres",
+      "vistas": 386818
+    },
+    {
+      "idioma": "en",
+      "puesto": 10,
+      "titulo": "Odyssey",
+      "vistas": 377685
+    },
+    {
+      "idioma": "es",
+      "puesto": 1,
+      "titulo": "Lamine_Yamal",
+      "vistas": 252362
+    },
+    {
+      "idioma": "es",
+      "puesto": 2,
+      "titulo": "Ferran_Torres",
+      "vistas": 178072
+    },
+    {
+      "idioma": "es",
+      "puesto": 3,
+      "titulo": "Copa_Mundial_de_Fútbol",
+      "vistas": 154496
+    },
+    {
+      "idioma": "es",
+      "puesto": 4,
+      "titulo": "Marc_Cucurella",
+      "vistas": 144979
+    },
+    {
+      "idioma": "es",
+      "puesto": 5,
+      "titulo": "Luis_de_la_Fuente_Castillo",
+      "vistas": 134099
+    },
+    {
+      "idioma": "es",
+      "puesto": 6,
+      "titulo": "Copa_Mundial_de_Fútbol_de_2026",
+      "vistas": 125141
+    },
+    {
+      "idioma": "es",
+      "puesto": 7,
+      "titulo": "Lionel_Messi",
+      "vistas": 114860
+    },
+    {
+      "idioma": "es",
+      "puesto": 8,
+      "titulo": "Rodri_Hernández",
+      "vistas": 112943
+    },
+    {
+      "idioma": "es",
+      "puesto": 9,
+      "titulo": "Lionel_Scaloni",
+      "vistas": 77630
+    },
+    {
+      "idioma": "es",
+      "puesto": 10,
+      "titulo": "La_Odisea_(película_de_2026)",
+      "vistas": 71026
+    }
+  ],
+  "tendencia_19_vs_18": [
+    {
+      "idioma": "en",
+      "titulo": "Lamine_Yamal",
+      "v18": 204714,
+      "v19": 1121535,
+      "aumento": 916821,
+      "puesto": 1
+    },
+    {
+      "idioma": "en",
+      "titulo": "2026_FIFA_World_Cup",
+      "v18": 239455,
+      "v19": 812499,
+      "aumento": 573044,
+      "puesto": 2
+    },
+    {
+      "idioma": "en",
+      "titulo": "Lionel_Messi",
+      "v18": 194401,
+      "v19": 735726,
+      "aumento": 541325,
+      "puesto": 3
+    },
+    {
+      "idioma": "en",
+      "titulo": "List_of_FIFA_World_Cup_finals",
+      "v18": 122854,
+      "v19": 652445,
+      "aumento": 529591,
+      "puesto": 4
+    },
+    {
+      "idioma": "en",
+      "titulo": "Shakira",
+      "v18": 28805,
+      "v19": 554136,
+      "aumento": 525331,
+      "puesto": 5
+    },
+    {
+      "idioma": "en",
+      "titulo": "Nico_Williams",
+      "v18": 5769,
+      "v19": 400168,
+      "aumento": 394399,
+      "puesto": 6
+    },
+    {
+      "idioma": "en",
+      "titulo": "Ferran_Torres",
+      "v18": 6008,
+      "v19": 386818,
+      "aumento": 380810,
+      "puesto": 7
+    },
+    {
+      "idioma": "en",
+      "titulo": "FIFA_World_Cup",
+      "v18": 123160,
+      "v19": 486196,
+      "aumento": 363036,
+      "puesto": 8
+    },
+    {
+      "idioma": "en",
+      "titulo": "Ryan_Fox",
+      "v18": 26783,
+      "v19": 369113,
+      "aumento": 342330,
+      "puesto": 9
+    },
+    {
+      "idioma": "en",
+      "titulo": "Andrew_Tate",
+      "v18": 4052,
+      "v19": 300200,
+      "aumento": 296148,
+      "puesto": 10
+    },
+    {
+      "idioma": "es",
+      "titulo": "Lamine_Yamal",
+      "v18": 41136,
+      "v19": 252362,
+      "aumento": 211226,
+      "puesto": 1
+    },
+    {
+      "idioma": "es",
+      "titulo": "Ferran_Torres",
+      "v18": 3081,
+      "v19": 178072,
+      "aumento": 174991,
+      "puesto": 2
+    },
+    {
+      "idioma": "es",
+      "titulo": "Copa_Mundial_de_Fútbol",
+      "v18": 43656,
+      "v19": 154496,
+      "aumento": 110840,
+      "puesto": 3
+    },
+    {
+      "idioma": "es",
+      "titulo": "Luis_de_la_Fuente_Castillo",
+      "v18": 31944,
+      "v19": 134099,
+      "aumento": 102155,
+      "puesto": 4
+    },
+    {
+      "idioma": "es",
+      "titulo": "Rodri_Hernández",
+      "v18": 15674,
+      "v19": 112943,
+      "aumento": 97269,
+      "puesto": 5
+    },
+    {
+      "idioma": "es",
+      "titulo": "Marc_Cucurella",
+      "v18": 56685,
+      "v19": 144979,
+      "aumento": 88294,
+      "puesto": 6
+    },
+    {
+      "idioma": "es",
+      "titulo": "Copa_Mundial_de_Fútbol_de_2026",
+      "v18": 41924,
+      "v19": 125141,
+      "aumento": 83217,
+      "puesto": 7
+    },
+    {
+      "idioma": "es",
+      "titulo": "Lionel_Messi",
+      "v18": 32241,
+      "v19": 114860,
+      "aumento": 82619,
+      "puesto": 8
+    },
+    {
+      "idioma": "es",
+      "titulo": "Pau_Cubarsí",
+      "v18": 4398,
+      "v19": 69851,
+      "aumento": 65453,
+      "puesto": 9
+    },
+    {
+      "idioma": "es",
+      "titulo": "Unai_Simón",
+      "v18": 6131,
+      "v19": 68697,
+      "aumento": 62566,
+      "puesto": 10
+    }
+  ],
+  "picos_top": [
+    {
+      "hora": "2026-07-20 15:00:00",
+      "idioma": "en",
+      "titulo": "Kevin_Keegan",
+      "vistas": 153049,
+      "base_24h": 116.1,
+      "razon": 708.3,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 21:00:00",
+      "idioma": "en",
+      "titulo": "Shakira",
+      "vistas": 439605,
+      "base_24h": 2071.6,
+      "razon": 202.4,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-21 15:00:00",
+      "idioma": "en",
+      "titulo": "Kaylee_Hottle",
+      "vistas": 23544,
+      "base_24h": 21.7,
+      "razon": 193.4,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 21:00:00",
+      "idioma": "es",
+      "titulo": "Gustavo_Dudamel",
+      "vistas": 33061,
+      "base_24h": 75.4,
+      "razon": 188.5,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 21:00:00",
+      "idioma": "es",
+      "titulo": "Justin_Bieber",
+      "vistas": 31997,
+      "base_24h": 92.2,
+      "razon": 166.5,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 19:00:00",
+      "idioma": "en",
+      "titulo": "Jennifer_Hudson",
+      "vistas": 42481,
+      "base_24h": 158.8,
+      "razon": 164.1,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 21:00:00",
+      "idioma": "en",
+      "titulo": "Justin_Bieber",
+      "vistas": 82310,
+      "base_24h": 440.1,
+      "razon": 152.4,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 17:00:00",
+      "idioma": "en",
+      "titulo": "Zaccharie_Risacher",
+      "vistas": 17123,
+      "base_24h": 16.0,
+      "razon": 147.6,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-20 18:00:00",
+      "idioma": "en",
+      "titulo": "John_Healey",
+      "vistas": 108998,
+      "base_24h": 655.2,
+      "razon": 144.3,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 18:00:00",
+      "idioma": "en",
+      "titulo": "Ryan_Fox",
+      "vistas": 208082,
+      "base_24h": 1624.4,
+      "razon": 120.7,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 21:00:00",
+      "idioma": "en",
+      "titulo": "Nico_Williams",
+      "vistas": 73572,
+      "base_24h": 522.1,
+      "razon": 118.3,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 19:00:00",
+      "idioma": "es",
+      "titulo": "Jennifer_Hudson",
+      "vistas": 14396,
+      "base_24h": 21.9,
+      "razon": 118.1,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 21:00:00",
+      "idioma": "en",
+      "titulo": "BTS",
+      "vistas": 74310,
+      "base_24h": 533.4,
+      "razon": 117.3,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 19:00:00",
+      "idioma": "es",
+      "titulo": "Tom_Cruise",
+      "vistas": 24624,
+      "base_24h": 112.8,
+      "razon": 115.7,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 20:00:00",
+      "idioma": "en",
+      "titulo": "Alexis_Mac_Allister",
+      "vistas": 94311,
+      "base_24h": 761.4,
+      "razon": 109.5,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 21:00:00",
+      "idioma": "en",
+      "titulo": "Gerard_Piqué",
+      "vistas": 139515,
+      "base_24h": 1240.2,
+      "razon": 104.1,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 21:00:00",
+      "idioma": "en",
+      "titulo": "Madonna",
+      "vistas": 136579,
+      "base_24h": 1292.3,
+      "razon": 98.1,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 21:00:00",
+      "idioma": "es",
+      "titulo": "Madonna",
+      "vistas": 26934,
+      "base_24h": 179.8,
+      "razon": 96.3,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 19:00:00",
+      "idioma": "en",
+      "titulo": "Nicole_Scherzinger",
+      "vistas": 33928,
+      "base_24h": 288.3,
+      "razon": 87.4,
+      "r": 1
+    },
+    {
+      "hora": "2026-07-19 18:00:00",
+      "idioma": "en",
+      "titulo": "Grant_Fox",
+      "vistas": 33322,
+      "base_24h": 286.2,
+      "razon": 86.3,
+      "r": 1
+    }
+  ],
+  "comunes_top50_final": [
+    {
+      "titulo": "Lamine_Yamal",
+      "puesto_en": 1,
+      "puesto_es": 1,
+      "vistas_en": 1121535,
+      "vistas_es": 252362
+    },
+    {
+      "titulo": "Lionel_Messi",
+      "puesto_en": 4,
+      "puesto_es": 7,
+      "vistas_en": 735726,
+      "vistas_es": 114860
+    },
+    {
+      "titulo": "Shakira",
+      "puesto_en": 6,
+      "puesto_es": 23,
+      "vistas_en": 554136,
+      "vistas_es": 46439
+    },
+    {
+      "titulo": "Nico_Williams",
+      "puesto_en": 8,
+      "puesto_es": 18,
+      "vistas_en": 400168,
+      "vistas_es": 59181
+    },
+    {
+      "titulo": "Ferran_Torres",
+      "puesto_en": 9,
+      "puesto_es": 2,
+      "vistas_en": 386818,
+      "vistas_es": 178072
+    },
+    {
+      "titulo": "Kylian_Mbappé",
+      "puesto_en": 15,
+      "puesto_es": 24,
+      "vistas_en": 317876,
+      "vistas_es": 45930
+    },
+    {
+      "titulo": "Jude_Bellingham",
+      "puesto_en": 16,
+      "puesto_es": 28,
+      "vistas_en": 307649,
+      "vistas_es": 37861
+    },
+    {
+      "titulo": "MetLife_Stadium",
+      "puesto_en": 19,
+      "puesto_es": 16,
+      "vistas_en": 259173,
+      "vistas_es": 61419
+    },
+    {
+      "titulo": "Matt_Damon",
+      "puesto_en": 20,
+      "puesto_es": 45,
+      "vistas_en": 230563,
+      "vistas_es": 23959
+    },
+    {
+      "titulo": "Marc_Cucurella",
+      "puesto_en": 21,
+      "puesto_es": 4,
+      "vistas_en": 224719,
+      "vistas_es": 144979
+    },
+    {
+      "titulo": "Pau_Cubarsí",
+      "puesto_en": 26,
+      "puesto_es": 11,
+      "vistas_en": 196719,
+      "vistas_es": 69851
+    },
+    {
+      "titulo": "Emiliano_Martínez",
+      "puesto_en": 27,
+      "puesto_es": 15,
+      "vistas_en": 196277,
+      "vistas_es": 65171
+    },
+    {
+      "titulo": "Leandro_Paredes",
+      "puesto_en": 28,
+      "puesto_es": 25,
+      "vistas_en": 191916,
+      "vistas_es": 45058
+    },
+    {
+      "titulo": "Madonna",
+      "puesto_en": 33,
+      "puesto_es": 34,
+      "vistas_en": 182414,
+      "vistas_es": 33695
+    },
+    {
+      "titulo": "Gianni_Infantino",
+      "puesto_en": 34,
+      "puesto_es": 13,
+      "vistas_en": 181625,
+      "vistas_es": 66488
+    },
+    {
+      "titulo": "Lionel_Scaloni",
+      "puesto_en": 36,
+      "puesto_es": 9,
+      "vistas_en": 179285,
+      "vistas_es": 77630
+    },
+    {
+      "titulo": "Enzo_Fernández",
+      "puesto_en": 41,
+      "puesto_es": 44,
+      "vistas_en": 144768,
+      "vistas_es": 24524
+    },
+    {
+      "titulo": "Slavko_Vinčić",
+      "puesto_en": 45,
+      "puesto_es": 38,
+      "vistas_en": 130592,
+      "vistas_es": 31101
+    },
+    {
+      "titulo": "Dani_Olmo",
+      "puesto_en": 46,
+      "puesto_es": 32,
+      "vistas_en": 126868,
+      "vistas_es": 34308
+    },
+    {
+      "titulo": "Unai_Simón",
+      "puesto_en": 47,
+      "puesto_es": 12,
+      "vistas_en": 124443,
+      "vistas_es": 68697
+    }
+  ],
+  "articulos_final": [
+    {
+      "idioma": "es",
+      "titulo": "Final_de_la_Copa_Mundial_de_Fútbol_de_2026",
+      "vistas": 97436
+    },
+    {
+      "idioma": "en",
+      "titulo": "2026_FIFA_World_Cup_final",
+      "vistas": 693554
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "fuente": "source.clima.ghcn.ghcn_crudo_parquet",
+    "estado": "pass",
+    "max_loaded_at": "2026-10-22T00:00:00+00:00",
+    "snapshotted_at": "2026-10-25T23:17:52.414690+00:00",
+    "antiguedad_horas": 95.3,
+    "criterio": {
+      "warn_after": {
+        "count": 5,
+        "period": "day"
+      },
+      "error_after": {
+        "count": 15,
+        "period": "day"
+      },
+      "filter": null
+    }
+  }
+]

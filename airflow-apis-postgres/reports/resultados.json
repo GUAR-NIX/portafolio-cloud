@@ -1,0 +1,664 @@
+{
+  "generado": "2026-10-20T17:06:51",
+  "airflow": {
+    "corridas": [
+      {
+        "dag_id": "construir_marts",
+        "state": "success",
+        "run_type": "asset_triggered",
+        "n": 343,
+        "primera": "2026-10-20T04:49:06.244Z",
+        "ultima": "2026-10-20T21:58:12.644Z",
+        "mediana_s": 6.288019
+      },
+      {
+        "dag_id": "ingesta_banco_mundial",
+        "state": "success",
+        "run_type": "scheduled",
+        "n": 26,
+        "primera": "2026-10-20T04:42:07.978Z",
+        "ultima": "2026-10-20T21:36:28.865Z",
+        "mediana_s": 142.5705685
+      },
+      {
+        "dag_id": "ingesta_clima_ecuador",
+        "state": "success",
+        "run_type": "scheduled",
+        "n": 384,
+        "primera": "2026-10-20T04:42:35.524Z",
+        "ultima": "2026-10-20T21:57:55.868Z",
+        "mediana_s": 44.47356
+      }
+    ],
+    "tareas": [
+      {
+        "dag_id": "construir_marts",
+        "task_id": "construir",
+        "state": "removed",
+        "n": 15,
+        "media_s": 11.03,
+        "mediana_s": 11.0,
+        "p95_s": 13.67,
+        "con_reintento": 0
+      },
+      {
+        "dag_id": "construir_marts",
+        "task_id": "construir",
+        "state": "success",
+        "n": 7,
+        "media_s": 10.55,
+        "mediana_s": 10.5,
+        "p95_s": 12.65,
+        "con_reintento": 0
+      },
+      {
+        "dag_id": "construir_marts",
+        "task_id": "controles_calidad",
+        "state": "removed",
+        "n": 15,
+        "media_s": 10.0,
+        "mediana_s": 9.93,
+        "p95_s": 12.39,
+        "con_reintento": 0
+      },
+      {
+        "dag_id": "construir_marts",
+        "task_id": "controles_calidad",
+        "state": "success",
+        "n": 7,
+        "media_s": 10.14,
+        "mediana_s": 10.17,
+        "p95_s": 11.07,
+        "con_reintento": 0
+      },
+      {
+        "dag_id": "construir_marts",
+        "task_id": "publicar_marts",
+        "state": "success",
+        "n": 336,
+        "media_s": 6.15,
+        "mediana_s": 4.48,
+        "p95_s": 13.36,
+        "con_reintento": 2
+      },
+      {
+        "dag_id": "ingesta_banco_mundial",
+        "task_id": "cargar_staging",
+        "state": "success",
+        "n": 26,
+        "media_s": 11.88,
+        "mediana_s": 12.06,
+        "p95_s": 14.6,
+        "con_reintento": 1
+      },
+      {
+        "dag_id": "ingesta_banco_mundial",
+        "task_id": "controles_calidad",
+        "state": "success",
+        "n": 26,
+        "media_s": 10.91,
+        "mediana_s": 10.98,
+        "p95_s": 13.5,
+        "con_reintento": 1
+      },
+      {
+        "dag_id": "ingesta_banco_mundial",
+        "task_id": "esperar_api",
+        "state": "success",
+        "n": 26,
+        "media_s": 12.19,
+        "mediana_s": 10.45,
+        "p95_s": 31.54,
+        "con_reintento": 1
+      },
+      {
+        "dag_id": "ingesta_banco_mundial",
+        "task_id": "extraer_indicador",
+        "state": "success",
+        "n": 260,
+        "media_s": 13.91,
+        "mediana_s": 11.47,
+        "p95_s": 43.64,
+        "con_reintento": 40
+      },
+      {
+        "dag_id": "ingesta_clima_ecuador",
+        "task_id": "cargar_staging",
+        "state": "success",
+        "n": 384,
+        "media_s": 4.95,
+        "mediana_s": 3.56,
+        "p95_s": 11.25,
+        "con_reintento": 1
+      },
+      {
+        "dag_id": "ingesta_clima_ecuador",
+        "task_id": "controles_calidad",
+        "state": "success",
+        "n": 384,
+        "media_s": 5.5,
+        "mediana_s": 4.05,
+        "p95_s": 12.04,
+        "con_reintento": 1
+      },
+      {
+        "dag_id": "ingesta_clima_ecuador",
+        "task_id": "extraer_a_raw",
+        "state": "success",
+        "n": 384,
+        "media_s": 10.94,
+        "mediana_s": 10.04,
+        "p95_s": 19.81,
+        "con_reintento": 17
+      }
+    ]
+  },
+  "datos": {
+    "filas_por_tabla": {
+      "raw.clima_respuestas": 384,
+      "raw.banco_mundial_respuestas": 260,
+      "staging.clima_diario": 4992,
+      "staging.indicadores_bm": 2234,
+      "auditoria.cargas": 1423,
+      "auditoria.controles_calidad": 6405,
+      "marts.clima_mensual_ciudad": 169,
+      "marts.clima_mensual_region": 52,
+      "marts.dim_ciudad": 13,
+      "marts.ecuador_vs_region": 256,
+      "marts.fct_clima_diario": 4992,
+      "marts.indicadores_pais_anual": 234,
+      "marts.resumen_ciudad": 13
+    },
+    "bytes_por_esquema": {
+      "auditoria": 1908736,
+      "marts": 1302528,
+      "raw": 1433600,
+      "staging": 1499136
+    },
+    "clima": {
+      "desde": "2025-10-01",
+      "hasta": "2026-10-19",
+      "dias": 384,
+      "filas_provisionales": 65,
+      "raw_por_fuente": [
+        {
+          "fuente": "archivo",
+          "dias": 379,
+          "bytes": 4258151,
+          "descargas": 379
+        },
+        {
+          "fuente": "pronostico",
+          "dias": 5,
+          "bytes": 56213,
+          "descargas": 5
+        }
+      ]
+    },
+    "banco_mundial": {
+      "desde": 2000,
+      "hasta": 2025,
+      "anios": 26,
+      "paises": 9,
+      "indicadores": 10,
+      "registros_crudos": 2340
+    },
+    "controles": [
+      {
+        "capa": "marts",
+        "critico": true,
+        "ok": false,
+        "n": 16
+      },
+      {
+        "capa": "marts",
+        "critico": true,
+        "ok": true,
+        "n": 2483
+      },
+      {
+        "capa": "staging.clima_diario",
+        "critico": false,
+        "ok": false,
+        "n": 5
+      },
+      {
+        "capa": "staging.clima_diario",
+        "critico": false,
+        "ok": true,
+        "n": 381
+      },
+      {
+        "capa": "staging.clima_diario",
+        "critico": true,
+        "ok": false,
+        "n": 1
+      },
+      {
+        "capa": "staging.clima_diario",
+        "critico": true,
+        "ok": true,
+        "n": 3087
+      },
+      {
+        "capa": "staging.indicadores_bm",
+        "critico": false,
+        "ok": true,
+        "n": 27
+      },
+      {
+        "capa": "staging.indicadores_bm",
+        "critico": true,
+        "ok": true,
+        "n": 405
+      }
+    ],
+    "controles_fallidos": [
+      {
+        "capa": "marts",
+        "control": "fct_clima_concilia_con_staging",
+        "veces": 11,
+        "valor_min": -13.0,
+        "valor_max": -13.0,
+        "primera": "2026-10-20T04:50:55.588Z"
+      },
+      {
+        "capa": "marts",
+        "control": "indicadores_concilian",
+        "veces": 5,
+        "valor_min": 86.0,
+        "valor_max": 87.0,
+        "primera": "2026-10-20T04:50:25.688Z"
+      },
+      {
+        "capa": "staging.clima_diario",
+        "control": "dato_provisional",
+        "veces": 5,
+        "valor_min": 13.0,
+        "valor_max": 13.0,
+        "primera": "2026-10-20T21:57:10.011Z"
+      },
+      {
+        "capa": "staging.clima_diario",
+        "control": "temperatura_en_rango_fisico",
+        "veces": 1,
+        "valor_min": 1.0,
+        "valor_max": 1.0,
+        "primera": "2026-10-20T21:28:26.985Z"
+      }
+    ],
+    "tiempos_carga": [
+      {
+        "dag_id": "construir_marts",
+        "capa": "marts",
+        "cargas": 357,
+        "filas": 1097048,
+        "media_s": 1.757,
+        "max_s": 10.46
+      },
+      {
+        "dag_id": "ingesta_banco_mundial",
+        "capa": "raw",
+        "cargas": 270,
+        "filas": 2430,
+        "media_s": 3.737,
+        "max_s": 66.646
+      },
+      {
+        "dag_id": "ingesta_banco_mundial",
+        "capa": "staging",
+        "cargas": 27,
+        "filas": 2295,
+        "media_s": 0.052,
+        "max_s": 0.354
+      },
+      {
+        "dag_id": "ingesta_clima_ecuador",
+        "capa": "raw",
+        "cargas": 384,
+        "filas": 4992,
+        "media_s": 1.14,
+        "max_s": 16.455
+      },
+      {
+        "dag_id": "ingesta_clima_ecuador",
+        "capa": "staging",
+        "cargas": 385,
+        "filas": 5005,
+        "media_s": 0.079,
+        "max_s": 1.109
+      }
+    ],
+    "resumen_ciudad": [
+      {
+        "ciudad": "Guayaquil",
+        "region": "Costa",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 26.7,
+        "amplitud_media_c": 8.04,
+        "lluvia_total_mm": 1702.5,
+        "pct_dias_lluviosos": 42.4,
+        "dias_calurosos": 322,
+        "lluvia_anualizada_mm": 1618.0,
+        "max_temp_c": 35.5,
+        "fecha_max_temp": "2025-12-26T00:00:00.000",
+        "max_lluvia_mm": 59.3,
+        "fecha_max_lluvia": "2026-03-21T00:00:00.000"
+      },
+      {
+        "ciudad": "Manta",
+        "region": "Costa",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 25.99,
+        "amplitud_media_c": 6.02,
+        "lluvia_total_mm": 686.1,
+        "pct_dias_lluviosos": 34.6,
+        "dias_calurosos": 178,
+        "lluvia_anualizada_mm": 652.0,
+        "max_temp_c": 33.5,
+        "fecha_max_temp": "2026-04-10T00:00:00.000",
+        "max_lluvia_mm": 25.4,
+        "fecha_max_lluvia": "2026-02-23T00:00:00.000"
+      },
+      {
+        "ciudad": "Esmeraldas",
+        "region": "Costa",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 25.67,
+        "amplitud_media_c": 6.17,
+        "lluvia_total_mm": 2238.3,
+        "pct_dias_lluviosos": 75.0,
+        "dias_calurosos": 121,
+        "lluvia_anualizada_mm": 2128.0,
+        "max_temp_c": 31.7,
+        "fecha_max_temp": "2025-12-11T00:00:00.000",
+        "max_lluvia_mm": 42.9,
+        "fecha_max_lluvia": "2026-09-27T00:00:00.000"
+      },
+      {
+        "ciudad": "Machala",
+        "region": "Costa",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 25.37,
+        "amplitud_media_c": 4.88,
+        "lluvia_total_mm": 1459.6,
+        "pct_dias_lluviosos": 51.8,
+        "dias_calurosos": 48,
+        "lluvia_anualizada_mm": 1387.0,
+        "max_temp_c": 32.4,
+        "fecha_max_temp": "2026-04-11T00:00:00.000",
+        "max_lluvia_mm": 121.8,
+        "fecha_max_lluvia": "2026-06-09T00:00:00.000"
+      },
+      {
+        "ciudad": "Nueva Loja",
+        "region": "Amazonía",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 24.71,
+        "amplitud_media_c": 7.3,
+        "lluvia_total_mm": 4874.9,
+        "pct_dias_lluviosos": 87.8,
+        "dias_calurosos": 141,
+        "lluvia_anualizada_mm": 4634.0,
+        "max_temp_c": 33.7,
+        "fecha_max_temp": "2026-03-22T00:00:00.000",
+        "max_lluvia_mm": 134.9,
+        "fecha_max_lluvia": "2025-10-24T00:00:00.000"
+      },
+      {
+        "ciudad": "Puerto Ayora",
+        "region": "Insular",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 23.95,
+        "amplitud_media_c": 4.3,
+        "lluvia_total_mm": 1338.0,
+        "pct_dias_lluviosos": 72.9,
+        "dias_calurosos": 11,
+        "lluvia_anualizada_mm": 1272.0,
+        "max_temp_c": 30.8,
+        "fecha_max_temp": "2026-04-11T00:00:00.000",
+        "max_lluvia_mm": 50.1,
+        "fecha_max_lluvia": "2026-04-15T00:00:00.000"
+      },
+      {
+        "ciudad": "Santo Domingo",
+        "region": "Costa",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 23.45,
+        "amplitud_media_c": 6.52,
+        "lluvia_total_mm": 3388.3,
+        "pct_dias_lluviosos": 89.6,
+        "dias_calurosos": 13,
+        "lluvia_anualizada_mm": 3221.0,
+        "max_temp_c": 31.1,
+        "fecha_max_temp": "2026-10-03T00:00:00.000",
+        "max_lluvia_mm": 120.1,
+        "fecha_max_lluvia": "2026-10-19T00:00:00.000"
+      },
+      {
+        "ciudad": "Puyo",
+        "region": "Amazonía",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 20.85,
+        "amplitud_media_c": 9.19,
+        "lluvia_total_mm": 3655.9,
+        "pct_dias_lluviosos": 94.5,
+        "dias_calurosos": 5,
+        "lluvia_anualizada_mm": 3475.0,
+        "max_temp_c": 30.3,
+        "fecha_max_temp": "2026-09-21T00:00:00.000",
+        "max_lluvia_mm": 67.8,
+        "fecha_max_lluvia": "2026-05-21T00:00:00.000"
+      },
+      {
+        "ciudad": "Ibarra",
+        "region": "Sierra",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 17.71,
+        "amplitud_media_c": 10.43,
+        "lluvia_total_mm": 1291.2,
+        "pct_dias_lluviosos": 52.6,
+        "dias_calurosos": 0,
+        "lluvia_anualizada_mm": 1227.0,
+        "max_temp_c": 29.7,
+        "fecha_max_temp": "2026-10-04T00:00:00.000",
+        "max_lluvia_mm": 35.7,
+        "fecha_max_lluvia": "2025-10-10T00:00:00.000"
+      },
+      {
+        "ciudad": "Loja",
+        "region": "Sierra",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 16.19,
+        "amplitud_media_c": 8.46,
+        "lluvia_total_mm": 1410.5,
+        "pct_dias_lluviosos": 69.0,
+        "dias_calurosos": 0,
+        "lluvia_anualizada_mm": 1341.0,
+        "max_temp_c": 26.3,
+        "fecha_max_temp": "2026-06-10T00:00:00.000",
+        "max_lluvia_mm": 35.7,
+        "fecha_max_lluvia": "2025-11-15T00:00:00.000"
+      },
+      {
+        "ciudad": "Ambato",
+        "region": "Sierra",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 14.09,
+        "amplitud_media_c": 9.51,
+        "lluvia_total_mm": 1776.5,
+        "pct_dias_lluviosos": 76.6,
+        "dias_calurosos": 0,
+        "lluvia_anualizada_mm": 1689.0,
+        "max_temp_c": 24.8,
+        "fecha_max_temp": "2026-04-01T00:00:00.000",
+        "max_lluvia_mm": 34.1,
+        "fecha_max_lluvia": "2025-11-03T00:00:00.000"
+      },
+      {
+        "ciudad": "Cuenca",
+        "region": "Sierra",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 13.96,
+        "amplitud_media_c": 11.08,
+        "lluvia_total_mm": 1952.6,
+        "pct_dias_lluviosos": 79.9,
+        "dias_calurosos": 0,
+        "lluvia_anualizada_mm": 1856.0,
+        "max_temp_c": 23.7,
+        "fecha_max_temp": "2026-04-02T00:00:00.000",
+        "max_lluvia_mm": 36.0,
+        "fecha_max_lluvia": "2026-05-06T00:00:00.000"
+      },
+      {
+        "ciudad": "Quito",
+        "region": "Sierra",
+        "desde": "2025-10-01T00:00:00.000",
+        "hasta": "2026-10-19T00:00:00.000",
+        "dias": 384,
+        "temp_media_c": 13.19,
+        "amplitud_media_c": 9.55,
+        "lluvia_total_mm": 2550.0,
+        "pct_dias_lluviosos": 66.7,
+        "dias_calurosos": 0,
+        "lluvia_anualizada_mm": 2424.0,
+        "max_temp_c": 23.5,
+        "fecha_max_temp": "2026-09-01T00:00:00.000",
+        "max_lluvia_mm": 69.0,
+        "fecha_max_lluvia": "2026-04-16T00:00:00.000"
+      }
+    ],
+    "ecuador_ultimo_anio": [
+      {
+        "indicador": "EG.ELC.ACCS.ZS",
+        "nombre_indicador": "Access to electricity (% of population)",
+        "anio": 2024,
+        "valor_ecuador": 98.5,
+        "promedio_pares": 98.429,
+        "valor_america_latina": 98.0459111591,
+        "puesto_ecuador": 5,
+        "paises_con_dato": 8
+      },
+      {
+        "indicador": "EN.GHG.CO2.PC.CE.AR5",
+        "nombre_indicador": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)",
+        "anio": 2024,
+        "valor_ecuador": 2.6447497,
+        "promedio_pares": 2.86,
+        "valor_america_latina": 2.6761756759,
+        "puesto_ecuador": 4,
+        "paises_con_dato": 8
+      },
+      {
+        "indicador": "FP.CPI.TOTL.ZG",
+        "nombre_indicador": "Inflation, consumer prices (annual %)",
+        "anio": 2025,
+        "valor_ecuador": 0.710469325,
+        "promedio_pares": 6.538,
+        "valor_america_latina": 2.081321271,
+        "puesto_ecuador": 7,
+        "paises_con_dato": 7
+      },
+      {
+        "indicador": "NV.AGR.TOTL.ZS",
+        "nombre_indicador": "Agriculture, forestry, and fishing, value added (% of GDP)",
+        "anio": 2025,
+        "valor_ecuador": 9.7029548225,
+        "promedio_pares": 5.78,
+        "valor_america_latina": 6.7997807518,
+        "puesto_ecuador": 2,
+        "paises_con_dato": 6
+      },
+      {
+        "indicador": "NY.GDP.MKTP.KD.ZG",
+        "nombre_indicador": "GDP growth (annual %)",
+        "anio": 2025,
+        "valor_ecuador": 3.7259485727,
+        "promedio_pares": 2.023,
+        "valor_america_latina": 2.3215320497,
+        "puesto_ecuador": 2,
+        "paises_con_dato": 8
+      },
+      {
+        "indicador": "NY.GDP.PCAP.CD",
+        "nombre_indicador": "GDP per capita (current US$)",
+        "anio": 2025,
+        "valor_ecuador": 7125.2761852774,
+        "promedio_pares": 11555.578,
+        "valor_america_latina": 11095.2176548294,
+        "puesto_ecuador": 7,
+        "paises_con_dato": 8
+      },
+      {
+        "indicador": "SI.POV.GINI",
+        "nombre_indicador": "Gini index",
+        "anio": 2025,
+        "valor_ecuador": 45.9,
+        "promedio_pares": null,
+        "valor_america_latina": null,
+        "puesto_ecuador": 1,
+        "paises_con_dato": 1
+      },
+      {
+        "indicador": "SL.UEM.TOTL.ZS",
+        "nombre_indicador": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
+        "anio": 2025,
+        "valor_ecuador": 3.308,
+        "promedio_pares": 5.877,
+        "valor_america_latina": 5.4590769101,
+        "puesto_ecuador": 6,
+        "paises_con_dato": 8
+      },
+      {
+        "indicador": "SP.POP.TOTL",
+        "nombre_indicador": "Population, total",
+        "anio": 2025,
+        "valor_ecuador": 18289896.0,
+        "promedio_pares": 73007821.0,
+        "valor_america_latina": 666592570.0,
+        "puesto_ecuador": 7,
+        "paises_con_dato": 8
+      },
+      {
+        "indicador": "SP.URB.TOTL.IN.ZS",
+        "nombre_indicador": "Urban population (% of total population)",
+        "anio": 2025,
+        "valor_ecuador": 63.3918189058,
+        "promedio_pares": 83.67,
+        "valor_america_latina": 81.5060587041,
+        "puesto_ecuador": 8,
+        "paises_con_dato": 8
+      }
+    ]
+  },
+  "backfill_clima": {
+    "cargas_staging": 385,
+    "minutos_activos": 78.3,
+    "pausas": 2,
+    "dias_por_minuto_ultimos_30min": 5.22
+  }
+}

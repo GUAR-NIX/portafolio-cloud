@@ -1,0 +1,55 @@
+name: kubernetes-api-clima
+
+on:
+  push:
+    paths: ["kubernetes-api-clima/**", ".github/workflows/kubernetes-api-clima.yml"]
+  pull_request:
+    paths: ["kubernetes-api-clima/**", ".github/workflows/kubernetes-api-clima.yml"]
+defaults:
+  run:
+    working-directory: kubernetes-api-clima
+
+jobs:
+  codigo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: kubernetes-api-clima/requirements*.txt
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check src app scripts tests descargar_datos.py carga
+      - run: pytest -q
+
+  kubernetes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: azure/setup-helm@v4
+        with: {version: "v3.19.0"}
+      - run: helm lint --strict charts/clima-ecuador && helm template clima-ecuador charts/clima-ecuador > /tmp/manifiestos.yaml
+      - run: docker build -f docker/api.Dockerfile -t clima-api:1.0.0 . && docker build -f docker/app.Dockerfile -t clima-app:1.0.0 .
+      - uses: helm/kind-action@v1
+        with:
+          version: v0.30.0
+          cluster_name: clima-ecuador-ci
+      - run: kind load docker-image clima-api:1.0.0 clima-app:1.0.0 --name clima-ecuador-ci
+      # Misma versión fijada que scripts/desplegar_kind.ps1; el HPA se prueba igual que en local.
+      - name: metrics-server
+        run: |
+          kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.8.1/components.yaml
+          kubectl patch deployment metrics-server -n kube-system --type json \
+            -p '[{"op":"add","path":"/spec/template/spec/containers/0/args/-","value":"--kubelet-insecure-tls"}]'
+          kubectl rollout status deployment/metrics-server -n kube-system --timeout=180s
+      - run: helm install clima-ecuador charts/clima-ecuador --wait --timeout 3m
+      - run: kubectl run humo --rm -i --restart=Never --image=curlimages/curl:8.16.0 -- curl -fsS "http://clima-ecuador-api:8000/clima?ciudad=Quito&fecha=2024-01-01"
+      - name: el HPA recibe métricas de CPU
+        run: |
+          for intento in $(seq 1 24); do
+            uso=$(kubectl get hpa clima-ecuador-api -o jsonpath='{.status.currentMetrics[0].resource.current.averageUtilization}')
+            if [ -n "$uso" ]; then echo "CPU actual: ${uso}%"; kubectl get hpa; exit 0; fi
+            sleep 10
+          done
+          kubectl describe hpa clima-ecuador-api; exit 1

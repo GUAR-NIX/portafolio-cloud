@@ -1,0 +1,61 @@
+[09:09:35] falla_inyectada: levantando el pipeline
+ Container cloud_02_streaming_github-minio-init-1 Running 
+ Container cloud_02_streaming_github-minio-1 Running 
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-spark-1 Recreate 
+ Container cloud_02_streaming_github-spark-1 Recreated 
+ Container cloud_02_streaming_github-minio-1 Waiting 
+ Container cloud_02_streaming_github-minio-1 Healthy 
+ Container cloud_02_streaming_github-minio-init-1 Starting 
+ Container cloud_02_streaming_github-minio-init-1 Started 
+ Container cloud_02_streaming_github-minio-init-1 Waiting 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-minio-init-1 Exited 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-spark-1 Starting 
+ Container cloud_02_streaming_github-spark-1 Started 
+[09:09:55] falla_inyectada: productor 2025-09-18T06:00:00Z → 2025-09-18T09:00:00Z a 120x
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-productor-run-6b91c084ff8e Creating 
+ Container cloud_02_streaming_github-productor-run-6b91c084ff8e Created 
+Reproduciendo 2025-09-18 06:00 → 2025-09-18 09:00 UTC (4 archivos) a 120x hacia gh-eventos-falla_inyectada
+       10 s · 53,066 enviados · 5,306 ev/s · reloj virtual 2025-09-18T06:20:00+00:00 · atraso máx 2.4 s
+       20 s · 108,136 enviados · 5,407 ev/s · reloj virtual 2025-09-18T06:40:00+00:00 · atraso máx 2.4 s
+       30 s · 160,939 enviados · 5,365 ev/s · reloj virtual 2025-09-18T07:00:00+00:00 · atraso máx 2.4 s
+       40 s · 213,991 enviados · 5,350 ev/s · reloj virtual 2025-09-18T07:20:00+00:00 · atraso máx 2.4 s
+[09:10:48] Spark cayó por la falla inyectada (plata:8); relanzando en 20 s
+       50 s · 269,998 enviados · 5,400 ev/s · reloj virtual 2025-09-18T07:40:00+00:00 · atraso máx 2.4 s
+       60 s · 324,434 enviados · 5,406 ev/s · reloj virtual 2025-09-18T08:00:01+00:00 · atraso máx 2.4 s
+       70 s · 378,380 enviados · 5,405 ev/s · reloj virtual 2025-09-18T08:20:01+00:00 · atraso máx 2.4 s
+       80 s · 433,470 enviados · 5,418 ev/s · reloj virtual 2025-09-18T08:40:01+00:00 · atraso máx 2.4 s
+{
+  "corrida": "falla_inyectada",
+  "factor": 120.0,
+  "enviados": 485125,
+  "originales": 480329,
+  "duplicados": 4796,
+  "tardios_dentro_watermark": 493,
+  "tardios_fuera_watermark": 467,
+  "primer_evento": "2025-09-18T06:00:00+00:00",
+  "ultimo_evento": "2025-09-18T08:59:59+00:00",
+  "duracion_s": 107.81,
+  "tasa_media_eps": 4500.0,
+  "atraso_max_s": 2.362516683999729,
+  "duracion_originales_s": 90.0,
+  "tasa_originales_eps": 5389.6,
+  "ids_unicos": 480329,
+  "errores_entrega": 0,
+  "sin_confirmar": 0,
+  "desde": "2025-09-18T06:00:00Z",
+  "hasta": "2025-09-18T09:00:00Z",
+  "semilla": 42,
+  "prob_duplicado": 0.01,
+  "prob_tardio": 0.002,
+  "terminado_en": "2026-10-21T14:11:46.322512+00:00"
+}
+[09:11:46] falla_inyectada: esperando a que bronce (485,125) y plata (480,329) alcancen
+[09:12:11] falla_inyectada: plata al día; esperando que oro se estabilice
+[09:13:02] falla_inyectada: verificando conteos
+[09:13:41] falla_inyectada: terminada · exactamente una vez = True

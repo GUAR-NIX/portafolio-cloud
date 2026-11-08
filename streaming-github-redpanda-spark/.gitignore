@@ -1,0 +1,29 @@
+# Datos descargados (6,2 GB) y eventos preparados: se regeneran con scripts/descargar_datos.py y streaming_gh.preparar
+data/raw/
+data/interim/
+data/*.log
+# Entorno local
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+spark-warehouse/
+metastore_db/
+derby.log
+# Terraform (solo código de referencia; nunca se aplica)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform.lock.hcl
+# Logs de construcción de imágenes
+reports/build_*.log
+.tmp/
+*.egg-info/
+.pytest_tmp*/
+.ipynb_checkpoints/
+.vscode/
+Thumbs.db
+desktop.ini

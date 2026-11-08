@@ -1,0 +1,546 @@
+[09:56:41] Borrando restos de la corrida principal (tema, tablas, checkpoints, métricas)
+[09:56:50] principal: levantando el pipeline
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-minio-1 Running 
+ Container cloud_02_streaming_github-minio-1 Waiting 
+ Container cloud_02_streaming_github-minio-1 Healthy 
+ Container cloud_02_streaming_github-minio-init-1 Starting 
+ Container cloud_02_streaming_github-minio-init-1 Started 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-minio-init-1 Waiting 
+ Container cloud_02_streaming_github-minio-init-1 Exited 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-spark-1 Starting 
+ Container cloud_02_streaming_github-spark-1 Started 
+[09:57:16] principal: productor 2025-09-16T00:00:00Z → 2025-09-19T00:00:00Z a 120x
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-productor-run-ad7d37cbf380 Creating 
+ Container cloud_02_streaming_github-productor-run-ad7d37cbf380 Created 
+Reproduciendo 2025-09-16 00:00 → 2025-09-19 00:00 UTC (72 archivos) a 120x hacia gh-eventos-principal
+       10 s · 50,797 enviados · 5,080 ev/s · reloj virtual 2025-09-16T00:20:00+00:00 · atraso máx 1.1 s
+       20 s · 101,359 enviados · 5,068 ev/s · reloj virtual 2025-09-16T00:40:00+00:00 · atraso máx 1.1 s
+       30 s · 153,715 enviados · 5,123 ev/s · reloj virtual 2025-09-16T01:00:00+00:00 · atraso máx 1.1 s
+       40 s · 212,708 enviados · 5,317 ev/s · reloj virtual 2025-09-16T01:20:01+00:00 · atraso máx 1.1 s
+       50 s · 264,831 enviados · 5,296 ev/s · reloj virtual 2025-09-16T01:40:01+00:00 · atraso máx 1.1 s
+       60 s · 319,218 enviados · 5,319 ev/s · reloj virtual 2025-09-16T02:00:02+00:00 · atraso máx 1.1 s
+       70 s · 371,628 enviados · 5,308 ev/s · reloj virtual 2025-09-16T02:20:02+00:00 · atraso máx 1.1 s
+       80 s · 422,804 enviados · 5,284 ev/s · reloj virtual 2025-09-16T02:40:02+00:00 · atraso máx 1.1 s
+       90 s · 475,256 enviados · 5,279 ev/s · reloj virtual 2025-09-16T03:00:03+00:00 · atraso máx 1.1 s
+      100 s · 528,939 enviados · 5,288 ev/s · reloj virtual 2025-09-16T03:20:03+00:00 · atraso máx 1.1 s
+      110 s · 582,493 enviados · 5,294 ev/s · reloj virtual 2025-09-16T03:40:03+00:00 · atraso máx 1.1 s
+      120 s · 634,746 enviados · 5,288 ev/s · reloj virtual 2025-09-16T04:00:03+00:00 · atraso máx 1.1 s
+      130 s · 685,571 enviados · 5,273 ev/s · reloj virtual 2025-09-16T04:20:03+00:00 · atraso máx 1.1 s
+      140 s · 736,025 enviados · 5,256 ev/s · reloj virtual 2025-09-16T04:40:04+00:00 · atraso máx 1.1 s
+      150 s · 784,617 enviados · 5,228 ev/s · reloj virtual 2025-09-16T05:00:08+00:00 · atraso máx 1.1 s
+      160 s · 836,528 enviados · 5,226 ev/s · reloj virtual 2025-09-16T05:20:08+00:00 · atraso máx 1.1 s
+      170 s · 890,061 enviados · 5,234 ev/s · reloj virtual 2025-09-16T05:40:08+00:00 · atraso máx 1.1 s
+      180 s · 941,225 enviados · 5,227 ev/s · reloj virtual 2025-09-16T06:00:08+00:00 · atraso máx 1.1 s
+      190 s · 994,408 enviados · 5,232 ev/s · reloj virtual 2025-09-16T06:20:08+00:00 · atraso máx 1.1 s
+      200 s · 1,049,400 enviados · 5,245 ev/s · reloj virtual 2025-09-16T06:40:08+00:00 · atraso máx 1.1 s
+      210 s · 1,102,260 enviados · 5,247 ev/s · reloj virtual 2025-09-16T07:00:08+00:00 · atraso máx 1.1 s
+      220 s · 1,157,604 enviados · 5,260 ev/s · reloj virtual 2025-09-16T07:20:09+00:00 · atraso máx 1.1 s
+      230 s · 1,216,175 enviados · 5,286 ev/s · reloj virtual 2025-09-16T07:40:10+00:00 · atraso máx 1.1 s
+      240 s · 1,270,339 enviados · 5,291 ev/s · reloj virtual 2025-09-16T08:00:10+00:00 · atraso máx 1.1 s
+      250 s · 1,323,809 enviados · 5,293 ev/s · reloj virtual 2025-09-16T08:20:11+00:00 · atraso máx 1.1 s
+      260 s · 1,381,849 enviados · 5,313 ev/s · reloj virtual 2025-09-16T08:40:11+00:00 · atraso máx 1.1 s
+      270 s · 1,437,033 enviados · 5,321 ev/s · reloj virtual 2025-09-16T09:00:11+00:00 · atraso máx 1.1 s
+      280 s · 1,493,606 enviados · 5,333 ev/s · reloj virtual 2025-09-16T09:20:11+00:00 · atraso máx 1.1 s
+      290 s · 1,550,373 enviados · 5,344 ev/s · reloj virtual 2025-09-16T09:40:11+00:00 · atraso máx 1.1 s
+      300 s · 1,607,484 enviados · 5,357 ev/s · reloj virtual 2025-09-16T10:00:11+00:00 · atraso máx 1.1 s
+      310 s · 1,664,268 enviados · 5,367 ev/s · reloj virtual 2025-09-16T10:20:11+00:00 · atraso máx 1.1 s
+      320 s · 1,720,649 enviados · 5,375 ev/s · reloj virtual 2025-09-16T10:40:11+00:00 · atraso máx 1.1 s
+      330 s · 1,776,642 enviados · 5,382 ev/s · reloj virtual 2025-09-16T11:00:12+00:00 · atraso máx 1.1 s
+      340 s · 1,830,289 enviados · 5,382 ev/s · reloj virtual 2025-09-16T11:20:12+00:00 · atraso máx 1.1 s
+      350 s · 1,887,015 enviados · 5,390 ev/s · reloj virtual 2025-09-16T11:40:13+00:00 · atraso máx 1.1 s
+      360 s · 1,941,196 enviados · 5,391 ev/s · reloj virtual 2025-09-16T12:00:13+00:00 · atraso máx 1.1 s
+      370 s · 1,996,979 enviados · 5,395 ev/s · reloj virtual 2025-09-16T12:20:15+00:00 · atraso máx 1.1 s
+      380 s · 2,052,589 enviados · 5,400 ev/s · reloj virtual 2025-09-16T12:40:15+00:00 · atraso máx 1.1 s
+      390 s · 2,108,775 enviados · 5,405 ev/s · reloj virtual 2025-09-16T13:00:16+00:00 · atraso máx 1.1 s
+      400 s · 2,165,317 enviados · 5,411 ev/s · reloj virtual 2025-09-16T13:20:16+00:00 · atraso máx 1.1 s
+      410 s · 2,223,227 enviados · 5,421 ev/s · reloj virtual 2025-09-16T13:40:16+00:00 · atraso máx 1.1 s
+      420 s · 2,278,660 enviados · 5,424 ev/s · reloj virtual 2025-09-16T14:00:17+00:00 · atraso máx 1.1 s
+      430 s · 2,335,894 enviados · 5,431 ev/s · reloj virtual 2025-09-16T14:20:17+00:00 · atraso máx 1.1 s
+      440 s · 2,394,642 enviados · 5,441 ev/s · reloj virtual 2025-09-16T14:40:18+00:00 · atraso máx 1.1 s
+      450 s · 2,450,701 enviados · 5,444 ev/s · reloj virtual 2025-09-16T15:00:18+00:00 · atraso máx 1.1 s
+      460 s · 2,506,029 enviados · 5,446 ev/s · reloj virtual 2025-09-16T15:20:18+00:00 · atraso máx 1.1 s
+      470 s · 2,563,378 enviados · 5,452 ev/s · reloj virtual 2025-09-16T15:40:19+00:00 · atraso máx 1.1 s
+      480 s · 2,621,122 enviados · 5,459 ev/s · reloj virtual 2025-09-16T16:00:19+00:00 · atraso máx 1.1 s
+      490 s · 2,677,122 enviados · 5,462 ev/s · reloj virtual 2025-09-16T16:20:20+00:00 · atraso máx 1.1 s
+      500 s · 2,734,750 enviados · 5,468 ev/s · reloj virtual 2025-09-16T16:40:20+00:00 · atraso máx 1.1 s
+      510 s · 2,791,867 enviados · 5,472 ev/s · reloj virtual 2025-09-16T17:00:21+00:00 · atraso máx 1.1 s
+      520 s · 2,846,955 enviados · 5,473 ev/s · reloj virtual 2025-09-16T17:20:21+00:00 · atraso máx 1.1 s
+      530 s · 2,902,698 enviados · 5,475 ev/s · reloj virtual 2025-09-16T17:40:21+00:00 · atraso máx 1.1 s
+      540 s · 2,956,393 enviados · 5,473 ev/s · reloj virtual 2025-09-16T18:00:21+00:00 · atraso máx 1.1 s
+      550 s · 3,011,016 enviados · 5,473 ev/s · reloj virtual 2025-09-16T18:20:21+00:00 · atraso máx 1.1 s
+      560 s · 3,067,241 enviados · 5,475 ev/s · reloj virtual 2025-09-16T18:40:22+00:00 · atraso máx 1.1 s
+      570 s · 3,120,869 enviados · 5,473 ev/s · reloj virtual 2025-09-16T19:00:22+00:00 · atraso máx 1.1 s
+      580 s · 3,177,429 enviados · 5,477 ev/s · reloj virtual 2025-09-16T19:20:23+00:00 · atraso máx 1.1 s
+      590 s · 3,234,525 enviados · 5,480 ev/s · reloj virtual 2025-09-16T19:40:23+00:00 · atraso máx 1.1 s
+      600 s · 3,286,793 enviados · 5,476 ev/s · reloj virtual 2025-09-16T20:00:23+00:00 · atraso máx 1.1 s
+      610 s · 3,340,254 enviados · 5,474 ev/s · reloj virtual 2025-09-16T20:20:23+00:00 · atraso máx 1.1 s
+      620 s · 3,395,183 enviados · 5,474 ev/s · reloj virtual 2025-09-16T20:40:23+00:00 · atraso máx 1.1 s
+      630 s · 3,445,463 enviados · 5,467 ev/s · reloj virtual 2025-09-16T21:00:25+00:00 · atraso máx 1.1 s
+      640 s · 3,498,624 enviados · 5,465 ev/s · reloj virtual 2025-09-16T21:20:25+00:00 · atraso máx 1.1 s
+      650 s · 3,549,875 enviados · 5,460 ev/s · reloj virtual 2025-09-16T21:40:25+00:00 · atraso máx 1.1 s
+      660 s · 3,603,568 enviados · 5,458 ev/s · reloj virtual 2025-09-16T22:00:25+00:00 · atraso máx 1.1 s
+      670 s · 3,654,215 enviados · 5,452 ev/s · reloj virtual 2025-09-16T22:20:25+00:00 · atraso máx 1.1 s
+      680 s · 3,705,303 enviados · 5,447 ev/s · reloj virtual 2025-09-16T22:40:25+00:00 · atraso máx 1.1 s
+      690 s · 3,755,520 enviados · 5,441 ev/s · reloj virtual 2025-09-16T23:00:25+00:00 · atraso máx 1.1 s
+      700 s · 3,806,430 enviados · 5,436 ev/s · reloj virtual 2025-09-16T23:20:25+00:00 · atraso máx 1.1 s
+      710 s · 3,854,797 enviados · 5,428 ev/s · reloj virtual 2025-09-16T23:40:26+00:00 · atraso máx 1.1 s
+      720 s · 3,902,411 enviados · 5,418 ev/s · reloj virtual 2025-09-17T00:00:26+00:00 · atraso máx 1.1 s
+      730 s · 3,949,503 enviados · 5,409 ev/s · reloj virtual 2025-09-17T00:20:26+00:00 · atraso máx 1.1 s
+      740 s · 4,000,044 enviados · 5,404 ev/s · reloj virtual 2025-09-17T00:40:26+00:00 · atraso máx 1.1 s
+      750 s · 4,055,417 enviados · 5,406 ev/s · reloj virtual 2025-09-17T01:00:26+00:00 · atraso máx 1.1 s
+      760 s · 4,111,735 enviados · 5,409 ev/s · reloj virtual 2025-09-17T01:20:28+00:00 · atraso máx 1.1 s
+      770 s · 4,164,186 enviados · 5,406 ev/s · reloj virtual 2025-09-17T01:40:28+00:00 · atraso máx 1.1 s
+      780 s · 4,218,713 enviados · 5,407 ev/s · reloj virtual 2025-09-17T02:00:28+00:00 · atraso máx 1.1 s
+      790 s · 4,272,517 enviados · 5,407 ev/s · reloj virtual 2025-09-17T02:20:28+00:00 · atraso máx 1.1 s
+      800 s · 4,321,280 enviados · 5,400 ev/s · reloj virtual 2025-09-17T02:40:31+00:00 · atraso máx 1.1 s
+      810 s · 4,370,512 enviados · 5,394 ev/s · reloj virtual 2025-09-17T03:00:31+00:00 · atraso máx 1.1 s
+      820 s · 4,422,205 enviados · 5,391 ev/s · reloj virtual 2025-09-17T03:20:31+00:00 · atraso máx 1.1 s
+      830 s · 4,475,934 enviados · 5,391 ev/s · reloj virtual 2025-09-17T03:40:31+00:00 · atraso máx 1.1 s
+      840 s · 4,528,731 enviados · 5,390 ev/s · reloj virtual 2025-09-17T04:00:31+00:00 · atraso máx 1.1 s
+      850 s · 4,580,603 enviados · 5,387 ev/s · reloj virtual 2025-09-17T04:20:34+00:00 · atraso máx 1.1 s
+      860 s · 4,630,212 enviados · 5,382 ev/s · reloj virtual 2025-09-17T04:40:34+00:00 · atraso máx 1.1 s
+      870 s · 4,680,727 enviados · 5,378 ev/s · reloj virtual 2025-09-17T05:00:34+00:00 · atraso máx 1.1 s
+      880 s · 4,733,277 enviados · 5,377 ev/s · reloj virtual 2025-09-17T05:20:34+00:00 · atraso máx 1.1 s
+      890 s · 4,784,690 enviados · 5,374 ev/s · reloj virtual 2025-09-17T05:40:34+00:00 · atraso máx 1.1 s
+      900 s · 4,833,567 enviados · 5,369 ev/s · reloj virtual 2025-09-17T06:00:34+00:00 · atraso máx 1.1 s
+      910 s · 4,884,871 enviados · 5,366 ev/s · reloj virtual 2025-09-17T06:20:34+00:00 · atraso máx 1.1 s
+      920 s · 4,939,821 enviados · 5,368 ev/s · reloj virtual 2025-09-17T06:40:35+00:00 · atraso máx 1.1 s
+      930 s · 4,992,739 enviados · 5,367 ev/s · reloj virtual 2025-09-17T07:00:35+00:00 · atraso máx 1.1 s
+      940 s · 5,046,864 enviados · 5,367 ev/s · reloj virtual 2025-09-17T07:20:35+00:00 · atraso máx 1.1 s
+      950 s · 5,103,885 enviados · 5,371 ev/s · reloj virtual 2025-09-17T07:40:35+00:00 · atraso máx 1.1 s
+      960 s · 5,156,919 enviados · 5,370 ev/s · reloj virtual 2025-09-17T08:00:35+00:00 · atraso máx 1.1 s
+      970 s · 5,210,906 enviados · 5,370 ev/s · reloj virtual 2025-09-17T08:20:35+00:00 · atraso máx 1.1 s
+      980 s · 5,264,894 enviados · 5,371 ev/s · reloj virtual 2025-09-17T08:40:35+00:00 · atraso máx 1.1 s
+      990 s · 5,319,242 enviados · 5,371 ev/s · reloj virtual 2025-09-17T09:00:35+00:00 · atraso máx 1.1 s
+     1000 s · 5,372,409 enviados · 5,371 ev/s · reloj virtual 2025-09-17T09:20:35+00:00 · atraso máx 1.1 s
+     1010 s · 5,425,599 enviados · 5,370 ev/s · reloj virtual 2025-09-17T09:40:36+00:00 · atraso máx 1.1 s
+     1020 s · 5,483,212 enviados · 5,374 ev/s · reloj virtual 2025-09-17T10:00:35+00:00 · atraso máx 1.1 s
+     1030 s · 5,538,583 enviados · 5,376 ev/s · reloj virtual 2025-09-17T10:20:36+00:00 · atraso máx 1.1 s
+     1040 s · 5,591,338 enviados · 5,375 ev/s · reloj virtual 2025-09-17T10:40:36+00:00 · atraso máx 1.1 s
+     1050 s · 5,643,729 enviados · 5,373 ev/s · reloj virtual 2025-09-17T11:00:37+00:00 · atraso máx 1.1 s
+     1060 s · 5,698,683 enviados · 5,375 ev/s · reloj virtual 2025-09-17T11:20:37+00:00 · atraso máx 1.1 s
+     1070 s · 5,755,437 enviados · 5,377 ev/s · reloj virtual 2025-09-17T11:40:37+00:00 · atraso máx 1.1 s
+     1080 s · 5,812,614 enviados · 5,381 ev/s · reloj virtual 2025-09-17T12:00:37+00:00 · atraso máx 1.1 s
+     1090 s · 5,866,795 enviados · 5,381 ev/s · reloj virtual 2025-09-17T12:20:37+00:00 · atraso máx 1.1 s
+     1100 s · 5,923,841 enviados · 5,384 ev/s · reloj virtual 2025-09-17T12:40:37+00:00 · atraso máx 1.1 s
+     1110 s · 5,978,853 enviados · 5,385 ev/s · reloj virtual 2025-09-17T13:00:37+00:00 · atraso máx 1.1 s
+     1120 s · 6,036,470 enviados · 5,388 ev/s · reloj virtual 2025-09-17T13:20:37+00:00 · atraso máx 1.1 s
+     1130 s · 6,091,889 enviados · 5,390 ev/s · reloj virtual 2025-09-17T13:40:38+00:00 · atraso máx 1.1 s
+     1140 s · 6,146,564 enviados · 5,390 ev/s · reloj virtual 2025-09-17T14:00:38+00:00 · atraso máx 1.1 s
+     1150 s · 6,201,799 enviados · 5,391 ev/s · reloj virtual 2025-09-17T14:20:38+00:00 · atraso máx 1.1 s
+     1160 s · 6,258,475 enviados · 5,394 ev/s · reloj virtual 2025-09-17T14:40:38+00:00 · atraso máx 1.1 s
+     1170 s · 6,315,967 enviados · 5,397 ev/s · reloj virtual 2025-09-17T15:00:38+00:00 · atraso máx 1.1 s
+     1180 s · 6,372,089 enviados · 5,399 ev/s · reloj virtual 2025-09-17T15:20:38+00:00 · atraso máx 1.1 s
+     1190 s · 6,428,862 enviados · 5,401 ev/s · reloj virtual 2025-09-17T15:40:38+00:00 · atraso máx 1.1 s
+     1200 s · 6,481,748 enviados · 5,400 ev/s · reloj virtual 2025-09-17T16:00:39+00:00 · atraso máx 1.1 s
+     1210 s · 6,536,245 enviados · 5,400 ev/s · reloj virtual 2025-09-17T16:20:39+00:00 · atraso máx 1.1 s
+     1220 s · 6,592,982 enviados · 5,403 ev/s · reloj virtual 2025-09-17T16:40:39+00:00 · atraso máx 1.1 s
+     1230 s · 6,649,167 enviados · 5,404 ev/s · reloj virtual 2025-09-17T17:00:40+00:00 · atraso máx 1.1 s
+     1240 s · 6,704,452 enviados · 5,405 ev/s · reloj virtual 2025-09-17T17:20:40+00:00 · atraso máx 1.1 s
+     1250 s · 6,759,985 enviados · 5,407 ev/s · reloj virtual 2025-09-17T17:40:40+00:00 · atraso máx 1.1 s
+     1260 s · 6,815,819 enviados · 5,408 ev/s · reloj virtual 2025-09-17T18:00:40+00:00 · atraso máx 1.1 s
+     1270 s · 6,869,945 enviados · 5,408 ev/s · reloj virtual 2025-09-17T18:20:41+00:00 · atraso máx 1.1 s
+     1280 s · 6,928,352 enviados · 5,411 ev/s · reloj virtual 2025-09-17T18:40:41+00:00 · atraso máx 1.1 s
+     1290 s · 6,983,199 enviados · 5,412 ev/s · reloj virtual 2025-09-17T19:00:42+00:00 · atraso máx 1.1 s
+     1300 s · 7,037,845 enviados · 5,412 ev/s · reloj virtual 2025-09-17T19:20:42+00:00 · atraso máx 1.1 s
+     1310 s · 7,093,393 enviados · 5,413 ev/s · reloj virtual 2025-09-17T19:40:42+00:00 · atraso máx 1.1 s
+     1320 s · 7,146,602 enviados · 5,412 ev/s · reloj virtual 2025-09-17T20:00:47+00:00 · atraso máx 1.1 s
+     1330 s · 7,198,170 enviados · 5,411 ev/s · reloj virtual 2025-09-17T20:20:47+00:00 · atraso máx 1.1 s
+     1340 s · 7,251,876 enviados · 5,410 ev/s · reloj virtual 2025-09-17T20:40:47+00:00 · atraso máx 1.1 s
+     1350 s · 7,302,260 enviados · 5,408 ev/s · reloj virtual 2025-09-17T21:00:47+00:00 · atraso máx 1.1 s
+     1360 s · 7,353,279 enviados · 5,405 ev/s · reloj virtual 2025-09-17T21:20:47+00:00 · atraso máx 1.1 s
+     1370 s · 7,404,423 enviados · 5,403 ev/s · reloj virtual 2025-09-17T21:40:47+00:00 · atraso máx 1.1 s
+     1380 s · 7,454,661 enviados · 5,400 ev/s · reloj virtual 2025-09-17T22:00:48+00:00 · atraso máx 1.1 s
+     1390 s · 7,506,977 enviados · 5,399 ev/s · reloj virtual 2025-09-17T22:20:48+00:00 · atraso máx 1.1 s
+     1400 s · 7,560,259 enviados · 5,399 ev/s · reloj virtual 2025-09-17T22:40:48+00:00 · atraso máx 1.1 s
+     1410 s · 7,607,994 enviados · 5,394 ev/s · reloj virtual 2025-09-17T23:00:49+00:00 · atraso máx 1.1 s
+     1420 s · 7,657,287 enviados · 5,391 ev/s · reloj virtual 2025-09-17T23:20:49+00:00 · atraso máx 1.1 s
+     1430 s · 7,706,684 enviados · 5,388 ev/s · reloj virtual 2025-09-17T23:40:49+00:00 · atraso máx 1.1 s
+     1440 s · 7,753,808 enviados · 5,383 ev/s · reloj virtual 2025-09-18T00:00:50+00:00 · atraso máx 1.1 s
+     1450 s · 7,803,715 enviados · 5,380 ev/s · reloj virtual 2025-09-18T00:20:51+00:00 · atraso máx 1.1 s
+     1460 s · 7,854,660 enviados · 5,378 ev/s · reloj virtual 2025-09-18T00:40:51+00:00 · atraso máx 1.1 s
+     1470 s · 7,905,559 enviados · 5,376 ev/s · reloj virtual 2025-09-18T01:00:51+00:00 · atraso máx 1.1 s
+     1480 s · 7,960,005 enviados · 5,377 ev/s · reloj virtual 2025-09-18T01:20:51+00:00 · atraso máx 1.1 s
+     1490 s · 8,012,430 enviados · 5,376 ev/s · reloj virtual 2025-09-18T01:40:52+00:00 · atraso máx 1.1 s
+     1500 s · 8,066,124 enviados · 5,376 ev/s · reloj virtual 2025-09-18T02:00:52+00:00 · atraso máx 1.1 s
+     1510 s · 8,116,099 enviados · 5,373 ev/s · reloj virtual 2025-09-18T02:20:52+00:00 · atraso máx 1.1 s
+     1520 s · 8,167,446 enviados · 5,372 ev/s · reloj virtual 2025-09-18T02:40:53+00:00 · atraso máx 1.1 s
+     1530 s · 8,216,673 enviados · 5,369 ev/s · reloj virtual 2025-09-18T03:00:53+00:00 · atraso máx 1.1 s
+     1540 s · 8,269,084 enviados · 5,368 ev/s · reloj virtual 2025-09-18T03:20:53+00:00 · atraso máx 1.1 s
+     1550 s · 8,320,287 enviados · 5,366 ev/s · reloj virtual 2025-09-18T03:40:53+00:00 · atraso máx 1.1 s
+     1560 s · 8,372,235 enviados · 5,365 ev/s · reloj virtual 2025-09-18T04:00:54+00:00 · atraso máx 1.1 s
+     1570 s · 8,422,416 enviados · 5,363 ev/s · reloj virtual 2025-09-18T04:20:54+00:00 · atraso máx 1.1 s
+     1580 s · 8,474,859 enviados · 5,362 ev/s · reloj virtual 2025-09-18T04:40:54+00:00 · atraso máx 1.1 s
+     1590 s · 8,525,042 enviados · 5,360 ev/s · reloj virtual 2025-09-18T05:00:54+00:00 · atraso máx 1.1 s
+     1600 s · 8,577,626 enviados · 5,359 ev/s · reloj virtual 2025-09-18T05:20:55+00:00 · atraso máx 1.1 s
+     1610 s · 8,627,184 enviados · 5,357 ev/s · reloj virtual 2025-09-18T05:40:55+00:00 · atraso máx 1.1 s
+     1620 s · 8,677,889 enviados · 5,355 ev/s · reloj virtual 2025-09-18T06:00:55+00:00 · atraso máx 1.1 s
+     1630 s · 8,730,733 enviados · 5,355 ev/s · reloj virtual 2025-09-18T06:20:55+00:00 · atraso máx 1.1 s
+     1640 s · 8,785,619 enviados · 5,356 ev/s · reloj virtual 2025-09-18T06:40:55+00:00 · atraso máx 1.1 s
+     1650 s · 8,838,446 enviados · 5,355 ev/s · reloj virtual 2025-09-18T07:00:56+00:00 · atraso máx 1.1 s
+     1660 s · 8,891,480 enviados · 5,355 ev/s · reloj virtual 2025-09-18T07:20:57+00:00 · atraso máx 1.1 s
+     1670 s · 8,947,181 enviados · 5,356 ev/s · reloj virtual 2025-09-18T07:40:57+00:00 · atraso máx 1.1 s
+     1680 s · 9,001,813 enviados · 5,357 ev/s · reloj virtual 2025-09-18T08:00:57+00:00 · atraso máx 1.1 s
+     1690 s · 9,055,399 enviados · 5,357 ev/s · reloj virtual 2025-09-18T08:20:57+00:00 · atraso máx 1.1 s
+     1700 s · 9,110,639 enviados · 5,358 ev/s · reloj virtual 2025-09-18T08:40:58+00:00 · atraso máx 1.1 s
+     1710 s · 9,162,807 enviados · 5,357 ev/s · reloj virtual 2025-09-18T09:00:58+00:00 · atraso máx 1.1 s
+     1720 s · 9,218,613 enviados · 5,358 ev/s · reloj virtual 2025-09-18T09:20:59+00:00 · atraso máx 1.1 s
+     1730 s · 9,272,230 enviados · 5,358 ev/s · reloj virtual 2025-09-18T09:40:59+00:00 · atraso máx 1.1 s
+     1740 s · 9,326,920 enviados · 5,359 ev/s · reloj virtual 2025-09-18T10:00:59+00:00 · atraso máx 1.1 s
+     1750 s · 9,381,783 enviados · 5,360 ev/s · reloj virtual 2025-09-18T10:20:59+00:00 · atraso máx 1.1 s
+     1761 s · 9,437,002 enviados · 5,360 ev/s · reloj virtual 2025-09-18T10:41:00+00:00 · atraso máx 1.1 s
+     1771 s · 9,490,781 enviados · 5,361 ev/s · reloj virtual 2025-09-18T11:01:00+00:00 · atraso máx 1.1 s
+     1781 s · 9,544,945 enviados · 5,361 ev/s · reloj virtual 2025-09-18T11:21:00+00:00 · atraso máx 1.1 s
+     1791 s · 9,602,314 enviados · 5,363 ev/s · reloj virtual 2025-09-18T11:41:00+00:00 · atraso máx 1.1 s
+     1801 s · 9,657,902 enviados · 5,364 ev/s · reloj virtual 2025-09-18T12:01:00+00:00 · atraso máx 1.1 s
+     1811 s · 9,713,050 enviados · 5,365 ev/s · reloj virtual 2025-09-18T12:21:02+00:00 · atraso máx 1.1 s
+     1821 s · 9,770,801 enviados · 5,367 ev/s · reloj virtual 2025-09-18T12:41:02+00:00 · atraso máx 1.1 s
+     1831 s · 9,826,772 enviados · 5,368 ev/s · reloj virtual 2025-09-18T13:01:02+00:00 · atraso máx 1.1 s
+     1841 s · 9,883,536 enviados · 5,370 ev/s · reloj virtual 2025-09-18T13:21:03+00:00 · atraso máx 1.1 s
+     1851 s · 9,942,373 enviados · 5,373 ev/s · reloj virtual 2025-09-18T13:41:04+00:00 · atraso máx 1.1 s
+     1861 s · 9,997,930 enviados · 5,374 ev/s · reloj virtual 2025-09-18T14:01:04+00:00 · atraso máx 1.1 s
+     1871 s · 10,053,131 enviados · 5,374 ev/s · reloj virtual 2025-09-18T14:21:04+00:00 · atraso máx 1.1 s
+     1881 s · 10,110,613 enviados · 5,376 ev/s · reloj virtual 2025-09-18T14:41:04+00:00 · atraso máx 1.1 s
+     1891 s · 10,168,171 enviados · 5,378 ev/s · reloj virtual 2025-09-18T15:01:04+00:00 · atraso máx 1.1 s
+     1901 s · 10,223,356 enviados · 5,379 ev/s · reloj virtual 2025-09-18T15:21:05+00:00 · atraso máx 1.1 s
+     1911 s · 10,279,999 enviados · 5,381 ev/s · reloj virtual 2025-09-18T15:41:05+00:00 · atraso máx 1.1 s
+     1921 s · 10,335,002 enviados · 5,381 ev/s · reloj virtual 2025-09-18T16:01:05+00:00 · atraso máx 1.1 s
+     1931 s · 10,341,593 enviados · 5,357 ev/s · reloj virtual 2025-09-18T16:21:19+00:00 · atraso máx 1.1 s
+     1941 s · 10,389,339 enviados · 5,354 ev/s · reloj virtual 2025-09-18T16:41:19+00:00 · atraso máx 1.1 s
+     1951 s · 10,446,245 enviados · 5,355 ev/s · reloj virtual 2025-09-18T17:01:20+00:00 · atraso máx 1.1 s
+     1961 s · 10,502,069 enviados · 5,356 ev/s · reloj virtual 2025-09-18T17:21:20+00:00 · atraso máx 1.1 s
+     1971 s · 10,556,380 enviados · 5,357 ev/s · reloj virtual 2025-09-18T17:41:20+00:00 · atraso máx 1.1 s
+     1981 s · 10,610,001 enviados · 5,357 ev/s · reloj virtual 2025-09-18T18:01:21+00:00 · atraso máx 1.1 s
+     1991 s · 10,665,704 enviados · 5,358 ev/s · reloj virtual 2025-09-18T18:21:21+00:00 · atraso máx 1.1 s
+     2001 s · 10,720,352 enviados · 5,358 ev/s · reloj virtual 2025-09-18T18:41:21+00:00 · atraso máx 1.1 s
+     2011 s · 10,773,705 enviados · 5,358 ev/s · reloj virtual 2025-09-18T19:01:22+00:00 · atraso máx 1.1 s
+     2021 s · 10,827,080 enviados · 5,358 ev/s · reloj virtual 2025-09-18T19:21:22+00:00 · atraso máx 1.1 s
+     2031 s · 10,882,638 enviados · 5,359 ev/s · reloj virtual 2025-09-18T19:41:22+00:00 · atraso máx 1.1 s
+     2041 s · 10,934,876 enviados · 5,358 ev/s · reloj virtual 2025-09-18T20:01:22+00:00 · atraso máx 1.1 s
+     2051 s · 10,988,606 enviados · 5,358 ev/s · reloj virtual 2025-09-18T20:21:23+00:00 · atraso máx 1.1 s
+     2061 s · 11,040,679 enviados · 5,358 ev/s · reloj virtual 2025-09-18T20:41:23+00:00 · atraso máx 1.1 s
+     2071 s · 11,093,713 enviados · 5,357 ev/s · reloj virtual 2025-09-18T21:01:23+00:00 · atraso máx 1.1 s
+     2081 s · 11,148,519 enviados · 5,358 ev/s · reloj virtual 2025-09-18T21:21:23+00:00 · atraso máx 1.1 s
+     2091 s · 11,198,659 enviados · 5,356 ev/s · reloj virtual 2025-09-18T21:41:23+00:00 · atraso máx 1.1 s
+     2101 s · 11,247,085 enviados · 5,354 ev/s · reloj virtual 2025-09-18T22:01:26+00:00 · atraso máx 1.1 s
+     2111 s · 11,295,308 enviados · 5,351 ev/s · reloj virtual 2025-09-18T22:21:27+00:00 · atraso máx 1.1 s
+     2121 s · 11,345,078 enviados · 5,350 ev/s · reloj virtual 2025-09-18T22:41:27+00:00 · atraso máx 1.1 s
+     2131 s · 11,394,752 enviados · 5,348 ev/s · reloj virtual 2025-09-18T23:01:29+00:00 · atraso máx 1.1 s
+     2141 s · 11,446,179 enviados · 5,347 ev/s · reloj virtual 2025-09-18T23:21:30+00:00 · atraso máx 1.1 s
+     2151 s · 11,495,084 enviados · 5,345 ev/s · reloj virtual 2025-09-18T23:41:30+00:00 · atraso máx 1.1 s
+{
+  "corrida": "principal",
+  "factor": 120.0,
+  "enviados": 11539694,
+  "originales": 11425689,
+  "duplicados": 114005,
+  "tardios_dentro_watermark": 11433,
+  "tardios_fuera_watermark": 11103,
+  "primer_evento": "2025-09-16T00:00:00+00:00",
+  "ultimo_evento": "2025-09-18T23:59:59+00:00",
+  "duracion_s": 2178.17,
+  "tasa_media_eps": 5297.9,
+  "atraso_max_s": 1.1286740209998243,
+  "duracion_originales_s": 2159.99,
+  "tasa_originales_eps": 5342.4,
+  "ids_unicos": 11425689,
+  "errores_entrega": 0,
+  "sin_confirmar": 0,
+  "desde": "2025-09-16T00:00:00Z",
+  "hasta": "2025-09-19T00:00:00Z",
+  "semilla": 42,
+  "prob_duplicado": 0.01,
+  "prob_tardio": 0.002,
+  "terminado_en": "2026-10-21T15:33:58.849827+00:00"
+}
+[10:34:00] principal: esperando a que bronce (11,539,694) y plata (11,425,689) alcancen
+[10:34:00] principal: plata al día; esperando que oro se estabilice
+[10:34:51] principal: verificando conteos
+[10:37:39] principal: terminada · exactamente una vez = True
+[10:37:40] bench_60x: levantando el pipeline
+ Container cloud_02_streaming_github-minio-init-1 Running 
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-minio-1 Running 
+ Container cloud_02_streaming_github-spark-1 Recreate 
+ Container cloud_02_streaming_github-spark-1 Recreated 
+ Container cloud_02_streaming_github-minio-1 Waiting 
+ Container cloud_02_streaming_github-minio-1 Healthy 
+ Container cloud_02_streaming_github-minio-init-1 Starting 
+ Container cloud_02_streaming_github-minio-init-1 Started 
+ Container cloud_02_streaming_github-minio-init-1 Waiting 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-minio-init-1 Exited 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-spark-1 Starting 
+ Container cloud_02_streaming_github-spark-1 Started 
+[10:38:03] bench_60x: productor 2025-09-17T12:00:00Z → 2025-09-17T18:00:00Z a 60x
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-productor-run-384b5d12c3a3 Creating 
+ Container cloud_02_streaming_github-productor-run-384b5d12c3a3 Created 
+Reproduciendo 2025-09-17 12:00 → 2025-09-17 18:00 UTC (7 archivos) a 60x hacia gh-eventos-bench_60x
+       10 s · 26,083 enviados · 2,608 ev/s · reloj virtual 2025-09-17T12:10:02+00:00 · atraso máx 2.9 s
+       20 s · 54,093 enviados · 2,705 ev/s · reloj virtual 2025-09-17T12:20:02+00:00 · atraso máx 2.9 s
+       30 s · 81,998 enviados · 2,733 ev/s · reloj virtual 2025-09-17T12:30:02+00:00 · atraso máx 2.9 s
+       40 s · 110,778 enviados · 2,769 ev/s · reloj virtual 2025-09-17T12:40:02+00:00 · atraso máx 2.9 s
+       50 s · 138,775 enviados · 2,775 ev/s · reloj virtual 2025-09-17T12:50:02+00:00 · atraso máx 2.9 s
+       60 s · 166,077 enviados · 2,768 ev/s · reloj virtual 2025-09-17T13:00:02+00:00 · atraso máx 2.9 s
+       70 s · 195,315 enviados · 2,789 ev/s · reloj virtual 2025-09-17T13:09:58+00:00 · atraso máx 2.9 s
+       80 s · 223,580 enviados · 2,792 ev/s · reloj virtual 2025-09-17T13:20:06+00:00 · atraso máx 2.9 s
+       90 s · 251,340 enviados · 2,791 ev/s · reloj virtual 2025-09-17T13:30:06+00:00 · atraso máx 2.9 s
+      100 s · 279,343 enviados · 2,791 ev/s · reloj virtual 2025-09-17T13:40:07+00:00 · atraso máx 2.9 s
+      110 s · 306,477 enviados · 2,784 ev/s · reloj virtual 2025-09-17T13:50:08+00:00 · atraso máx 2.9 s
+      120 s · 334,326 enviados · 2,784 ev/s · reloj virtual 2025-09-17T14:00:08+00:00 · atraso máx 2.9 s
+      130 s · 362,516 enviados · 2,786 ev/s · reloj virtual 2025-09-17T14:10:08+00:00 · atraso máx 2.9 s
+      140 s · 388,902 enviados · 2,776 ev/s · reloj virtual 2025-09-17T14:20:08+00:00 · atraso máx 2.9 s
+      150 s · 417,791 enviados · 2,783 ev/s · reloj virtual 2025-09-17T14:30:09+00:00 · atraso máx 2.9 s
+      160 s · 445,857 enviados · 2,785 ev/s · reloj virtual 2025-09-17T14:40:09+00:00 · atraso máx 2.9 s
+      170 s · 474,121 enviados · 2,787 ev/s · reloj virtual 2025-09-17T14:50:09+00:00 · atraso máx 2.9 s
+      180 s · 503,651 enviados · 2,796 ev/s · reloj virtual 2025-09-17T15:00:09+00:00 · atraso máx 2.9 s
+      190 s · 531,523 enviados · 2,796 ev/s · reloj virtual 2025-09-17T15:10:09+00:00 · atraso máx 2.9 s
+      200 s · 559,336 enviados · 2,795 ev/s · reloj virtual 2025-09-17T15:20:10+00:00 · atraso máx 2.9 s
+      210 s · 588,296 enviados · 2,799 ev/s · reloj virtual 2025-09-17T15:30:11+00:00 · atraso máx 2.9 s
+      220 s · 616,223 enviados · 2,799 ev/s · reloj virtual 2025-09-17T15:40:11+00:00 · atraso máx 2.9 s
+      230 s · 642,454 enviados · 2,791 ev/s · reloj virtual 2025-09-17T15:50:11+00:00 · atraso máx 2.9 s
+      240 s · 669,265 enviados · 2,787 ev/s · reloj virtual 2025-09-17T16:00:11+00:00 · atraso máx 2.9 s
+      250 s · 696,172 enviados · 2,783 ev/s · reloj virtual 2025-09-17T16:10:12+00:00 · atraso máx 2.9 s
+      260 s · 724,005 enviados · 2,783 ev/s · reloj virtual 2025-09-17T16:20:13+00:00 · atraso máx 2.9 s
+      270 s · 751,542 enviados · 2,782 ev/s · reloj virtual 2025-09-17T16:30:13+00:00 · atraso máx 2.9 s
+      280 s · 780,462 enviados · 2,786 ev/s · reloj virtual 2025-09-17T16:40:13+00:00 · atraso máx 2.9 s
+      290 s · 809,097 enviados · 2,788 ev/s · reloj virtual 2025-09-17T16:50:13+00:00 · atraso máx 2.9 s
+      300 s · 836,454 enviados · 2,786 ev/s · reloj virtual 2025-09-17T17:00:13+00:00 · atraso máx 2.9 s
+      310 s · 864,606 enviados · 2,787 ev/s · reloj virtual 2025-09-17T17:10:13+00:00 · atraso máx 2.9 s
+      320 s · 892,084 enviados · 2,786 ev/s · reloj virtual 2025-09-17T17:20:14+00:00 · atraso máx 2.9 s
+      330 s · 919,319 enviados · 2,784 ev/s · reloj virtual 2025-09-17T17:30:14+00:00 · atraso máx 2.9 s
+      340 s · 947,332 enviados · 2,785 ev/s · reloj virtual 2025-09-17T17:40:14+00:00 · atraso máx 2.9 s
+      350 s · 975,243 enviados · 2,785 ev/s · reloj virtual 2025-09-17T17:50:14+00:00 · atraso máx 2.9 s
+{
+  "corrida": "bench_60x",
+  "factor": 60.0,
+  "enviados": 1002041,
+  "originales": 992129,
+  "duplicados": 9912,
+  "tardios_dentro_watermark": 1031,
+  "tardios_fuera_watermark": 946,
+  "primer_evento": "2025-09-17T12:00:02+00:00",
+  "ultimo_evento": "2025-09-17T17:59:59+00:00",
+  "duracion_s": 392.0,
+  "tasa_media_eps": 2556.2,
+  "atraso_max_s": 2.9008120050002617,
+  "duracion_originales_s": 359.95,
+  "tasa_originales_eps": 2783.6,
+  "ids_unicos": 992129,
+  "errores_entrega": 0,
+  "sin_confirmar": 0,
+  "desde": "2025-09-17T12:00:00Z",
+  "hasta": "2025-09-17T18:00:00Z",
+  "semilla": 42,
+  "prob_duplicado": 0.01,
+  "prob_tardio": 0.002,
+  "terminado_en": "2026-10-21T15:44:40.176952+00:00"
+}
+[10:44:40] bench_60x: esperando a que bronce (1,002,041) y plata (992,129) alcancen
+[10:44:50] bench_60x: plata al día; esperando que oro se estabilice
+[10:45:41] bench_60x: verificando conteos
+[10:46:39] bench_60x: terminada · exactamente una vez = True
+[10:46:40] bench_600x: levantando el pipeline
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-minio-1 Running 
+ Container cloud_02_streaming_github-minio-init-1 Running 
+ Container cloud_02_streaming_github-spark-1 Recreate 
+ Container cloud_02_streaming_github-spark-1 Recreated 
+ Container cloud_02_streaming_github-minio-1 Waiting 
+ Container cloud_02_streaming_github-minio-1 Healthy 
+ Container cloud_02_streaming_github-minio-init-1 Starting 
+ Container cloud_02_streaming_github-minio-init-1 Started 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-minio-init-1 Waiting 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-minio-init-1 Exited 
+ Container cloud_02_streaming_github-spark-1 Starting 
+ Container cloud_02_streaming_github-spark-1 Started 
+[10:47:03] bench_600x: productor 2025-09-17T12:00:00Z → 2025-09-17T18:00:00Z a 600x
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-productor-run-7a06ed788e16 Creating 
+ Container cloud_02_streaming_github-productor-run-7a06ed788e16 Created 
+Reproduciendo 2025-09-17 12:00 → 2025-09-17 18:00 UTC (7 archivos) a 600x hacia gh-eventos-bench_600x
+       10 s · 279,208 enviados · 27,918 ev/s · reloj virtual 2025-09-17T13:40:02+00:00 · atraso máx 3.0 s
+       20 s · 558,949 enviados · 27,945 ev/s · reloj virtual 2025-09-17T15:20:03+00:00 · atraso máx 3.0 s
+       30 s · 835,911 enviados · 27,862 ev/s · reloj virtual 2025-09-17T17:00:02+00:00 · atraso máx 3.0 s
+{
+  "corrida": "bench_600x",
+  "factor": 600.0,
+  "enviados": 1002041,
+  "originales": 992129,
+  "duplicados": 9912,
+  "tardios_dentro_watermark": 1031,
+  "tardios_fuera_watermark": 946,
+  "primer_evento": "2025-09-17T12:00:02+00:00",
+  "ultimo_evento": "2025-09-17T17:59:59+00:00",
+  "duracion_s": 39.2,
+  "tasa_media_eps": 25562.2,
+  "atraso_max_s": 2.963672244000918,
+  "duracion_originales_s": 36.0,
+  "tasa_originales_eps": 27829.4,
+  "ids_unicos": 992129,
+  "errores_entrega": 0,
+  "sin_confirmar": 0,
+  "desde": "2025-09-17T12:00:00Z",
+  "hasta": "2025-09-17T18:00:00Z",
+  "semilla": 42,
+  "prob_duplicado": 0.01,
+  "prob_tardio": 0.002,
+  "terminado_en": "2026-10-21T15:47:47.424373+00:00"
+}
+[10:47:47] bench_600x: esperando a que bronce (1,002,041) y plata (992,129) alcancen
+[10:48:32] bench_600x: plata al día; esperando que oro se estabilice
+[10:49:23] bench_600x: verificando conteos
+[10:50:11] bench_600x: terminada · exactamente una vez = True
+[10:50:12] bench_max: levantando el pipeline
+ Container cloud_02_streaming_github-minio-1 Running 
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-minio-init-1 Running 
+ Container cloud_02_streaming_github-spark-1 Recreate 
+ Container cloud_02_streaming_github-spark-1 Recreated 
+ Container cloud_02_streaming_github-minio-1 Waiting 
+ Container cloud_02_streaming_github-minio-1 Healthy 
+ Container cloud_02_streaming_github-minio-init-1 Starting 
+ Container cloud_02_streaming_github-minio-init-1 Started 
+ Container cloud_02_streaming_github-minio-init-1 Waiting 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-minio-init-1 Exited 
+ Container cloud_02_streaming_github-spark-1 Starting 
+ Container cloud_02_streaming_github-spark-1 Started 
+[10:50:35] bench_max: productor 2025-09-17T12:00:00Z → 2025-09-17T18:00:00Z a 0x
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-productor-run-2cbd300f5de6 Creating 
+ Container cloud_02_streaming_github-productor-run-2cbd300f5de6 Created 
+Reproduciendo 2025-09-17 12:00 → 2025-09-17 18:00 UTC (7 archivos) a máxima velocidad hacia gh-eventos-bench_max
+       10 s · 333,281 enviados · 33,311 ev/s · reloj virtual 2025-09-17T13:59:41+00:00 · atraso máx 0.0 s
+       20 s · 680,802 enviados · 34,031 ev/s · reloj virtual 2025-09-17T16:04:06+00:00 · atraso máx 0.0 s
+{
+  "corrida": "bench_max",
+  "factor": 0.0,
+  "enviados": 1002041,
+  "originales": 992129,
+  "duplicados": 9912,
+  "tardios_dentro_watermark": 1031,
+  "tardios_fuera_watermark": 946,
+  "primer_evento": "2025-09-17T12:00:02+00:00",
+  "ultimo_evento": "2025-09-17T17:59:59+00:00",
+  "duracion_s": 28.62,
+  "tasa_media_eps": 35011.3,
+  "atraso_max_s": 0.0,
+  "duracion_originales_s": 28.62,
+  "tasa_originales_eps": 35008.6,
+  "ids_unicos": 992129,
+  "errores_entrega": 0,
+  "sin_confirmar": 0,
+  "desde": "2025-09-17T12:00:00Z",
+  "hasta": "2025-09-17T18:00:00Z",
+  "semilla": 42,
+  "prob_duplicado": 0.01,
+  "prob_tardio": 0.002,
+  "terminado_en": "2026-10-21T15:51:09.012494+00:00"
+}
+[10:51:09] bench_max: esperando a que bronce (1,002,041) y plata (992,129) alcancen
+[10:51:54] bench_max: plata al día; esperando que oro se estabilice
+[10:53:05] bench_max: verificando conteos
+[10:53:49] bench_max: terminada · exactamente una vez = True
+[10:53:50] Borrando restos de la corrida recuperacion (tema, tablas, checkpoints, métricas)
+[10:53:53] recuperacion: levantando el pipeline
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-minio-1 Running 
+ Container cloud_02_streaming_github-minio-init-1 Running 
+ Container cloud_02_streaming_github-spark-1 Recreate 
+ Container cloud_02_streaming_github-spark-1 Recreated 
+ Container cloud_02_streaming_github-minio-1 Waiting 
+ Container cloud_02_streaming_github-minio-1 Healthy 
+ Container cloud_02_streaming_github-minio-init-1 Starting 
+ Container cloud_02_streaming_github-minio-init-1 Started 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-minio-init-1 Waiting 
+ Container cloud_02_streaming_github-minio-init-1 Exited 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-spark-1 Starting 
+ Container cloud_02_streaming_github-spark-1 Started 
+[10:54:16] recuperacion: productor 2025-09-17T00:00:00Z → 2025-09-17T18:00:00Z a 240x
+ Container cloud_02_streaming_github-redpanda-1 Running 
+ Container cloud_02_streaming_github-redpanda-1 Waiting 
+ Container cloud_02_streaming_github-redpanda-1 Healthy 
+ Container cloud_02_streaming_github-productor-run-e9bb350472a2 Creating 
+ Container cloud_02_streaming_github-productor-run-e9bb350472a2 Created 
+Reproduciendo 2025-09-17 00:00 → 2025-09-17 18:00 UTC (19 archivos) a 240x hacia gh-eventos-recuperacion
+       10 s · 97,417 enviados · 9,741 ev/s · reloj virtual 2025-09-17T00:40:00+00:00 · atraso máx 2.7 s
+       20 s · 208,792 enviados · 10,438 ev/s · reloj virtual 2025-09-17T01:20:01+00:00 · atraso máx 2.7 s
+       30 s · 315,664 enviados · 10,521 ev/s · reloj virtual 2025-09-17T02:00:01+00:00 · atraso máx 2.7 s
+       40 s · 418,628 enviados · 10,465 ev/s · reloj virtual 2025-09-17T02:40:01+00:00 · atraso máx 2.7 s
+[10:55:01] docker kill spark (t = 45 s del productor)
+       50 s · 519,099 enviados · 10,381 ev/s · reloj virtual 2025-09-17T03:20:01+00:00 · atraso máx 2.7 s
+       60 s · 625,452 enviados · 10,423 ev/s · reloj virtual 2025-09-17T04:00:01+00:00 · atraso máx 2.7 s
+       70 s · 727,045 enviados · 10,386 ev/s · reloj virtual 2025-09-17T04:40:01+00:00 · atraso máx 2.7 s
+       80 s · 830,007 enviados · 10,374 ev/s · reloj virtual 2025-09-17T05:20:02+00:00 · atraso máx 2.7 s
+[10:55:40] Spark reanudado tras 38 s
+       90 s · 930,544 enviados · 10,338 ev/s · reloj virtual 2025-09-17T06:00:02+00:00 · atraso máx 2.7 s
+      100 s · 1,036,791 enviados · 10,367 ev/s · reloj virtual 2025-09-17T06:40:02+00:00 · atraso máx 2.7 s
+      110 s · 1,143,711 enviados · 10,397 ev/s · reloj virtual 2025-09-17T07:20:02+00:00 · atraso máx 2.7 s
+      120 s · 1,253,956 enviados · 10,449 ev/s · reloj virtual 2025-09-17T08:00:03+00:00 · atraso máx 2.7 s
+[10:56:26] docker kill spark (t = 130 s del productor)
+      130 s · 1,362,055 enviados · 10,476 ev/s · reloj virtual 2025-09-17T08:40:04+00:00 · atraso máx 2.7 s
+      140 s · 1,469,438 enviados · 10,495 ev/s · reloj virtual 2025-09-17T09:20:04+00:00 · atraso máx 2.7 s
+      150 s · 1,580,059 enviados · 10,532 ev/s · reloj virtual 2025-09-17T10:00:05+00:00 · atraso máx 2.7 s
+      160 s · 1,688,019 enviados · 10,548 ev/s · reloj virtual 2025-09-17T10:40:06+00:00 · atraso máx 2.7 s
+[10:57:05] Spark reanudado tras 38 s
+      170 s · 1,795,476 enviados · 10,560 ev/s · reloj virtual 2025-09-17T11:20:06+00:00 · atraso máx 2.7 s
+      180 s · 1,909,725 enviados · 10,608 ev/s · reloj virtual 2025-09-17T12:00:06+00:00 · atraso máx 2.7 s
+      190 s · 2,020,709 enviados · 10,634 ev/s · reloj virtual 2025-09-17T12:40:06+00:00 · atraso máx 2.7 s
+      200 s · 2,133,336 enviados · 10,665 ev/s · reloj virtual 2025-09-17T13:20:07+00:00 · atraso máx 2.7 s
+      210 s · 2,244,120 enviados · 10,685 ev/s · reloj virtual 2025-09-17T14:00:07+00:00 · atraso máx 2.7 s
+[10:57:51] docker kill spark (t = 215 s del productor)
+      220 s · 2,355,632 enviados · 10,706 ev/s · reloj virtual 2025-09-17T14:40:07+00:00 · atraso máx 2.7 s
+      230 s · 2,468,978 enviados · 10,733 ev/s · reloj virtual 2025-09-17T15:20:07+00:00 · atraso máx 2.7 s
+      240 s · 2,578,938 enviados · 10,744 ev/s · reloj virtual 2025-09-17T16:00:08+00:00 · atraso máx 2.7 s
+      250 s · 2,689,869 enviados · 10,758 ev/s · reloj virtual 2025-09-17T16:40:08+00:00 · atraso máx 2.7 s
+[10:58:31] Spark reanudado tras 39 s
+      260 s · 2,801,772 enviados · 10,775 ev/s · reloj virtual 2025-09-17T17:20:08+00:00 · atraso máx 2.7 s
+{
+  "corrida": "recuperacion",
+  "factor": 240.0,
+  "enviados": 2911774,
+  "originales": 2882926,
+  "duplicados": 28848,
+  "tardios_dentro_watermark": 2844,
+  "tardios_fuera_watermark": 2826,
+  "primer_evento": "2025-09-17T00:00:00+00:00",
+  "ultimo_evento": "2025-09-17T17:59:59+00:00",
+  "duracion_s": 278.89,
+  "tasa_media_eps": 10440.7,
+  "atraso_max_s": 2.742307983000501,
+  "duracion_originales_s": 270.0,
+  "tasa_originales_eps": 10783.9,
+  "ids_unicos": 2882926,
+  "errores_entrega": 0,
+  "sin_confirmar": 0,
+  "desde": "2025-09-17T00:00:00Z",
+  "hasta": "2025-09-17T18:00:00Z",
+  "semilla": 42,
+  "prob_duplicado": 0.01,
+  "prob_tardio": 0.002,
+  "terminado_en": "2026-10-21T15:59:02.377301+00:00"
+}
+[10:59:02] recuperacion: esperando a que bronce (2,911,774) y plata (2,882,926) alcancen
+[11:00:47] recuperacion: plata al día; esperando que oro se estabilice
+[11:01:58] recuperacion: verificando conteos
+[11:03:01] recuperacion: terminada · exactamente una vez = True

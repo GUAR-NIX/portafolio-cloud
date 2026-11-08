@@ -1,0 +1,114 @@
+{
+  "corridas": 5,
+  "filas_limpio": 30432442,
+  "casos": {
+    "limpio · hora en partición horaria (20-jul 19 h)": {
+      "sql": "SELECT titulo, sum(vistas) AS v FROM iceberg.wiki.pageviews_limpio WHERE idioma = 'es' AND hora = TIMESTAMP '2026-07-20 19:00:00' GROUP BY titulo ORDER BY v DESC LIMIT 10",
+      "ms_mediana": 75,
+      "ms_corridas": [
+        75,
+        75,
+        77,
+        76,
+        71
+      ],
+      "mb_leidos": 0.28,
+      "filas_procesadas": 26019,
+      "splits": 35,
+      "top1": [
+        "Lamine_Yamal",
+        9443
+      ]
+    },
+    "limpio · hora en partición diaria (19-jul 19 h)": {
+      "sql": "SELECT titulo, sum(vistas) AS v FROM iceberg.wiki.pageviews_limpio WHERE idioma = 'es' AND hora = TIMESTAMP '2026-07-19 19:00:00' GROUP BY titulo ORDER BY v DESC LIMIT 10",
+      "ms_mediana": 73,
+      "ms_corridas": [
+        72,
+        78,
+        70,
+        82,
+        73
+      ],
+      "mb_leidos": 0.31,
+      "filas_procesadas": 27105,
+      "splits": 35,
+      "top1": [
+        "Tom_Cruise",
+        24624
+      ]
+    },
+    "limpio · solo poda por idioma (hora con función)": {
+      "sql": "SELECT titulo, sum(vistas) AS v FROM iceberg.wiki.pageviews_limpio WHERE lower(idioma) = 'es' AND date_format(hora, '%Y-%m-%d %H') = '2026-07-20 19' GROUP BY titulo ORDER BY v DESC LIMIT 10",
+      "ms_mediana": 180,
+      "ms_corridas": [
+        171,
+        219,
+        242,
+        180,
+        164
+      ],
+      "mb_leidos": 22.22,
+      "filas_procesadas": 1980798,
+      "splits": 130,
+      "top1": [
+        "Lamine_Yamal",
+        9443
+      ]
+    },
+    "limpio · sin poda (funciones sobre dominio y hora)": {
+      "sql": "SELECT titulo, sum(vistas) AS v FROM iceberg.wiki.pageviews_limpio WHERE substr(dominio, 1, 2) = 'es' AND date_format(hora, '%Y-%m-%d %H') = '2026-07-20 19' GROUP BY titulo ORDER BY v DESC LIMIT 10",
+      "ms_mediana": 850,
+      "ms_corridas": [
+        883,
+        804,
+        866,
+        850,
+        758
+      ],
+      "mb_leidos": 323.71,
+      "filas_procesadas": 30432442,
+      "splits": 226,
+      "top1": [
+        "Lamine_Yamal",
+        9443
+      ]
+    },
+    "crudo compactado · hora (19-jul 19 h)": {
+      "sql": "SELECT titulo, sum(CAST(vistas AS bigint)) AS v FROM iceberg.wiki.pageviews_crudo WHERE dominio IN ('es', 'es.m') AND hora = TIMESTAMP '2026-07-19 19:00:00' GROUP BY titulo ORDER BY v DESC LIMIT 10",
+      "ms_mediana": 200,
+      "ms_corridas": [
+        205,
+        202,
+        200,
+        197,
+        191
+      ],
+      "mb_leidos": 65.25,
+      "filas_procesadas": 7711580,
+      "splits": 35,
+      "top1": [
+        "Wikipedia:Portada",
+        30298
+      ]
+    },
+    "crudo compactado · sin poda (19-jul 19 h)": {
+      "sql": "SELECT titulo, sum(CAST(vistas AS bigint)) AS v FROM iceberg.wiki.pageviews_crudo WHERE dominio IN ('es', 'es.m') AND date_format(hora, '%Y-%m-%d %H') = '2026-07-19 19' GROUP BY titulo ORDER BY v DESC LIMIT 10",
+      "ms_mediana": 666,
+      "ms_corridas": [
+        739,
+        650,
+        666,
+        681,
+        635
+      ],
+      "mb_leidos": 168.58,
+      "filas_procesadas": 30677014,
+      "splits": 61,
+      "top1": [
+        "Wikipedia:Portada",
+        30298
+      ]
+    }
+  }
+}

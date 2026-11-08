@@ -1,0 +1,6 @@
+{"evento": "arranque", "ts": "2026-10-21T15:50:19.347947+00:00", "args": {"corrida": "bench_max", "capas": "bronce,plata,oro", "trigger_s": 3.0, "trigger_oro_s": 10.0, "max_offsets": 300000, "disponible_ahora": false}}
+{"evento": "consulta_iniciada", "consulta": "bronce", "ts": "2026-10-21T15:50:30.220304+00:00"}
+{"evento": "consulta_iniciada", "consulta": "plata", "ts": "2026-10-21T15:50:32.084038+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_actividad_5min", "ts": "2026-10-21T15:50:32.885447+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_repos_hora", "ts": "2026-10-21T15:50:33.567968+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_lenguajes_hora", "ts": "2026-10-21T15:50:34.069887+00:00"}

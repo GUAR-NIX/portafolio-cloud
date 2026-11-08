@@ -1,0 +1,20 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: clima-ecuador
+nodes:
+  - role: control-plane
+    # ingress-nginx (manifiesto para kind) se programa en el nodo con esta etiqueta.
+    kubeadmConfigPatches:
+      - |
+        kind: InitConfiguration
+        nodeRegistration:
+          kubeletExtraArgs:
+            node-labels: "ingress-ready=true"
+    extraPortMappings:
+      - containerPort: 30080   # NodePort de Streamlit
+        hostPort: 8080
+        protocol: TCP
+      - containerPort: 80      # ingress-nginx
+        hostPort: 8081
+        protocol: TCP
+  - role: worker

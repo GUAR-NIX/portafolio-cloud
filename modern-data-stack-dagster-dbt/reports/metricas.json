@@ -1,0 +1,103 @@
+{
+  "por_anio": [
+    {
+      "anio": "2022",
+      "filas_crudas": 38181174,
+      "estaciones": 43836,
+      "MB_csv": 1372.3,
+      "MB_csv_gz": 175.6,
+      "MB_parquet": 37.0,
+      "segundos_descarga": 23.8,
+      "segundos_conversion": 30.2,
+      "segundos_controles": 0.7,
+      "run_id": "58f9590b",
+      "segundos_corrida": 76.3
+    },
+    {
+      "anio": "2023",
+      "filas_crudas": 38293556,
+      "estaciones": 44415,
+      "MB_csv": 1376.3,
+      "MB_csv_gz": 176.0,
+      "MB_parquet": 36.7,
+      "segundos_descarga": 23.3,
+      "segundos_conversion": 44.0,
+      "segundos_controles": 0.6,
+      "run_id": "9cbd1503",
+      "segundos_corrida": 88.6
+    },
+    {
+      "anio": "2024",
+      "filas_crudas": 38470116,
+      "estaciones": 44882,
+      "MB_csv": 1383.4,
+      "MB_csv_gz": 176.5,
+      "MB_parquet": 37.0,
+      "segundos_descarga": 14.2,
+      "segundos_conversion": 31.3,
+      "segundos_controles": 0.6,
+      "run_id": "568bd6a5",
+      "segundos_corrida": 67.0
+    },
+    {
+      "anio": "2025",
+      "filas_crudas": 36371852,
+      "estaciones": 44531,
+      "MB_csv": 1310.9,
+      "MB_csv_gz": 166.0,
+      "MB_parquet": 34.8,
+      "segundos_descarga": 28.0,
+      "segundos_conversion": 37.1,
+      "segundos_controles": 0.7,
+      "run_id": "be511bc6",
+      "segundos_corrida": 79.4
+    },
+    {
+      "anio": "2026",
+      "filas_crudas": 26178186,
+      "estaciones": 39717,
+      "MB_csv": 944.9,
+      "MB_csv_gz": 118.5,
+      "MB_parquet": 25.1,
+      "segundos_descarga": 18.3,
+      "segundos_conversion": 20.4,
+      "segundos_controles": 0.4,
+      "run_id": "9e888874",
+      "segundos_corrida": 57.3
+    }
+  ],
+  "totales": {
+    "filas_crudas": 177494884,
+    "MB_csv": 6387.8,
+    "MB_csv_gz": 812.6,
+    "MB_parquet": 170.6,
+    "MB_duckdb": 2013.3
+  },
+  "filas_por_capa": {
+    "crudo.ghcn_crudo_parquet": 177494884,
+    "staging.stg_ghcn__observaciones": 94363937,
+    "staging.stg_ghcn__estaciones": 133039,
+    "staging.stg_ghcn__paises": 219,
+    "intermediate.int_observaciones_diarias": 57941103,
+    "intermediate.int_estaciones": 133039,
+    "intermediate.int_clima_mensual_estacion": 2239194,
+    "intermediate.int_normal_mensual_estacion": 136689,
+    "marts.mart_clima_mensual_estacion": 2239194,
+    "marts.mart_clima_mensual_pais": 9713,
+    "marts.mart_extremos_pais_anual": 889
+  },
+  "valores_descartados_por_qflag": 109833,
+  "consulta_referencia_tmax_mensual": {
+    "anio": 2025,
+    "segundos_csv_gz": 12.54,
+    "segundos_parquet_minio": 0.14
+  },
+  "dbt_build": {
+    "segundos": 149.9,
+    "conteo": {
+      "model:success": 10,
+      "test:pass": 37,
+      "test:warn": 2
+    }
+  }
+}

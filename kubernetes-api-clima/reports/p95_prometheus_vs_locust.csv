@@ -1,0 +1,5 @@
+escenario,locust_p50_ms,prometheus_p50_ms,locust_p95_ms,prometheus_p95_ms
+fijo-1,720,583,970,961
+fijo-4,70,48,140,123
+hpa,350,293,460,479
+hpa-ingress,27,20,370,384

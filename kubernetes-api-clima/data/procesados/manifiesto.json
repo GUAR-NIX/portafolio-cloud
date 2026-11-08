@@ -1,0 +1,74 @@
+{
+  "fuente": "https://archive-api.open-meteo.com/v1/archive",
+  "licencia": "CC BY 4.0",
+  "fecha_descarga": "2026-10-22",
+  "periodo": [
+    "2024-01-01",
+    "2024-12-31"
+  ],
+  "filas": 4392,
+  "ciudades": 12,
+  "sha256_parquet": "0e0cae2c3fb667d27fd003dc388e417943e171728b9c7b830c5f86017b738f62",
+  "detalle": [
+    {
+      "ciudad": "Quito",
+      "archivo": "data\\raw\\quito_2024.json",
+      "filas": 366
+    },
+    {
+      "ciudad": "Guayaquil",
+      "archivo": "data\\raw\\guayaquil_2024.json",
+      "filas": 366
+    },
+    {
+      "ciudad": "Cuenca",
+      "archivo": "data\\raw\\cuenca_2024.json",
+      "filas": 366
+    },
+    {
+      "ciudad": "Loja",
+      "archivo": "data\\raw\\loja_2024.json",
+      "filas": 366
+    },
+    {
+      "ciudad": "Ambato",
+      "archivo": "data\\raw\\ambato_2024.json",
+      "filas": 366
+    },
+    {
+      "ciudad": "Manta",
+      "archivo": "data\\raw\\manta_2024.json",
+      "filas": 366
+    },
+    {
+      "ciudad": "Esmeraldas",
+      "archivo": "data\\raw\\esmeraldas_2024.json",
+      "filas": 366
+    },
+    {
+      "ciudad": "Ibarra",
+      "archivo": "data\\raw\\ibarra_2024.json",
+      "filas": 366
+    },
+    {
+      "ciudad": "Puyo",
+      "archivo": "data\\raw\\puyo_2024.json",
+      "filas": 366
+    },
+    {
+      "ciudad": "Nueva Loja",
+      "archivo": "data\\raw\\nueva_loja_2024.json",
+      "filas": 366
+    },
+    {
+      "ciudad": "Santo Domingo",
+      "archivo": "data\\raw\\santo_domingo_2024.json",
+      "filas": 366
+    },
+    {
+      "ciudad": "Puerto Ayora",
+      "archivo": "data\\raw\\puerto_ayora_2024.json",
+      "filas": 366
+    }
+  ]
+}

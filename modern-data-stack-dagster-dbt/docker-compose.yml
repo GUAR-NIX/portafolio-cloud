@@ -1,0 +1,76 @@
+# Modern data stack local: MinIO (S3) + Dagster (webserver + daemon) con dbt-duckdb.
+# Memoria total limitada a ~7,5 GB.
+x-dagster: &dagster
+  build:
+    context: .
+    dockerfile: docker/Dockerfile
+  image: clima-mds:1.0
+  environment:
+    S3_ENDPOINT: minio:9000
+    S3_ACCESS_KEY: ${MINIO_ROOT_USER:-minio_local}
+    S3_SECRET_KEY: ${MINIO_ROOT_PASSWORD:-minio_local_clave}
+    BUCKET: ${BUCKET:-ghcn}
+    ANIOS: ${ANIOS:-2022,2023,2024,2025,2026}
+    RUTA_DUCKDB: /opt/almacen/clima.duckdb
+    DBT_TARGET: dev
+    TZ: America/Guayaquil
+  volumes:
+    - .:/opt/proyecto
+    - almacen:/opt/almacen
+    - dagster-home:/opt/dagster/home/datos
+  depends_on:
+    crear-bucket:
+      condition: service_completed_successfully
+
+services:
+  minio:
+    # MinIO ya no publica imágenes en Docker Hub: se compila desde el código fuente oficial (docker/minio)
+    image: minio-local:2025-10-15
+    build:
+      context: docker/minio
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minio_local}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minio_local_clave}
+    ports: ["9000:9000", "9001:9001"]
+    volumes: [minio-datos:/data]
+    mem_limit: 1g
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "http://localhost:9000/minio/health/live"]
+      interval: 5s
+      retries: 20
+
+  crear-bucket:
+    image: minio-local:2025-10-15
+    depends_on:
+      minio:
+        condition: service_healthy
+    entrypoint: >
+      sh -c "mc alias set local http://minio:9000 $${MINIO_ROOT_USER} $${MINIO_ROOT_PASSWORD}
+      && mc mb --ignore-existing local/$${BUCKET}
+      && mc ls local"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minio_local}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minio_local_clave}
+      BUCKET: ${BUCKET:-ghcn}
+    mem_limit: 128m
+
+  dagster-webserver:
+    <<: *dagster
+    command: >
+      sh -c "cd dbt_clima && dbt parse --profiles-dir . --quiet && cd ..
+      && dagster-webserver -h 0.0.0.0 -p 3000 -w workspace.yaml"
+    ports: ["3000:3000"]
+    mem_limit: 1536m
+
+  dagster-daemon:
+    <<: *dagster
+    command: >
+      sh -c "until [ -f dbt_clima/target/manifest.json ]; do sleep 3; done
+      && dagster-daemon run -w workspace.yaml"
+    # Las corridas se ejecutan en este contenedor (QueuedRunCoordinator): aquí va la RAM de DuckDB.
+    mem_limit: 5g
+
+volumes:
+  minio-datos:
+  almacen:
+  dagster-home:

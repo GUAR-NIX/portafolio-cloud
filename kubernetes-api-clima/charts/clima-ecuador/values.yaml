@@ -1,0 +1,53 @@
+api:
+  image:
+    repository: clima-api
+    tag: "1.0.0"
+    pullPolicy: IfNotPresent
+  # Solo se usa con el HPA desactivado; con HPA el Deployment no fija réplicas para que
+  # un `helm upgrade` no las devuelva a 1 en plena carga.
+  replicas: 1
+  # Segundos de drenaje en el preStop antes del SIGTERM (ver api-deployment.yaml).
+  drenajeSegundos: 10
+  # Medido en kind (reports/carga_cluster.json): 4 pods con limit de 500m sirvieron 476 sol./s,
+  # ~4,2 ms de CPU por solicitud. 200m de request ≈ 47 sol./s sostenidas por pod; el limit
+  # admite ráfagas de 2,5 veces el request antes del throttling.
+  resources:
+    requests: {cpu: 200m, memory: 160Mi}
+    limits: {cpu: 500m, memory: 384Mi}
+  hpa:
+    enabled: true
+    minReplicas: 1
+    maxReplicas: 4
+    # 60 % de 200m = 120m por pod (~28 sol./s). En reposo un pod usa 3m (1-2 %), así que las
+    # sondas y el raspado de Prometheus no disparan escalados; bajo carga sostenida un pod satura
+    # su limit (250 %) y el HPA pide el máximo en un solo paso. El 50 % de 50m anterior era 25m:
+    # cualquier ráfaga mínima lo cruzaba.
+    targetCPUUtilizationPercentage: 60
+    behavior:
+      scaleUp:
+        stabilizationWindowSeconds: 0
+        policies: [{type: Percent, value: 100, periodSeconds: 15}]
+      # Ventana de 60 s y como máximo un pod cada 30 s: evita subir y bajar con picos breves.
+      scaleDown:
+        stabilizationWindowSeconds: 60
+        policies: [{type: Pods, value: 1, periodSeconds: 30}]
+
+app:
+  image:
+    repository: clima-app
+    tag: "1.0.0"
+    pullPolicy: IfNotPresent
+  replicas: 1
+  resources:
+    requests: {cpu: 25m, memory: 128Mi}
+    limits: {cpu: 200m, memory: 384Mi}
+
+ingress:
+  enabled: false
+  className: nginx
+  host: clima.local
+
+serviceMonitor:
+  enabled: false
+  labels:
+    release: monitoreo

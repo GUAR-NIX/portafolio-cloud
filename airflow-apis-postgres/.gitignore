@@ -1,0 +1,22 @@
+# Logs de Airflow (se regeneran; una muestra queda en reports/logs/)
+/logs/
+# Datos crudos descargados con scripts/descargar_datos.py
+data/raw/
+# Entorno local
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+# Airflow genera estos si se corre fuera de Docker
+airflow.cfg
+airflow.db
+webserver_config.py
+standalone_admin_password.txt
+*.egg-info/
+.pytest_tmp*/
+.ipynb_checkpoints/
+.vscode/
+Thumbs.db
+desktop.ini

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "clima.nombre" . }}-config
+  labels:
+    {{- include "clima.etiquetas" . | nindent 4 }}
+data:
+  API_URL: http://{{ include "clima.nombre" . }}-api:8000
+

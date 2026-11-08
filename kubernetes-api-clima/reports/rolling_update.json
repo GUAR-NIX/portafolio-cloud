@@ -1,0 +1,50 @@
+{
+  "fecha_utc": "2026-10-26T12:48:02+00:00",
+  "estrategia": "RollingUpdate maxSurge=1 maxUnavailable=0, preStop con drenaje (Connection: close) + 10 s, 2 réplicas, carga directa al Service (ClusterIP)",
+  "revision_restaurada": 3,
+  "version_inicial": "1.0.0",
+  "upgrade_segundos": 16.8,
+  "version_tras_upgrade": "1.0.1",
+  "rollback_segundos": 16.4,
+  "version_tras_rollback": "1.0.0",
+  "upgrade_inicio_segundo": 19.7,
+  "rollback_inicio_segundo": 58.0,
+  "carga": {
+    "escenario": "rolling",
+    "objetivo": "http://clima-ecuador-api:8000",
+    "usuarios": 30,
+    "duracion_segundos": 150,
+    "procesos_locust": 2,
+    "solicitudes": 39842,
+    "errores": 0,
+    "tasa_error_pct": 0.0,
+    "solicitudes_por_segundo": 265.5,
+    "latencia_p50_ms": 70,
+    "latencia_p95_ms": 180,
+    "latencia_p99_ms": 240,
+    "latencia_maxima_ms": 462.8,
+    "por_endpoint": {
+      "/ciudades": {
+        "solicitudes": 5793,
+        "errores": 0,
+        "p50_ms": 66,
+        "p95_ms": 170
+      },
+      "/clima": {
+        "solicitudes": 17035,
+        "errores": 0,
+        "p50_ms": 72,
+        "p95_ms": 180
+      },
+      "/indicadores/{ciudad}": {
+        "solicitudes": 17014,
+        "errores": 0,
+        "p50_ms": 70,
+        "p95_ms": 170
+      }
+    },
+    "advertencia_cpu_locust": false,
+    "inicio_carga_unix_nodo": 1793018729,
+    "fin_carga_unix_nodo": 1793018877
+  }
+}

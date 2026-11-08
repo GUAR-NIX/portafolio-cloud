@@ -1,0 +1,7 @@
+# Equipo local (Windows, Python 3.14): pruebas puras, descarga de muestra, reporte y gráficos.
+# Airflow NO se instala aquí: corre en Docker (imagen oficial apache/airflow:3.3.2-python3.12).
+requests>=2.32
+psycopg2-binary>=2.9.11
+pandas>=2.2
+matplotlib>=3.9
+pytest>=8

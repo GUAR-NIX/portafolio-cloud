@@ -1,0 +1,63 @@
+{
+  "sentencia": "ALTER TABLE iceberg.wiki.pageviews_limpio SET PROPERTIES partitioning = ARRAY['idioma', 'hour(hora)']",
+  "consultas": {
+    "vistas_por_dia_e_idioma": [
+      {
+        "dia": "2026-07-18",
+        "idioma": "en",
+        "vistas": 138311252,
+        "filas": 7100654
+      },
+      {
+        "dia": "2026-07-18",
+        "idioma": "es",
+        "vistas": 8017495,
+        "filas": 518074
+      },
+      {
+        "dia": "2026-07-19",
+        "idioma": "en",
+        "vistas": 158941576,
+        "filas": 7146696
+      },
+      {
+        "dia": "2026-07-19",
+        "idioma": "es",
+        "vistas": 11399982,
+        "filas": 498089
+      }
+    ],
+    "top5_en_final": [
+      {
+        "titulo": "Lamine_Yamal",
+        "vistas": 480214
+      },
+      {
+        "titulo": "Shakira",
+        "vistas": 456707
+      },
+      {
+        "titulo": "Lionel_Messi",
+        "vistas": 273544
+      },
+      {
+        "titulo": "List_of_FIFA_World_Cup_finals",
+        "vistas": 203951
+      },
+      {
+        "titulo": "MetLife_Stadium",
+        "vistas": 173340
+      }
+    ]
+  },
+  "archivos_por_spec": [
+    {
+      "spec_id": 0,
+      "archivos": 96,
+      "filas": 15263513,
+      "mb": 161.0,
+      "ejemplo_particion": "{\"idioma\":\"en\",\"hora_day\":\"2026-07-18\",\"hora_hour\":null}"
+    }
+  ],
+  "ddl_despues": "CREATE TABLE iceberg.wiki.pageviews_limpio (\n   hora timestamp(6),\n   dominio varchar,\n   idioma varchar,\n   plataforma varchar,\n   titulo varchar COMMENT 'normalizado como MediaWiki',\n   vistas bigint,\n   lote varchar COMMENT 'lote de carga (trazabilidad)'\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/warehouse/wiki/pageviews_limpio_c3518ceb-590e-4eeb-a3e2-14d20daf7087',\n   partitioning = ARRAY['idioma','hour(hora)'],\n   target_max_file_size = '128MB'\n)"
+}

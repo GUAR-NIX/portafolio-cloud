@@ -1,0 +1,471 @@
+{
+  "anio_analisis": 2025,
+  "normal_referencia": "promedio 2022-2024 por estación y mes (no es una normal OMS de 30 años)",
+  "criterio_paises": "al menos 10 meses con anomalía y 3 estaciones por mes",
+  "paises_con_anomalia_anual": 39,
+  "anomalia_mediana_paises_c": -0.01,
+  "paises_mas_calidos": [
+    {
+      "codigo_pais": "IC",
+      "pais": "Iceland",
+      "anomalia_c": 1.25,
+      "meses": 12,
+      "estaciones": 4.0
+    },
+    {
+      "codigo_pais": "KG",
+      "pais": "Kyrgyzstan",
+      "anomalia_c": 1.17,
+      "meses": 12,
+      "estaciones": 8.0
+    },
+    {
+      "codigo_pais": "GL",
+      "pais": "Greenland [Denmark]",
+      "anomalia_c": 1.03,
+      "meses": 12,
+      "estaciones": 8.0
+    },
+    {
+      "codigo_pais": "FI",
+      "pais": "Finland",
+      "anomalia_c": 0.9,
+      "meses": 12,
+      "estaciones": 166.0
+    },
+    {
+      "codigo_pais": "SW",
+      "pais": "Sweden",
+      "anomalia_c": 0.87,
+      "meses": 12,
+      "estaciones": 212.0
+    },
+    {
+      "codigo_pais": "NO",
+      "pais": "Norway",
+      "anomalia_c": 0.85,
+      "meses": 12,
+      "estaciones": 124.0
+    },
+    {
+      "codigo_pais": "KZ",
+      "pais": "Kazakhstan",
+      "anomalia_c": 0.81,
+      "meses": 12,
+      "estaciones": 51.0
+    },
+    {
+      "codigo_pais": "PK",
+      "pais": "Pakistan",
+      "anomalia_c": 0.77,
+      "meses": 11,
+      "estaciones": 15.0
+    },
+    {
+      "codigo_pais": "UZ",
+      "pais": "Uzbekistan",
+      "anomalia_c": 0.72,
+      "meses": 12,
+      "estaciones": 16.0
+    },
+    {
+      "codigo_pais": "EN",
+      "pais": "Estonia",
+      "anomalia_c": 0.43,
+      "meses": 12,
+      "estaciones": 24.0
+    }
+  ],
+  "paises_mas_frios": [
+    {
+      "codigo_pais": "NL",
+      "pais": "Netherlands",
+      "anomalia_c": -0.27,
+      "meses": 12,
+      "estaciones": 43.0
+    },
+    {
+      "codigo_pais": "SP",
+      "pais": "Spain",
+      "anomalia_c": -0.27,
+      "meses": 12,
+      "estaciones": 162.0
+    },
+    {
+      "codigo_pais": "CA",
+      "pais": "Canada",
+      "anomalia_c": -0.29,
+      "meses": 12,
+      "estaciones": 957.0
+    },
+    {
+      "codigo_pais": "SZ",
+      "pais": "Switzerland",
+      "anomalia_c": -0.4,
+      "meses": 12,
+      "estaciones": 9.0
+    },
+    {
+      "codigo_pais": "RO",
+      "pais": "Romania",
+      "anomalia_c": -0.56,
+      "meses": 12,
+      "estaciones": 25.0
+    },
+    {
+      "codigo_pais": "TH",
+      "pais": "Thailand",
+      "anomalia_c": -0.6,
+      "meses": 12,
+      "estaciones": 12.0
+    },
+    {
+      "codigo_pais": "GM",
+      "pais": "Germany",
+      "anomalia_c": -0.64,
+      "meses": 12,
+      "estaciones": 438.0
+    },
+    {
+      "codigo_pais": "AM",
+      "pais": "Armenia",
+      "anomalia_c": -0.74,
+      "meses": 12,
+      "estaciones": 11.0
+    },
+    {
+      "codigo_pais": "AU",
+      "pais": "Austria",
+      "anomalia_c": -0.82,
+      "meses": 12,
+      "estaciones": 6.0
+    },
+    {
+      "codigo_pais": "SF",
+      "pais": "South Africa",
+      "anomalia_c": -0.85,
+      "meses": 11,
+      "estaciones": 27.0
+    }
+  ],
+  "anomalia_mensual_mas_alta": {
+    "mes_inicio": "2026-03-01 00:00:00",
+    "anomalia_estaciones": "2.4174780665290827",
+    "n": "9869",
+    "anomalia_paises": "0.17642745385298622"
+  },
+  "extremos_tmax_top10": [
+    {
+      "pais": "Iran",
+      "tmax_max_c": "51.6",
+      "estacion_tmax_max": "ABADAN",
+      "fecha_tmax_max": "2025-07-17",
+      "tmin_min_c": "-19.5",
+      "estacion_tmin_min": "ZANJAN",
+      "fecha_tmin_min": "2025-02-25",
+      "prcp_max_diaria_mm": "54.9",
+      "estacion_prcp_max": "SHIRAZ",
+      "fecha_prcp_max": "2025-02-13",
+      "estaciones": "29"
+    },
+    {
+      "pais": "United States",
+      "tmax_max_c": "51.1",
+      "estacion_tmax_max": "DEATH VALLEY NP",
+      "fecha_tmax_max": "2025-07-14",
+      "tmin_min_c": "-54.4",
+      "estacion_tmin_min": "N POLE 1N",
+      "fecha_tmin_min": "2025-12-29",
+      "prcp_max_diaria_mm": "355.3",
+      "estacion_prcp_max": "HARLINGEN 4.4 W",
+      "fecha_prcp_max": "2025-03-28",
+      "estaciones": "32907"
+    },
+    {
+      "pais": "Pakistan",
+      "tmax_max_c": "50.5",
+      "estacion_tmax_max": "SHAHBAZ AB",
+      "fecha_tmax_max": "2025-06-13",
+      "tmin_min_c": "-10.6",
+      "estacion_tmin_min": "SKARDU",
+      "fecha_tmin_min": "2025-01-13",
+      "prcp_max_diaria_mm": "163.3",
+      "estacion_prcp_max": "JINNAH INTL",
+      "fecha_prcp_max": "2025-08-20",
+      "estaciones": "26"
+    },
+    {
+      "pais": "Saudi Arabia",
+      "tmax_max_c": "49.9",
+      "estacion_tmax_max": "AL AHSA",
+      "fecha_tmax_max": "2025-07-28",
+      "tmin_min_c": "-5.0",
+      "estacion_tmin_min": "TURAIF",
+      "fecha_tmin_min": "2025-02-25",
+      "prcp_max_diaria_mm": "115.0",
+      "estacion_prcp_max": "GASSIM",
+      "fecha_prcp_max": "2025-12-18",
+      "estaciones": "26"
+    },
+    {
+      "pais": "Oman",
+      "tmax_max_c": "49.6",
+      "estacion_tmax_max": "FAHUD (AUT)",
+      "fecha_tmax_max": "2025-07-31",
+      "tmin_min_c": "2.3",
+      "estacion_tmin_min": "SAIQ",
+      "fecha_tmin_min": "2025-01-03",
+      "prcp_max_diaria_mm": "81.0",
+      "estacion_prcp_max": "QARN ALAM",
+      "fecha_prcp_max": "2025-08-20",
+      "estaciones": "25"
+    },
+    {
+      "pais": "Australia",
+      "tmax_max_c": "49.3",
+      "estacion_tmax_max": "GERALDTON AIRPORT",
+      "fecha_tmax_max": "2025-01-20",
+      "tmin_min_c": "-13.2",
+      "estacion_tmin_min": "THREDBO AWS",
+      "fecha_tmin_min": "2025-08-18",
+      "prcp_max_diaria_mm": "745.2",
+      "estacion_prcp_max": "PALUMA IVY COTTAGE",
+      "fecha_prcp_max": "2025-02-03",
+      "estaciones": "3815"
+    },
+    {
+      "pais": "Senegal",
+      "tmax_max_c": "49.1",
+      "estacion_tmax_max": "KEDOUGOU",
+      "fecha_tmax_max": "2025-03-18",
+      "tmin_min_c": "10.8",
+      "estacion_tmin_min": "PODOR",
+      "fecha_tmin_min": "2025-01-19",
+      "prcp_max_diaria_mm": "186.7",
+      "estacion_prcp_max": "KAOLACK",
+      "fecha_prcp_max": "2025-08-03",
+      "estaciones": "12"
+    },
+    {
+      "pais": "United Arab Emirates",
+      "tmax_max_c": "49.0",
+      "estacion_tmax_max": "AL AIN INTL",
+      "fecha_tmax_max": "2025-08-01",
+      "tmin_min_c": "7.4",
+      "estacion_tmin_min": "SHARJAH INTER. AIRP",
+      "fecha_tmin_min": "2025-01-12",
+      "prcp_max_diaria_mm": "3.0",
+      "estacion_prcp_max": "SHARJAH INTER. AIRP",
+      "fecha_prcp_max": "2025-02-02",
+      "estaciones": "4"
+    },
+    {
+      "pais": "Israel",
+      "tmax_max_c": "48.8",
+      "estacion_tmax_max": "ELAT",
+      "fecha_tmax_max": "2025-08-13",
+      "tmin_min_c": "-1.7",
+      "estacion_tmin_min": "HAR KENAAN",
+      "fecha_tmin_min": "2025-02-24",
+      "prcp_max_diaria_mm": "12.4",
+      "estacion_prcp_max": "BEN GURION",
+      "fecha_prcp_max": "2025-02-06",
+      "estaciones": "5"
+    },
+    {
+      "pais": "India",
+      "tmax_max_c": "48.8",
+      "estacion_tmax_max": "GANGANAGAR",
+      "fecha_tmax_max": "2025-06-13",
+      "tmin_min_c": "-4.2",
+      "estacion_tmin_min": "SRINAGAR",
+      "fecha_tmin_min": "2025-01-27",
+      "prcp_max_diaria_mm": "271.0",
+      "estacion_prcp_max": "PURNEA",
+      "fecha_prcp_max": "2025-08-04",
+      "estaciones": "152"
+    }
+  ],
+  "extremos_tmin_top10": [
+    {
+      "pais": "Antarctica",
+      "tmax_max_c": "13.5",
+      "estacion_tmax_max": "BASE MARAMBIO",
+      "fecha_tmax_max": "2025-01-22",
+      "tmin_min_c": "-80.2",
+      "estacion_tmin_min": "VOSTOK",
+      "fecha_tmin_min": "2025-07-09",
+      "prcp_max_diaria_mm": "44.0",
+      "estacion_prcp_max": "NOVOLAZAREVSKAJA",
+      "fecha_prcp_max": "2025-04-13",
+      "estaciones": "51"
+    },
+    {
+      "pais": "Russia",
+      "tmax_max_c": "40.7",
+      "estacion_tmax_max": "ZIMOVNIKI",
+      "fecha_tmax_max": "2025-07-14",
+      "tmin_min_c": "-58.7",
+      "estacion_tmin_min": "TEGJULTJA",
+      "fecha_tmin_min": "2025-01-01",
+      "prcp_max_diaria_mm": "128.0",
+      "estacion_prcp_max": "TIVJAKU",
+      "fecha_prcp_max": "2025-06-08",
+      "estaciones": "586"
+    },
+    {
+      "pais": "United States",
+      "tmax_max_c": "51.1",
+      "estacion_tmax_max": "DEATH VALLEY NP",
+      "fecha_tmax_max": "2025-07-14",
+      "tmin_min_c": "-54.4",
+      "estacion_tmin_min": "N POLE 1N",
+      "fecha_tmin_min": "2025-12-29",
+      "prcp_max_diaria_mm": "355.3",
+      "estacion_prcp_max": "HARLINGEN 4.4 W",
+      "fecha_prcp_max": "2025-03-28",
+      "estaciones": "32907"
+    },
+    {
+      "pais": "Canada",
+      "tmax_max_c": "41.3",
+      "estacion_tmax_max": "LYTTON RCS",
+      "fecha_tmax_max": "2025-08-26",
+      "tmin_min_c": "-52.5",
+      "estacion_tmin_min": "FARO A",
+      "fecha_tmin_min": "2025-12-23",
+      "prcp_max_diaria_mm": "215.2",
+      "estacion_prcp_max": "LENNARD ISLAND",
+      "fecha_prcp_max": "2025-04-07",
+      "estaciones": "1913"
+    },
+    {
+      "pais": "China",
+      "tmax_max_c": "47.0",
+      "estacion_tmax_max": "TURPAN",
+      "fecha_tmax_max": "2025-07-20",
+      "tmin_min_c": "-42.1",
+      "estacion_tmin_min": "HUMA",
+      "fecha_tmin_min": "2025-01-03",
+      "prcp_max_diaria_mm": "143.8",
+      "estacion_prcp_max": "GUANGZHOU",
+      "fecha_prcp_max": "2025-08-14",
+      "estaciones": "201"
+    },
+    {
+      "pais": "Mongolia",
+      "tmax_max_c": "38.8",
+      "estacion_tmax_max": "BAITAG",
+      "fecha_tmax_max": "2025-07-28",
+      "tmin_min_c": "-39.7",
+      "estacion_tmin_min": "ULAAN-GOM",
+      "fecha_tmin_min": "2025-01-15",
+      "prcp_max_diaria_mm": "69.0",
+      "estacion_prcp_max": "DASHBALBAR",
+      "fecha_prcp_max": "2025-08-12",
+      "estaciones": "41"
+    },
+    {
+      "pais": "Finland",
+      "tmax_max_c": "32.6",
+      "estacion_tmax_max": "OULUNSALO OULUN LENTOASEMA",
+      "fecha_tmax_max": "2025-07-31",
+      "tmin_min_c": "-39.4",
+      "estacion_tmin_min": "KITTILA LENTOASEMA",
+      "fecha_tmin_min": "2025-02-04",
+      "prcp_max_diaria_mm": "86.0",
+      "estacion_prcp_max": "RUOKOLAHTI KOTANIEMI SIITONEN",
+      "fecha_prcp_max": "2025-06-18",
+      "estaciones": "238"
+    },
+    {
+      "pais": "Fiji",
+      "tmax_max_c": "34.4",
+      "estacion_tmax_max": "Viwa",
+      "fecha_tmax_max": "2025-12-06",
+      "tmin_min_c": "-39.4",
+      "estacion_tmin_min": "Vanuabalavu",
+      "fecha_tmin_min": "2025-12-31",
+      "prcp_max_diaria_mm": "151.1",
+      "estacion_prcp_max": "Nausori",
+      "fecha_prcp_max": "2025-05-09",
+      "estaciones": "10"
+    },
+    {
+      "pais": "Tajikistan",
+      "tmax_max_c": "43.1",
+      "estacion_tmax_max": "KALAY-KHUMB",
+      "fecha_tmax_max": "2025-07-04",
+      "tmin_min_c": "-38.6",
+      "estacion_tmin_min": "MURGAB",
+      "fecha_tmin_min": "2025-01-14",
+      "prcp_max_diaria_mm": "41.0",
+      "estacion_prcp_max": "DANGARA",
+      "fecha_prcp_max": "2025-03-25",
+      "estaciones": "24"
+    },
+    {
+      "pais": "Greenland [Denmark]",
+      "tmax_max_c": "19.0",
+      "estacion_tmax_max": "NUUK",
+      "fecha_tmax_max": "2025-07-24",
+      "tmin_min_c": "-37.6",
+      "estacion_tmin_min": "DANMARKSHAVN",
+      "fecha_tmin_min": "2025-01-21",
+      "prcp_max_diaria_mm": "94.3",
+      "estacion_prcp_max": "ITTOQQORTOORMIIT",
+      "fecha_prcp_max": "2025-03-08",
+      "estaciones": "13"
+    }
+  ],
+  "linea_base_ingenua": {
+    "paises": 14,
+    "diferencia_abs_mediana_c": 0.09,
+    "diferencia_abs_max_c": 0.7,
+    "peor_pais": {
+      "codigo_pais": "CH",
+      "pais": "China",
+      "anomalia_estaciones_c": "0.0015825000275074275",
+      "anomalia_ingenua_c": "0.7035231181863324",
+      "estaciones": "155.0",
+      "diferencia_abs_c": "0.701940618158825"
+    }
+  },
+  "cobertura_ecuador": [
+    {
+      "anio": 2022,
+      "estaciones": 10,
+      "dias_estacion_tmax": 1172,
+      "dias_estacion_tmin": 1019,
+      "dias_estacion_prcp": 774
+    },
+    {
+      "anio": 2023,
+      "estaciones": 9,
+      "dias_estacion_tmax": 1192,
+      "dias_estacion_tmin": 1088,
+      "dias_estacion_prcp": 871
+    },
+    {
+      "anio": 2024,
+      "estaciones": 9,
+      "dias_estacion_tmax": 621,
+      "dias_estacion_tmin": 619,
+      "dias_estacion_prcp": 458
+    },
+    {
+      "anio": 2025,
+      "estaciones": 9,
+      "dias_estacion_tmax": 274,
+      "dias_estacion_tmin": 263,
+      "dias_estacion_prcp": 164
+    },
+    {
+      "anio": 2026,
+      "estaciones": 7,
+      "dias_estacion_tmax": 1,
+      "dias_estacion_tmin": 1,
+      "dias_estacion_prcp": 516
+    }
+  ]
+}

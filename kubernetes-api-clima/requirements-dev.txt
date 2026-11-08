@@ -1,0 +1,8 @@
+-r requirements.txt
+httpx==0.28.1
+pytest==8.4.2
+ruff==0.14.0
+matplotlib==3.10.7
+locust==2.41.5
+PyYAML==6.0.3
+streamlit==1.50.0

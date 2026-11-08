@@ -1,0 +1,120 @@
+# Lakehouse local: MinIO (S3) + Nessie (catálogo Iceberg REST con ramas) + Trino (motor SQL) + cargador Python.
+# Todas las credenciales son locales y de ejemplo (minioadmin). Memoria total limitada a ~6,5 GB.
+name: lakehouse-iceberg
+
+x-s3: &s3
+  AWS_ACCESS_KEY_ID: minioadmin
+  AWS_SECRET_ACCESS_KEY: minioadmin
+  AWS_REGION: us-east-1
+
+services:
+  minio:
+    # Compilado desde el código fuente oficial (MinIO ya no publica imágenes en Docker Hub): ver docker/minio/
+    build: ./docker/minio
+    image: minio-local:2025-10-15
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports: ["9000:9000", "9001:9001"]
+    volumes: ["minio-datos:/data"]
+    mem_limit: 1g
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  minio-init:
+    image: minio-local:2025-10-15
+    depends_on:
+      minio: {condition: service_healthy}
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - mc alias set local http://minio:9000 minioadmin minioadmin && mc mb -p local/lakehouse && mc ls local
+    mem_limit: 128m
+    restart: "no"
+
+  nessie:
+    image: ghcr.io/projectnessie/nessie:0.108.8
+    depends_on:
+      minio-init: {condition: service_completed_successfully}
+    environment:
+      # Historial de commits persistente (RocksDB en un volumen)
+      nessie.version.store.type: ROCKSDB
+      nessie.version.store.persist.rocks.database-path: /nessie/datos
+      # Nessie como catálogo Iceberg REST: escribe los metadatos en MinIO
+      nessie.catalog.default-warehouse: lakehouse
+      nessie.catalog.warehouses.lakehouse.location: s3://lakehouse/warehouse/
+      nessie.catalog.service.s3.default-options.endpoint: http://minio:9000/
+      nessie.catalog.service.s3.default-options.path-style-access: "true"
+      nessie.catalog.service.s3.default-options.region: us-east-1
+      nessie.catalog.service.s3.default-options.access-key: urn:nessie-secret:quarkus:nessie.catalog.secrets.access-key
+      nessie.catalog.secrets.access-key.name: minioadmin
+      nessie.catalog.secrets.access-key.secret: minioadmin
+      nessie.server.authentication.enabled: "false"
+      JAVA_OPTS_APPEND: -Xms256m -Xmx640m
+    ports: ["19120:19120"]
+    volumes: ["nessie-datos:/nessie"]
+    user: root
+    mem_limit: 1g
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:9000/q/health/ready || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  nessie-init:
+    # Deja creadas la rama `dev` y la etiqueta `historia` (Trino tiene un catálogo fijo apuntando a cada una)
+    image: python:3.12-slim
+    depends_on:
+      nessie: {condition: service_healthy}
+    volumes: ["./lakehouse:/app/lakehouse:ro"]
+    working_dir: /app
+    command: ["python", "-c", "from lakehouse.nessie import Nessie; n = Nessie('http://nessie:19120'); n.asegurar_rama('dev'); n.asegurar_etiqueta('historia'); print(n.ramas())"]
+    mem_limit: 128m
+    restart: "no"
+
+  trino:
+    image: trinodb/trino:483
+    depends_on:
+      nessie-init: {condition: service_completed_successfully}
+    environment: *s3
+    ports: ["8080:8080"]
+    volumes:
+      - ./trino/catalog:/etc/trino/catalog:ro
+      - ./trino/jvm.config:/etc/trino/jvm.config:ro
+      - ./trino/config.properties:/etc/trino/config.properties:ro
+    mem_limit: 3g
+    healthcheck:
+      test: ["CMD", "/usr/lib/trino/bin/health-check"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+
+  cargador:
+    # Herramientas en Python (descarga, carga con PyIceberg, demos, análisis). Se usa con `docker compose run`.
+    build: ./cargador
+    image: lakehouse-cargador:1.0
+    profiles: ["herramientas"]
+    depends_on:
+      trino: {condition: service_healthy}
+    environment:
+      <<: *s3
+      NESSIE_URI: http://nessie:19120
+      TRINO_HOST: trino
+      S3_ENDPOINT: http://minio:9000
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - ./lakehouse:/app/lakehouse:ro
+      - ./scripts:/app/scripts:ro
+      - ./sql:/app/sql:ro
+      - ./tests:/app/tests:ro
+      - ./pyproject.toml:/app/pyproject.toml:ro
+      - ./reports:/app/reports
+      - ./data/pageviews:/app/data/pageviews   # dumps filtrados (~3 MB por hora), en el host
+    working_dir: /app
+    mem_limit: 2g
+
+volumes:
+  minio-datos:
+  nessie-datos:

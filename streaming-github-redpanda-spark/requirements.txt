@@ -1,0 +1,3 @@
+# Todo corre en la imagen de Docker (Python 3.11): ver requirements-spark.txt.
+# Los scripts del anfitrión (scripts/descargar_datos.py, scripts/orquestar.py) solo usan la biblioteca estándar.
+-r requirements-spark.txt

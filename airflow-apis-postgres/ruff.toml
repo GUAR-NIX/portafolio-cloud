@@ -1,0 +1,9 @@
+line-length = 120
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E402"]          # sys.path / matplotlib.use antes de algunos imports en scripts
+
+[lint.isort]
+known-first-party = ["ingesta"]

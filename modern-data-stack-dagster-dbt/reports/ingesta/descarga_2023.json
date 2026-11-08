@@ -1,0 +1,11 @@
+{
+  "anio": "2023",
+  "url": "https://noaa-ghcn-pds.s3.amazonaws.com/csv.gz/by_year/2023.csv.gz",
+  "etag": "b3105b1e496ce6c0d497c8fde40cf339",
+  "bytes_csv_gz": 176017298,
+  "bytes_csv_descomprimido": 1376338331,
+  "bytes_descargados_en_esta_corrida": 176017298,
+  "reutilizado_de_cache": false,
+  "segundos_descarga": 23.3,
+  "segundos_medir_descomprimido": 4.3
+}

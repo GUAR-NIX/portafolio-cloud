@@ -1,0 +1,39 @@
+{{- if .Values.ingress.enabled }}
+# Dos Ingress: el de la API reescribe /api/<ruta> a /<ruta>; el de Streamlit no debe reescribir.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "clima.nombre" . }}-api
+  labels:
+    {{- include "clima.etiquetas" . | nindent 4 }}
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: {{ .Values.ingress.className }}
+  rules:
+    - host: {{ .Values.ingress.host }}
+      http:
+        paths:
+          - path: /api(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service: {name: {{ include "clima.nombre" . }}-api, port: {number: 8000}}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "clima.nombre" . }}-app
+  labels:
+    {{- include "clima.etiquetas" . | nindent 4 }}
+spec:
+  ingressClassName: {{ .Values.ingress.className }}
+  rules:
+    - host: {{ .Values.ingress.host }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service: {name: {{ include "clima.nombre" . }}-app, port: {number: 8501}}
+{{- end }}

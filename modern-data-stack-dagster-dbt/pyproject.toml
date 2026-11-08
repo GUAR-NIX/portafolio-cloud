@@ -1,0 +1,20 @@
+[project]
+name = "clima-mds"
+version = "1.0.0"
+description = "Modern data stack local (Dagster + dbt + DuckDB + MinIO) sobre NOAA GHCN-Daily"
+requires-python = ">=3.11,<3.13"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+src = ["src"]
+extend-exclude = ["dbt_clima/target", "terraform"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q -p no:cacheprovider"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::UserWarning"]

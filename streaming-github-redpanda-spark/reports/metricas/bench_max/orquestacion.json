@@ -1,0 +1,15 @@
+{
+  "corrida": "bench_max",
+  "desde": "2025-09-17T12:00:00Z",
+  "hasta": "2025-09-17T18:00:00Z",
+  "factor": 0.0,
+  "trigger_s": 3,
+  "kills": [],
+  "inicio": "2026-10-21T15:50:12.369642+00:00",
+  "ts_productor_inicio": 1792597835.4320073,
+  "ts_productor_fin": 1792597869.586446,
+  "ts_plata_alcanzada": 1792597914.6056402,
+  "fin": "2026-10-21T15:53:05.673655+00:00",
+  "exactamente_una_vez": true,
+  "terminada": true
+}

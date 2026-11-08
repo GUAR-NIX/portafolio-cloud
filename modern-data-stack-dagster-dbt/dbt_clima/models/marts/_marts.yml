@@ -1,0 +1,67 @@
+version: 2
+
+models:
+  - name: mart_clima_mensual_estacion
+    description: Clima mensual por estación con anomalía de temperatura media frente a la normal 2022-2024.
+    data_tests:
+      - combinacion_unica:
+          arguments:
+            columnas: [id_estacion, anio, mes]
+    columns:
+      - name: id_estacion
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('int_estaciones')
+                field: id_estacion
+              config:
+                # estaciones nuevas aparecen en los datos antes que en ghcnd-stations.txt: avisar, no detener
+                warn_if: ">0"
+                error_if: ">100"
+      - name: tmedia_c
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: -80, maximo: 50}
+      - name: anomalia_tmedia_c
+        description: tmedia_c menos tmedia_normal_c, solo en meses completos (al menos 20 días con TMAX y TMIN).
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: -25, maximo: 25}
+      - name: prcp_total_mm
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: 0, maximo: 15000}
+  - name: mart_clima_mensual_pais
+    description: Indicadores mensuales por país (promedio simple de estaciones con mes completo).
+    data_tests:
+      - combinacion_unica:
+          arguments:
+            columnas: [codigo_pais, anio, mes]
+    columns:
+      - name: codigo_pais
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_ghcn__paises')
+                field: codigo_pais
+      - name: anomalia_tmedia_c
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: -15, maximo: 15}
+  - name: mart_extremos_pais_anual
+    description: Máxima, mínima y lluvia diaria extremas por país y año, con estación y fecha.
+    data_tests:
+      - combinacion_unica:
+          arguments:
+            columnas: [codigo_pais, anio]
+    columns:
+      - name: tmax_max_c
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: -90, maximo: 60}
+      - name: tmin_min_c
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: -95, maximo: 50}

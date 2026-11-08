@@ -1,0 +1,16 @@
+tipo,eventos,pct,max_en_5_min,media_en_5_min
+PushEvent,7098205.0,62.32,11153,8263.0
+CreateEvent,1366480.0,12.0,2321,1591.0
+PullRequestEvent,843922.0,7.41,1562,982.0
+IssueCommentEvent,471391.0,4.14,1171,549.0
+WatchEvent,355364.0,3.12,712,414.0
+DeleteEvent,293150.0,2.57,657,341.0
+PullRequestReviewEvent,279226.0,2.45,500,325.0
+IssuesEvent,212185.0,1.86,764,247.0
+PullRequestReviewCommentEvent,207360.0,1.82,436,241.0
+ForkEvent,98567.0,0.87,185,115.0
+ReleaseEvent,62460.0,0.55,629,73.0
+MemberEvent,41595.0,0.37,95,48.0
+PublicEvent,39213.0,0.34,114,46.0
+GollumEvent,11043.0,0.1,43,13.0
+CommitCommentEvent,9447.0,0.08,33,11.0

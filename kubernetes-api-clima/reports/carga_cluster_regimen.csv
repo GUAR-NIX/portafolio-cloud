@@ -1,0 +1,5 @@
+escenario,segundos,solicitudes_por_segundo_locust,errores_locust,p50_ms_prometheus,p95_ms_prometheus,p99_ms_prometheus
+fijo-1,59,76.0,0,449,940,992
+fijo-4,58,522.2,0,44,108,142
+hpa,239,134.5,0,289,479,496
+hpa-ingress,239,399.5,0,18,372,478

@@ -1,0 +1,26 @@
+# Instancia de Dagster: almacenamiento SQLite en el volumen DAGSTER_HOME (suficiente para una PC).
+# Una corrida a la vez: DuckDB admite un solo escritor y así la RAM queda acotada.
+run_coordinator:
+  module: dagster._core.run_coordinator
+  class: QueuedRunCoordinator
+  config:
+    max_concurrent_runs: 1
+run_monitoring:
+  enabled: true
+  max_resume_run_attempts: 0
+telemetry:
+  enabled: false
+# Todo el estado de la instancia vive en el volumen dagster-home (sobrevive a reinicios de la PC).
+storage:
+  sqlite:
+    base_dir: /opt/dagster/home/datos/almacen
+local_artifact_storage:
+  module: dagster._core.storage.root
+  class: LocalArtifactStorage
+  config:
+    base_dir: /opt/dagster/home/datos/artefactos
+compute_logs:
+  module: dagster._core.storage.local_compute_log_manager
+  class: LocalComputeLogManager
+  config:
+    base_dir: /opt/dagster/home/datos/logs

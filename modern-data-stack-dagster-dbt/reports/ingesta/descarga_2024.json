@@ -1,0 +1,11 @@
+{
+  "anio": "2024",
+  "url": "https://noaa-ghcn-pds.s3.amazonaws.com/csv.gz/by_year/2024.csv.gz",
+  "etag": "d47691981db47e8a2432d95b232cec7f",
+  "bytes_csv_gz": 176504452,
+  "bytes_csv_descomprimido": 1383355743,
+  "bytes_descargados_en_esta_corrida": 176504452,
+  "reutilizado_de_cache": false,
+  "segundos_descarga": 14.2,
+  "segundos_medir_descomprimido": 4.6
+}

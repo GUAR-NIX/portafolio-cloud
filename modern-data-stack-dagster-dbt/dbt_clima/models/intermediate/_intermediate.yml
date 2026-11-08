@@ -1,0 +1,74 @@
+version: 2
+
+models:
+  - name: int_observaciones_diarias
+    description: Una fila por estación y día; TMAX, TMIN y PRCP válidas (QFLAG vacía) en columnas.
+    data_tests:
+      - combinacion_unica:
+          arguments:
+            columnas: [id_estacion, fecha]
+      - cumple_expresion:
+          arguments:
+            expresion: "tmax_c >= tmin_c or tmax_c is null or tmin_c is null"
+          config:
+            severity: warn   # NOAA no marca todas las inversiones leves; se vigila sin detener el pipeline
+    columns:
+      - name: id_estacion
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('int_estaciones')
+                field: id_estacion
+              config:
+                # estaciones nuevas aparecen en los datos antes que en ghcnd-stations.txt: avisar, no detener
+                warn_if: ">0"
+                error_if: ">1000"
+      - name: fecha
+        data_tests: [not_null]
+      - name: tmax_c
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: -90, maximo: 60}
+      - name: tmin_c
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: -95, maximo: 50}
+      - name: prcp_mm
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: 0, maximo: 1900}   # récord mundial en 24 h: 1825 mm (La Reunión, 1966)
+  - name: int_estaciones
+    description: Estaciones con el nombre de su país.
+    columns:
+      - name: id_estacion
+        data_tests: [unique, not_null]
+      - name: codigo_pais
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_ghcn__paises')
+                field: codigo_pais
+  - name: int_clima_mensual_estacion
+    description: Agregado mensual por estación (días con dato, medias, totales y extremos).
+    data_tests:
+      - combinacion_unica:
+          arguments:
+            columnas: [id_estacion, anio, mes]
+    columns:
+      - name: mes
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+                quote: false
+      - name: dias_temp
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: 0, maximo: 31}
+  - name: int_normal_mensual_estacion
+    description: Normal de referencia (promedio 2022-2024 de los meses completos) por estación y mes.
+    data_tests:
+      - combinacion_unica:
+          arguments:
+            columnas: [id_estacion, mes]

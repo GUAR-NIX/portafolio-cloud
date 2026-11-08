@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "clima.nombre" . }}-api
+  labels:
+    {{- include "clima.etiquetas" . | nindent 4 }}
+    app.kubernetes.io/component: api
+spec:
+  selector:
+    app.kubernetes.io/name: {{ include "clima.nombre" . }}
+    app.kubernetes.io/component: api
+  ports:
+    - {name: http, port: 8000, targetPort: http}
+

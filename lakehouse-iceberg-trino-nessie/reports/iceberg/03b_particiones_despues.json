@@ -1,0 +1,92 @@
+{
+  "consultas_viejas_mismo_resultado": {
+    "vistas_por_dia_e_idioma": true,
+    "top5_en_final": true
+  },
+  "consultas": {
+    "vistas_por_dia_e_idioma": [
+      {
+        "dia": "2026-07-18",
+        "idioma": "en",
+        "vistas": 138311252,
+        "filas": 7100654
+      },
+      {
+        "dia": "2026-07-18",
+        "idioma": "es",
+        "vistas": 8017495,
+        "filas": 518074
+      },
+      {
+        "dia": "2026-07-19",
+        "idioma": "en",
+        "vistas": 158941576,
+        "filas": 7146696
+      },
+      {
+        "dia": "2026-07-19",
+        "idioma": "es",
+        "vistas": 11399982,
+        "filas": 498089
+      }
+    ],
+    "top5_en_final": [
+      {
+        "titulo": "Lamine_Yamal",
+        "vistas": 480214
+      },
+      {
+        "titulo": "Shakira",
+        "vistas": 456707
+      },
+      {
+        "titulo": "Lionel_Messi",
+        "vistas": 273544
+      },
+      {
+        "titulo": "List_of_FIFA_World_Cup_finals",
+        "vistas": 203951
+      },
+      {
+        "titulo": "MetLife_Stadium",
+        "vistas": 173340
+      }
+    ]
+  },
+  "archivos_por_spec": [
+    {
+      "spec_id": 0,
+      "archivos": 96,
+      "filas": 15263513,
+      "mb": 161.0,
+      "ejemplo_particion": "{\"idioma\":\"en\",\"hora_day\":\"2026-07-18\",\"hora_hour\":null}"
+    },
+    {
+      "spec_id": 1,
+      "archivos": 48,
+      "filas": 7565376,
+      "mb": 80.1,
+      "ejemplo_particion": "{\"idioma\":\"en\",\"hora_day\":null,\"hora_hour\":495696}"
+    }
+  ],
+  "lectura_una_hora": {
+    "2026-07-19": {
+      "physicalInputBytes": 3767311,
+      "processedRows": 353430,
+      "ms_mediana": 340
+    },
+    "2026-07-20": {
+      "physicalInputBytes": 3760033,
+      "processedRows": 352839,
+      "ms_mediana": 279
+    }
+  },
+  "specs": [
+    {
+      "spec_id": 1
+    },
+    {
+      "spec_id": 0
+    }
+  ]
+}

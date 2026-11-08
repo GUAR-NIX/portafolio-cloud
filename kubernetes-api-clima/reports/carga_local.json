@@ -1,0 +1,13 @@
+{
+  "entorno": "Uvicorn con un proceso, sin contenedor",
+  "usuarios_concurrentes": 50,
+  "duracion_segundos": 30,
+  "solicitudes": 11531,
+  "fallos": 0,
+  "solicitudes_por_segundo": 410.64,
+  "latencia_mediana_ms": 85,
+  "latencia_p95_ms": 110,
+  "latencia_maxima_ms": 161.79,
+  "hpa_verificado": false,
+  "motivo_hpa_no_verificado": "Docker Desktop no levantó el motor en esta ejecución."
+}

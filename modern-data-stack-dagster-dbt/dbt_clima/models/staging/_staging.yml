@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: stg_ghcn__observaciones
+    description: Observaciones de TMAX, TMIN y PRCP con tipos y unidades físicas (°C y mm). Vista sobre el Parquet de MinIO.
+    columns:
+      - name: id_estacion
+        data_tests: [not_null]
+      - name: fecha
+        data_tests: [not_null]
+      - name: elemento
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["TMAX", "TMIN", "PRCP"]
+      - name: bandera_calidad
+        description: QFLAG de NOAA (D duplicado, G brecha, I consistencia interna, K racha, L multidía, M mensual, N naive, O atípico, R rango, S espacial, T temporal, W viento, X límites, Z Datzilla).
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["D", "G", "I", "K", "L", "M", "N", "O", "R", "S", "T", "W", "X", "Z"]
+  - name: stg_ghcn__estaciones
+    description: Catálogo de estaciones con coordenadas y elevación.
+    columns:
+      - name: id_estacion
+        data_tests: [unique, not_null]
+      - name: latitud
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: -90, maximo: 90}
+      - name: longitud
+        data_tests:
+          - rango_fisico:
+              arguments: {minimo: -180, maximo: 180}
+  - name: stg_ghcn__paises
+    description: Países (códigos FIPS de 2 letras que usa NOAA).
+    columns:
+      - name: codigo_pais
+        data_tests: [unique, not_null]

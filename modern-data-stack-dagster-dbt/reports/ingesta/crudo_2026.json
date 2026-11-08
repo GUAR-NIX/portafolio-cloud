@@ -1,0 +1,34 @@
+{
+  "anio": "2026",
+  "destino": "s3://ghcn/crudo/ghcn_diario/anio=2026/datos.parquet",
+  "filas": 26178186,
+  "estaciones": 39717,
+  "bytes_parquet": 25125402,
+  "segundos_conversion": 20.4,
+  "segundos_controles": 0.4,
+  "simular_datos_malos": false,
+  "controles": {
+    "filas_minimas": {
+      "aprobado": true,
+      "filas": 26178186,
+      "estaciones": 39717
+    },
+    "fechas_dentro_del_anio": {
+      "aprobado": true,
+      "fecha_min": 20260101,
+      "fecha_max": 20261022
+    },
+    "claves_sin_nulos": {
+      "aprobado": true,
+      "filas_con_nulos": 0
+    },
+    "elementos_basicos_presentes": {
+      "aprobado": true,
+      "presentes": "PRCP, TMAX, TMIN"
+    },
+    "temperatura_en_rango_fisico": {
+      "aprobado": true,
+      "filas_fuera_de_rango": 0
+    }
+  }
+}

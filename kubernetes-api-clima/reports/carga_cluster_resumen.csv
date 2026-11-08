@@ -1,0 +1,5 @@
+escenario,replicas,objetivo,usuarios,duracion_segundos,solicitudes,errores,tasa_error_pct,solicitudes_por_segundo,latencia_p50_ms,latencia_p95_ms,latencia_p99_ms,latencia_maxima_ms
+fijo-1,1 fija(s),http://clima-ecuador-api:8000,50,120,8237,0,0.0,68.5,720,970,1100,1456.3
+fijo-4,4 fija(s),http://clima-ecuador-api:8000,50,120,57172,0,0.0,476.3,70,140,160,249.3
+hpa,HPA 1→4,http://clima-ecuador-api:8000,50,300,39658,0,0.0,132.2,350,460,500,708.2
+hpa-ingress,HPA 1→4,http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api,50,300,109115,0,0.0,363.7,27,370,460,829.5

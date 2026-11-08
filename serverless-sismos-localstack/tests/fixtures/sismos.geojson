@@ -1,0 +1,10 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","id":"ec-fuerte","properties":{"mag":5.6,"place":"Costa de Ecuador","time":1704067200000,"updated":1704067300000,"url":"https://earthquake.usgs.gov/earthquakes/eventpage/ec-fuerte"},"geometry":{"type":"Point","coordinates":[-80.0,-1.5,25.0]}},
+    {"type":"Feature","id":"ec-suave","properties":{"mag":3.2,"place":"Quito, Ecuador","time":1704068200000,"updated":1704068300000,"url":"https://earthquake.usgs.gov/earthquakes/eventpage/ec-suave"},"geometry":{"type":"Point","coordinates":[-78.5,-0.2,10.0]}},
+    {"type":"Feature","id":"lejano","properties":{"mag":6.5,"place":"Japón","time":1704069200000,"updated":1704069300000,"url":"https://earthquake.usgs.gov/earthquakes/eventpage/lejano"},"geometry":{"type":"Point","coordinates":[139.7,35.7,30.0]}},
+    {"type":"Feature","id":"invalido","properties":{"mag":12.0,"place":"Dato inválido","time":1704070200000,"updated":1704070300000,"url":"https://example.invalid"},"geometry":{"type":"Point","coordinates":[-78.5,-0.2,10.0]}}
+  ]
+}
+

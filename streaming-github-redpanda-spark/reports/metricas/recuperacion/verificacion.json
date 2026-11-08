@@ -1,0 +1,59 @@
+{
+  "corrida": "recuperacion",
+  "productor": {
+    "enviados": 2911774,
+    "originales": 2882926,
+    "ids_unicos": 2882926,
+    "duplicados": 28848,
+    "tardios_dentro_watermark": 2844,
+    "tardios_fuera_watermark": 2826
+  },
+  "kafka_mensajes": 2911774,
+  "bronce": {
+    "filas": 2911774,
+    "offsets_unicos": 2911774,
+    "duplicados": 0,
+    "diferencia_vs_enviados": 0
+  },
+  "plata": {
+    "filas": 2882926,
+    "ids_unicos": 2882926,
+    "duplicados": 0,
+    "reenvios_que_pasaron": 12,
+    "tardios_dentro": 2844,
+    "tardios_fuera": 2826,
+    "perdidos_vs_productor": 0
+  },
+  "oro_actividad_5min": {
+    "ultima_ventana_cerrada": "2025-09-17 17:45:00",
+    "ventanas": 3195,
+    "ventanas_duplicadas": 0,
+    "eventos_en_plata": 2841996,
+    "eventos_en_oro": 2841996,
+    "diferencia": 0,
+    "ventanas_con_diferencia": 0,
+    "ventanas_oro_mayor_que_plata": 0,
+    "tardios_fuera_watermark_en_esas_ventanas": 2777
+  },
+  "oro_repos_hora": {
+    "ultima_ventana_cerrada": "2025-09-17 17:00:00",
+    "ventanas": 1248226,
+    "ventanas_duplicadas": 0,
+    "eventos_en_plata": 2718412,
+    "eventos_en_oro": 2718409,
+    "diferencia": 3,
+    "ventanas_con_diferencia": 3,
+    "ventanas_oro_mayor_que_plata": 0,
+    "tardios_fuera_watermark_en_esas_ventanas": 2657
+  },
+  "oro_lenguajes_hora": {
+    "filas": 2234
+  },
+  "oro_picos_actividad": {
+    "filas": 61
+  },
+  "oro_picos_repos": {
+    "filas": 18
+  },
+  "exactamente_una_vez": true
+}

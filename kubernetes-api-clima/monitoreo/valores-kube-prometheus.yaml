@@ -1,0 +1,43 @@
+# Perfil reducido de kube-prometheus-stack para un clúster kind en una laptop.
+# Solo se conserva lo que usa el dashboard: Prometheus, Grafana y kube-state-metrics.
+alertmanager: {enabled: false}
+nodeExporter: {enabled: false}
+defaultRules: {create: false}
+kubeEtcd: {enabled: false}
+kubeScheduler: {enabled: false}
+kubeControllerManager: {enabled: false}
+kubeProxy: {enabled: false}
+
+prometheusOperator:
+  resources:
+    requests: {cpu: 20m, memory: 64Mi}
+    limits: {memory: 192Mi}
+
+prometheus:
+  prometheusSpec:
+    retention: 6h
+    scrapeInterval: 15s
+    evaluationInterval: 30s
+    resources:
+      requests: {cpu: 100m, memory: 384Mi}
+      limits: {memory: 1Gi}
+
+kube-state-metrics:
+  resources:
+    requests: {cpu: 10m, memory: 32Mi}
+    limits: {memory: 128Mi}
+
+grafana:
+  defaultDashboardsEnabled: false
+  # Acceso anónimo de solo lectura: evita manejar contraseñas para ver el dashboard en local.
+  grafana.ini:
+    auth.anonymous:
+      enabled: true
+      org_role: Viewer
+  resources:
+    requests: {cpu: 50m, memory: 128Mi}
+    limits: {memory: 384Mi}
+  sidecar:
+    resources:
+      requests: {cpu: 10m, memory: 32Mi}
+      limits: {memory: 128Mi}

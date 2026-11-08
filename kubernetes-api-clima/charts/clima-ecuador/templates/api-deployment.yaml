@@ -1,0 +1,66 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "clima.nombre" . }}-api
+  labels:
+    {{- include "clima.etiquetas" . | nindent 4 }}
+    app.kubernetes.io/component: api
+spec:
+  {{- if not .Values.api.hpa.enabled }}
+  replicas: {{ .Values.api.replicas }}
+  {{- end }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: {maxUnavailable: 0, maxSurge: 1}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "clima.nombre" . }}
+      app.kubernetes.io/component: api
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{ include "clima.nombre" . }}
+        app.kubernetes.io/component: api
+    spec:
+      # Drenaje (preStop) + cierre ordenado de Uvicorn deben caber dentro del período de gracia.
+      terminationGracePeriodSeconds: {{ add .Values.api.drenajeSegundos 20 }}
+      containers:
+        - name: api
+          image: "{{ .Values.api.image.repository }}:{{ .Values.api.image.tag }}"
+          imagePullPolicy: {{ .Values.api.image.pullPolicy }}
+          env:
+            - {name: VERSION_APP, value: {{ .Values.api.image.tag | quote }}}
+          ports:
+            - {name: http, containerPort: 8000}
+          readinessProbe:
+            httpGet: {path: /listo, port: http}
+            initialDelaySeconds: 3
+            periodSeconds: 5
+            timeoutSeconds: 2
+          livenessProbe:
+            httpGet: {path: /salud, port: http}
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            # Con el CPU saturado (throttling) el timeout de 1 s por defecto reinicia pods sanos.
+            timeoutSeconds: 3
+            failureThreshold: 3
+          lifecycle:
+            # 1) /drenar: las respuestas llevan `Connection: close` y los clientes keep-alive se mudan
+            #    a otro pod; 2) la espera deja que kube-proxy retire el Endpoint antes del SIGTERM.
+            preStop:
+              exec:
+                command:
+                  - sh
+                  - -c
+                  - >-
+                    python -c "import urllib.request as u;
+                    u.urlopen(u.Request('http://127.0.0.1:8000/drenar', method='POST'), timeout=2)";
+                    sleep {{ .Values.api.drenajeSegundos }}
+          resources:
+            {{- toYaml .Values.api.resources | nindent 12 }}
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+            capabilities: {drop: ["ALL"]}
+

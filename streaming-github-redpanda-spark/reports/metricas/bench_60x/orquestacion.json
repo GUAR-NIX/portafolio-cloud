@@ -1,0 +1,15 @@
+{
+  "corrida": "bench_60x",
+  "desde": "2025-09-17T12:00:00Z",
+  "hasta": "2025-09-17T18:00:00Z",
+  "factor": 60.0,
+  "trigger_s": 3,
+  "kills": [],
+  "inicio": "2026-10-21T15:37:40.641487+00:00",
+  "ts_productor_inicio": 1792597083.8442676,
+  "ts_productor_fin": 1792597480.8193643,
+  "ts_plata_alcanzada": 1792597490.8277316,
+  "fin": "2026-10-21T15:45:41.866553+00:00",
+  "exactamente_una_vez": true,
+  "terminada": true
+}

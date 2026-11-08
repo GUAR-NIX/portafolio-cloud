@@ -1,0 +1,3 @@
+# CI: mismo Airflow que la imagen de Docker (instalado con su archivo de restricciones en el workflow)
+pytest>=8,<10
+ruff>=0.6

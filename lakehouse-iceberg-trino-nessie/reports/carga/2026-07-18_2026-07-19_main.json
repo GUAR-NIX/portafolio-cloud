@@ -1,0 +1,770 @@
+[
+ {
+  "hora": "2026-07-18T00:00",
+  "rama": "main",
+  "lineas": 325802,
+  "espera_descarga_s": 13.1,
+  "crudo_s": 3.9,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2339,
+  "vistas_no_articulo": 385019,
+  "fusionadas": 4,
+  "filas_limpias": 323455,
+  "vistas_limpias": 6059749,
+  "limpio_s": 1.3
+ },
+ {
+  "hora": "2026-07-18T01:00",
+  "rama": "main",
+  "lineas": 314527,
+  "espera_descarga_s": 7.7,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2194,
+  "vistas_no_articulo": 373166,
+  "fusionadas": 4,
+  "filas_limpias": 312325,
+  "vistas_limpias": 5937576,
+  "limpio_s": 1.0
+ },
+ {
+  "hora": "2026-07-18T02:00",
+  "rama": "main",
+  "lineas": 317961,
+  "espera_descarga_s": 10.1,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2300,
+  "vistas_no_articulo": 387128,
+  "fusionadas": 3,
+  "filas_limpias": 315654,
+  "vistas_limpias": 6178414,
+  "limpio_s": 1.1
+ },
+ {
+  "hora": "2026-07-18T03:00",
+  "rama": "main",
+  "lineas": 321912,
+  "espera_descarga_s": 9.0,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2200,
+  "vistas_no_articulo": 401504,
+  "fusionadas": 6,
+  "filas_limpias": 319702,
+  "vistas_limpias": 6321143,
+  "limpio_s": 1.0
+ },
+ {
+  "hora": "2026-07-18T04:00",
+  "rama": "main",
+  "lineas": 311724,
+  "espera_descarga_s": 8.3,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 1925,
+  "vistas_no_articulo": 400085,
+  "fusionadas": 4,
+  "filas_limpias": 309791,
+  "vistas_limpias": 5930243,
+  "limpio_s": 1.0
+ },
+ {
+  "hora": "2026-07-18T05:00",
+  "rama": "main",
+  "lineas": 288974,
+  "espera_descarga_s": 8.5,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 1801,
+  "vistas_no_articulo": 449496,
+  "fusionadas": 3,
+  "filas_limpias": 287166,
+  "vistas_limpias": 5268797,
+  "limpio_s": 0.9
+ },
+ {
+  "hora": "2026-07-18T06:00",
+  "rama": "main",
+  "lineas": 268368,
+  "espera_descarga_s": 8.4,
+  "crudo_s": 0.5,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 1795,
+  "vistas_no_articulo": 424552,
+  "fusionadas": 6,
+  "filas_limpias": 266563,
+  "vistas_limpias": 4698152,
+  "limpio_s": 0.9
+ },
+ {
+  "hora": "2026-07-18T07:00",
+  "rama": "main",
+  "lineas": 255021,
+  "espera_descarga_s": 11.8,
+  "crudo_s": 0.5,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 1789,
+  "vistas_no_articulo": 420085,
+  "fusionadas": 6,
+  "filas_limpias": 253222,
+  "vistas_limpias": 4382916,
+  "limpio_s": 0.8
+ },
+ {
+  "hora": "2026-07-18T08:00",
+  "rama": "main",
+  "lineas": 245146,
+  "espera_descarga_s": 10.1,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 1822,
+  "vistas_no_articulo": 444019,
+  "fusionadas": 2,
+  "filas_limpias": 243318,
+  "vistas_limpias": 4162819,
+  "limpio_s": 0.9
+ },
+ {
+  "hora": "2026-07-18T09:00",
+  "rama": "main",
+  "lineas": 240508,
+  "espera_descarga_s": 9.8,
+  "crudo_s": 0.5,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 1960,
+  "vistas_no_articulo": 428241,
+  "fusionadas": 2,
+  "filas_limpias": 238542,
+  "vistas_limpias": 4051995,
+  "limpio_s": 0.8
+ },
+ {
+  "hora": "2026-07-18T10:00",
+  "rama": "main",
+  "lineas": 243363,
+  "espera_descarga_s": 11.3,
+  "crudo_s": 0.5,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 1861,
+  "vistas_no_articulo": 426207,
+  "fusionadas": 2,
+  "filas_limpias": 241496,
+  "vistas_limpias": 4090976,
+  "limpio_s": 0.8
+ },
+ {
+  "hora": "2026-07-18T11:00",
+  "rama": "main",
+  "lineas": 254823,
+  "espera_descarga_s": 11.9,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 1901,
+  "vistas_no_articulo": 458167,
+  "fusionadas": 1,
+  "filas_limpias": 252917,
+  "vistas_limpias": 4339788,
+  "limpio_s": 0.9
+ },
+ {
+  "hora": "2026-07-18T12:00",
+  "rama": "main",
+  "lineas": 274717,
+  "espera_descarga_s": 12.0,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2092,
+  "vistas_no_articulo": 478662,
+  "fusionadas": 2,
+  "filas_limpias": 272619,
+  "vistas_limpias": 4794723,
+  "limpio_s": 0.9
+ },
+ {
+  "hora": "2026-07-18T13:00",
+  "rama": "main",
+  "lineas": 302951,
+  "espera_descarga_s": 11.8,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2387,
+  "vistas_no_articulo": 494125,
+  "fusionadas": 5,
+  "filas_limpias": 300555,
+  "vistas_limpias": 5475225,
+  "limpio_s": 1.1
+ },
+ {
+  "hora": "2026-07-18T14:00",
+  "rama": "main",
+  "lineas": 331636,
+  "espera_descarga_s": 11.9,
+  "crudo_s": 1.1,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2463,
+  "vistas_no_articulo": 530102,
+  "fusionadas": 3,
+  "filas_limpias": 329166,
+  "vistas_limpias": 6145372,
+  "limpio_s": 1.7
+ },
+ {
+  "hora": "2026-07-18T15:00",
+  "rama": "main",
+  "lineas": 354218,
+  "espera_descarga_s": 10.4,
+  "crudo_s": 0.8,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2469,
+  "vistas_no_articulo": 572571,
+  "fusionadas": 7,
+  "filas_limpias": 351738,
+  "vistas_limpias": 6657798,
+  "limpio_s": 1.2
+ },
+ {
+  "hora": "2026-07-18T16:00",
+  "rama": "main",
+  "lineas": 369822,
+  "espera_descarga_s": 11.4,
+  "crudo_s": 1.0,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2761,
+  "vistas_no_articulo": 607092,
+  "fusionadas": 4,
+  "filas_limpias": 367053,
+  "vistas_limpias": 7074520,
+  "limpio_s": 2.0
+ },
+ {
+  "hora": "2026-07-18T17:00",
+  "rama": "main",
+  "lineas": 377525,
+  "espera_descarga_s": 11.7,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2779,
+  "vistas_no_articulo": 559414,
+  "fusionadas": 2,
+  "filas_limpias": 374740,
+  "vistas_limpias": 7281312,
+  "limpio_s": 1.4
+ },
+ {
+  "hora": "2026-07-18T18:00",
+  "rama": "main",
+  "lineas": 384705,
+  "espera_descarga_s": 11.4,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2846,
+  "vistas_no_articulo": 541331,
+  "fusionadas": 5,
+  "filas_limpias": 381850,
+  "vistas_limpias": 7491791,
+  "limpio_s": 1.2
+ },
+ {
+  "hora": "2026-07-18T19:00",
+  "rama": "main",
+  "lineas": 387384,
+  "espera_descarga_s": 11.7,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2811,
+  "vistas_no_articulo": 532227,
+  "fusionadas": 5,
+  "filas_limpias": 384564,
+  "vistas_limpias": 7697677,
+  "limpio_s": 1.2
+ },
+ {
+  "hora": "2026-07-18T20:00",
+  "rama": "main",
+  "lineas": 392483,
+  "espera_descarga_s": 12.4,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2825,
+  "vistas_no_articulo": 528575,
+  "fusionadas": 6,
+  "filas_limpias": 389648,
+  "vistas_limpias": 7899582,
+  "limpio_s": 1.2
+ },
+ {
+  "hora": "2026-07-18T21:00",
+  "rama": "main",
+  "lineas": 394062,
+  "espera_descarga_s": 11.1,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2900,
+  "vistas_no_articulo": 521454,
+  "fusionadas": 2,
+  "filas_limpias": 391156,
+  "vistas_limpias": 8078398,
+  "limpio_s": 1.3
+ },
+ {
+  "hora": "2026-07-18T22:00",
+  "rama": "main",
+  "lineas": 369811,
+  "espera_descarga_s": 10.7,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2855,
+  "vistas_no_articulo": 665764,
+  "fusionadas": 2,
+  "filas_limpias": 366950,
+  "vistas_limpias": 8373908,
+  "limpio_s": 1.3
+ },
+ {
+  "hora": "2026-07-18T23:00",
+  "rama": "main",
+  "lineas": 347507,
+  "espera_descarga_s": 8.8,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2962,
+  "vistas_no_articulo": 587993,
+  "fusionadas": 3,
+  "filas_limpias": 344538,
+  "vistas_limpias": 7935873,
+  "limpio_s": 1.2
+ },
+ {
+  "hora": "2026-07-19T00:00",
+  "rama": "main",
+  "lineas": 337635,
+  "espera_descarga_s": 11.4,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2566,
+  "vistas_no_articulo": 508603,
+  "fusionadas": 2,
+  "filas_limpias": 335063,
+  "vistas_limpias": 7862988,
+  "limpio_s": 1.1
+ },
+ {
+  "hora": "2026-07-19T01:00",
+  "rama": "main",
+  "lineas": 330203,
+  "espera_descarga_s": 9.4,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2255,
+  "vistas_no_articulo": 405022,
+  "fusionadas": 1,
+  "filas_limpias": 327943,
+  "vistas_limpias": 6861081,
+  "limpio_s": 1.1
+ },
+ {
+  "hora": "2026-07-19T02:00",
+  "rama": "main",
+  "lineas": 331138,
+  "espera_descarga_s": 8.7,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2273,
+  "vistas_no_articulo": 404551,
+  "fusionadas": 6,
+  "filas_limpias": 328855,
+  "vistas_limpias": 6997890,
+  "limpio_s": 1.1
+ },
+ {
+  "hora": "2026-07-19T03:00",
+  "rama": "main",
+  "lineas": 334213,
+  "espera_descarga_s": 9.0,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2279,
+  "vistas_no_articulo": 425943,
+  "fusionadas": 2,
+  "filas_limpias": 331928,
+  "vistas_limpias": 7005692,
+  "limpio_s": 1.2
+ },
+ {
+  "hora": "2026-07-19T04:00",
+  "rama": "main",
+  "lineas": 322838,
+  "espera_descarga_s": 9.9,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2309,
+  "vistas_no_articulo": 437416,
+  "fusionadas": 2,
+  "filas_limpias": 320523,
+  "vistas_limpias": 6553311,
+  "limpio_s": 1.1
+ },
+ {
+  "hora": "2026-07-19T05:00",
+  "rama": "main",
+  "lineas": 301153,
+  "espera_descarga_s": 8.6,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2220,
+  "vistas_no_articulo": 477541,
+  "fusionadas": 3,
+  "filas_limpias": 298926,
+  "vistas_limpias": 5818595,
+  "limpio_s": 1.0
+ },
+ {
+  "hora": "2026-07-19T06:00",
+  "rama": "main",
+  "lineas": 277295,
+  "espera_descarga_s": 9.6,
+  "crudo_s": 0.5,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2114,
+  "vistas_no_articulo": 475125,
+  "fusionadas": 1,
+  "filas_limpias": 275176,
+  "vistas_limpias": 5133350,
+  "limpio_s": 0.9
+ },
+ {
+  "hora": "2026-07-19T07:00",
+  "rama": "main",
+  "lineas": 262779,
+  "espera_descarga_s": 9.5,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2156,
+  "vistas_no_articulo": 459135,
+  "fusionadas": 1,
+  "filas_limpias": 260618,
+  "vistas_limpias": 4743888,
+  "limpio_s": 1.1
+ },
+ {
+  "hora": "2026-07-19T08:00",
+  "rama": "main",
+  "lineas": 255373,
+  "espera_descarga_s": 10.4,
+  "crudo_s": 0.5,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2232,
+  "vistas_no_articulo": 474855,
+  "fusionadas": 3,
+  "filas_limpias": 253134,
+  "vistas_limpias": 4562517,
+  "limpio_s": 1.1
+ },
+ {
+  "hora": "2026-07-19T09:00",
+  "rama": "main",
+  "lineas": 255974,
+  "espera_descarga_s": 12.5,
+  "crudo_s": 0.5,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2523,
+  "vistas_no_articulo": 478370,
+  "fusionadas": 3,
+  "filas_limpias": 253444,
+  "vistas_limpias": 4554110,
+  "limpio_s": 0.9
+ },
+ {
+  "hora": "2026-07-19T10:00",
+  "rama": "main",
+  "lineas": 256352,
+  "espera_descarga_s": 12.6,
+  "crudo_s": 0.5,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2403,
+  "vistas_no_articulo": 445512,
+  "fusionadas": 2,
+  "filas_limpias": 253943,
+  "vistas_limpias": 4531708,
+  "limpio_s": 0.9
+ },
+ {
+  "hora": "2026-07-19T11:00",
+  "rama": "main",
+  "lineas": 266033,
+  "espera_descarga_s": 10.9,
+  "crudo_s": 0.5,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2601,
+  "vistas_no_articulo": 470888,
+  "fusionadas": 1,
+  "filas_limpias": 263427,
+  "vistas_limpias": 4743723,
+  "limpio_s": 0.9
+ },
+ {
+  "hora": "2026-07-19T12:00",
+  "rama": "main",
+  "lineas": 287681,
+  "espera_descarga_s": 11.2,
+  "crudo_s": 0.5,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2916,
+  "vistas_no_articulo": 502791,
+  "fusionadas": 1,
+  "filas_limpias": 284760,
+  "vistas_limpias": 5274636,
+  "limpio_s": 0.9
+ },
+ {
+  "hora": "2026-07-19T13:00",
+  "rama": "main",
+  "lineas": 316371,
+  "espera_descarga_s": 11.5,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 3034,
+  "vistas_no_articulo": 513076,
+  "fusionadas": 5,
+  "filas_limpias": 313328,
+  "vistas_limpias": 5957227,
+  "limpio_s": 1.2
+ },
+ {
+  "hora": "2026-07-19T14:00",
+  "rama": "main",
+  "lineas": 338369,
+  "espera_descarga_s": 16.5,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 3288,
+  "vistas_no_articulo": 538359,
+  "fusionadas": 4,
+  "filas_limpias": 335073,
+  "vistas_limpias": 6445734,
+  "limpio_s": 1.2
+ },
+ {
+  "hora": "2026-07-19T15:00",
+  "rama": "main",
+  "lineas": 363234,
+  "espera_descarga_s": 14.6,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 3639,
+  "vistas_no_articulo": 584869,
+  "fusionadas": 4,
+  "filas_limpias": 359587,
+  "vistas_limpias": 7122215,
+  "limpio_s": 1.2
+ },
+ {
+  "hora": "2026-07-19T16:00",
+  "rama": "main",
+  "lineas": 375988,
+  "espera_descarga_s": 12.4,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 3764,
+  "vistas_no_articulo": 603467,
+  "fusionadas": 4,
+  "filas_limpias": 372216,
+  "vistas_limpias": 7356151,
+  "limpio_s": 1.4
+ },
+ {
+  "hora": "2026-07-19T17:00",
+  "rama": "main",
+  "lineas": 381771,
+  "espera_descarga_s": 13.9,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 3573,
+  "vistas_no_articulo": 564310,
+  "fusionadas": 3,
+  "filas_limpias": 378191,
+  "vistas_limpias": 7680483,
+  "limpio_s": 1.4
+ },
+ {
+  "hora": "2026-07-19T18:00",
+  "rama": "main",
+  "lineas": 385337,
+  "espera_descarga_s": 14.5,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 3430,
+  "vistas_no_articulo": 547460,
+  "fusionadas": 2,
+  "filas_limpias": 381901,
+  "vistas_limpias": 8207193,
+  "limpio_s": 1.3
+ },
+ {
+  "hora": "2026-07-19T19:00",
+  "rama": "main",
+  "lineas": 383660,
+  "espera_descarga_s": 12.4,
+  "crudo_s": 0.8,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 3120,
+  "vistas_no_articulo": 551865,
+  "fusionadas": 1,
+  "filas_limpias": 380535,
+  "vistas_limpias": 9131557,
+  "limpio_s": 1.6
+ },
+ {
+  "hora": "2026-07-19T20:00",
+  "rama": "main",
+  "lineas": 358615,
+  "espera_descarga_s": 12.3,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 3223,
+  "vistas_no_articulo": 584757,
+  "fusionadas": 2,
+  "filas_limpias": 355386,
+  "vistas_limpias": 10828032,
+  "limpio_s": 1.2
+ },
+ {
+  "hora": "2026-07-19T21:00",
+  "rama": "main",
+  "lineas": 363002,
+  "espera_descarga_s": 15.1,
+  "crudo_s": 0.7,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 3140,
+  "vistas_no_articulo": 534703,
+  "fusionadas": 2,
+  "filas_limpias": 359856,
+  "vistas_limpias": 11507735,
+  "limpio_s": 1.3
+ },
+ {
+  "hora": "2026-07-19T22:00",
+  "rama": "main",
+  "lineas": 307382,
+  "espera_descarga_s": 10.2,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 2574,
+  "vistas_no_articulo": 527796,
+  "fusionadas": 2,
+  "filas_limpias": 304802,
+  "vistas_limpias": 8997755,
+  "limpio_s": 1.0
+ },
+ {
+  "hora": "2026-07-19T23:00",
+  "rama": "main",
+  "lineas": 319184,
+  "espera_descarga_s": 11.5,
+  "crudo_s": 0.6,
+  "invalidas": {
+   "titulo": 4
+  },
+  "no_articulo": 3007,
+  "vistas_no_articulo": 499942,
+  "fusionadas": 3,
+  "filas_limpias": 316170,
+  "vistas_limpias": 12463987,
+  "limpio_s": 1.0
+ }
+]

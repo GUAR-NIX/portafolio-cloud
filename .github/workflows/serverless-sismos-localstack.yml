@@ -1,0 +1,58 @@
+name: serverless-sismos-localstack
+
+on:
+  push:
+    paths: ["serverless-sismos-localstack/**", ".github/workflows/serverless-sismos-localstack.yml"]
+  pull_request:
+    paths: ["serverless-sismos-localstack/**", ".github/workflows/serverless-sismos-localstack.yml"]
+defaults:
+  run:
+    working-directory: serverless-sismos-localstack
+
+jobs:
+  unitarias:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: serverless-sismos-localstack/requirements*.txt
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check src lambdas scripts tests descargar_datos.py
+      - run: pytest -q -m "not integracion"
+
+  localstack:
+    runs-on: ubuntu-latest
+    services:
+      localstack:
+        image: localstack/localstack:4.8.1
+        ports: ["4566:4566"]
+        # LocalStack crea un contenedor por entorno Lambda: necesita el socket de Docker.
+        volumes:
+          - /var/run/docker.sock:/var/run/docker.sock
+        env:
+          SERVICES: s3,dynamodb,sns,sqs,lambda,iam,logs,sts
+        options: >-
+          --health-cmd "curl -fsS http://localhost:4566/_localstack/health"
+          --health-interval 5s --health-timeout 3s --health-retries 30
+    env:
+      AWS_ACCESS_KEY_ID: test
+      AWS_SECRET_ACCESS_KEY: test
+      AWS_DEFAULT_REGION: us-east-1
+      AWS_ENDPOINT_URL: http://localhost:4566
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - uses: hashicorp/setup-terraform@v3
+        with: {terraform_version: "1.13.4"}
+      - run: pip install -r requirements-dev.txt
+      - run: python scripts/empaquetar_lambda.py
+      - run: terraform -chdir=terraform fmt -check && terraform -chdir=terraform init && terraform -chdir=terraform validate
+      - run: terraform -chdir=terraform apply -auto-approve
+      - run: pytest -q -m integracion
+      - if: always()
+        run: terraform -chdir=terraform destroy -auto-approve
+

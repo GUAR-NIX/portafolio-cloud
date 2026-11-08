@@ -1,0 +1,69 @@
+{
+  "commit_nessie_fin_18_jul": {
+    "hash": "1446a8471f59ff946b91d03967e31da63c450043d0dd1ea5630a2af7a33328da",
+    "commitTime": "2026-10-27T19:31:47.196026966Z",
+    "metadataLocation": "s3://lakehouse/warehouse/wiki/pageviews_limpio_c3518ceb-590e-4eeb-a3e2-14d20daf7087/metadata/00000-8b826935-f1b7-4583-8d30-25af5ef660d3.metadata.json",
+    "snapshots_en_metadata": 1,
+    "snapshot_id": 1104248524378406391,
+    "hora": "2026-07-18T23:00"
+  },
+  "snapshots_en_tabla_main": 1,
+  "commits_en_main": 100,
+  "actual_main": {
+    "filas": 15263513,
+    "vistas": 316670305,
+    "desde": "2026-07-18 00:00:00",
+    "hasta": "2026-07-19 23:00:00"
+  },
+  "etiqueta_historia": {
+    "filas": 7618728,
+    "vistas": 146328747,
+    "desde": "2026-07-18 00:00:00",
+    "hasta": "2026-07-18 23:00:00"
+  },
+  "top5_es_actual": [
+    {
+      "titulo": "Lamine_Yamal",
+      "vistas": 293498
+    },
+    {
+      "titulo": "Marc_Cucurella",
+      "vistas": 201664
+    },
+    {
+      "titulo": "Copa_Mundial_de_Fútbol",
+      "vistas": 198152
+    },
+    {
+      "titulo": "Ferran_Torres",
+      "vistas": 181153
+    },
+    {
+      "titulo": "Copa_Mundial_de_Fútbol_de_2026",
+      "vistas": 167065
+    }
+  ],
+  "top5_es_fin_18": [
+    {
+      "titulo": "La_Odisea_(película_de_2026)",
+      "vistas": 87029
+    },
+    {
+      "titulo": "Marc_Cucurella",
+      "vistas": 56685
+    },
+    {
+      "titulo": "Copa_Mundial_de_Fútbol",
+      "vistas": 43656
+    },
+    {
+      "titulo": "Copa_Mundial_de_Fútbol_de_2026",
+      "vistas": 41924
+    },
+    {
+      "titulo": "Lamine_Yamal",
+      "vistas": 41136
+    }
+  ],
+  "for_version_as_of_snapshot_viejo": "TrinoUserError(type=USER_ERROR, name=INVALID_ARGUMENTS, message=\"Iceberg snapshot ID does not exists: 1104248524378406391\", query_id=20261027_194035_00005_457ym)"
+}

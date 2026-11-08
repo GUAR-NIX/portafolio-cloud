@@ -1,0 +1,1057 @@
+{
+  "corridas": {
+    "bench_600x": {
+      "corrida": "bench_600x",
+      "productor": {
+        "corrida": "bench_600x",
+        "factor": 600.0,
+        "enviados": 1002041,
+        "originales": 992129,
+        "duplicados": 9912,
+        "tardios_dentro_watermark": 1031,
+        "tardios_fuera_watermark": 946,
+        "primer_evento": "2025-09-17T12:00:02+00:00",
+        "ultimo_evento": "2025-09-17T17:59:59+00:00",
+        "duracion_s": 39.2,
+        "tasa_media_eps": 25562.2,
+        "atraso_max_s": 2.963672244000918,
+        "duracion_originales_s": 36.0,
+        "tasa_originales_eps": 27829.4,
+        "ids_unicos": 992129,
+        "errores_entrega": 0,
+        "sin_confirmar": 0,
+        "desde": "2025-09-17T12:00:00Z",
+        "hasta": "2025-09-17T18:00:00Z",
+        "semilla": 42,
+        "prob_duplicado": 0.01,
+        "prob_tardio": 0.002,
+        "terminado_en": "2026-10-21T15:47:47.424373+00:00"
+      },
+      "verificacion": {
+        "corrida": "bench_600x",
+        "productor": {
+          "enviados": 1002041,
+          "originales": 992129,
+          "ids_unicos": 992129,
+          "duplicados": 9912,
+          "tardios_dentro_watermark": 1031,
+          "tardios_fuera_watermark": 946
+        },
+        "kafka_mensajes": 1002041,
+        "bronce": {
+          "filas": 1002041,
+          "offsets_unicos": 1002041,
+          "duplicados": 0,
+          "diferencia_vs_enviados": 0
+        },
+        "plata": {
+          "filas": 992129,
+          "ids_unicos": 992129,
+          "duplicados": 0,
+          "reenvios_que_pasaron": 0,
+          "tardios_dentro": 1031,
+          "tardios_fuera": 946,
+          "perdidos_vs_productor": 0
+        },
+        "oro_actividad_5min": {
+          "ultima_ventana_cerrada": "2025-09-17 17:45:00",
+          "ventanas": 1035,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 951199,
+          "eventos_en_oro": 951140,
+          "diferencia": 59,
+          "ventanas_con_diferencia": 24,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 913
+        },
+        "oro_repos_hora": {
+          "ultima_ventana_cerrada": "2025-09-17 17:00:00",
+          "ventanas": 401018,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 827615,
+          "eventos_en_oro": 827615,
+          "diferencia": 0,
+          "ventanas_con_diferencia": 0,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 803
+        },
+        "oro_lenguajes_hora": {
+          "filas": 732
+        },
+        "oro_picos_actividad": {
+          "filas": 17
+        },
+        "oro_picos_repos": {
+          "filas": 2
+        },
+        "exactamente_una_vez": true
+      },
+      "orquestacion": {
+        "corrida": "bench_600x",
+        "desde": "2025-09-17T12:00:00Z",
+        "hasta": "2025-09-17T18:00:00Z",
+        "factor": 600.0,
+        "trigger_s": 3,
+        "kills": [],
+        "inicio": "2026-10-21T15:46:40.648108+00:00",
+        "ts_productor_inicio": 1792597623.7116866,
+        "ts_productor_fin": 1792597667.9611197,
+        "ts_plata_alcanzada": 1792597712.9771812,
+        "fin": "2026-10-21T15:49:23.956081+00:00",
+        "exactamente_una_vez": true,
+        "terminada": true
+      },
+      "lotes_repetidos": 0,
+      "capas": {
+        "bronce": {
+          "lotes": 6,
+          "filas": 1002041,
+          "duracion_lote_mediana_s": 6.77,
+          "latencia_p50_s": 9.98,
+          "latencia_p95_s": 26.85,
+          "latencia_max_s": 28.8,
+          "segundos_activos": 60.8,
+          "eventos_por_s": 16478.0,
+          "eventos_por_s_lote_max": 43306.0
+        },
+        "oro_actividad_5min": {
+          "lotes": 2,
+          "filas": 1035,
+          "duracion_lote_mediana_s": 10.31,
+          "latencia_p50_s": 59.41,
+          "latencia_p95_s": 70.15,
+          "latencia_max_s": 71.9
+        },
+        "oro_lenguajes_hora": {
+          "lotes": 3,
+          "filas": 732,
+          "duracion_lote_mediana_s": 4.84,
+          "latencia_p50_s": 50.65,
+          "latencia_p95_s": 62.33,
+          "latencia_max_s": 63.07
+        },
+        "oro_repos_hora": {
+          "lotes": 2,
+          "filas": 401018,
+          "duracion_lote_mediana_s": 7.93,
+          "latencia_p50_s": 65.37,
+          "latencia_p95_s": 76.06,
+          "latencia_max_s": 77.29
+        },
+        "plata": {
+          "lotes": 5,
+          "filas": 992129,
+          "duracion_lote_mediana_s": 11.24,
+          "latencia_p50_s": 35.21,
+          "latencia_p95_s": 41.65,
+          "latencia_max_s": 45.88,
+          "segundos_activos": 68.4,
+          "eventos_por_s": 14500.0,
+          "eventos_por_s_lote_max": 26544.0
+        }
+      }
+    },
+    "bench_60x": {
+      "corrida": "bench_60x",
+      "productor": {
+        "corrida": "bench_60x",
+        "factor": 60.0,
+        "enviados": 1002041,
+        "originales": 992129,
+        "duplicados": 9912,
+        "tardios_dentro_watermark": 1031,
+        "tardios_fuera_watermark": 946,
+        "primer_evento": "2025-09-17T12:00:02+00:00",
+        "ultimo_evento": "2025-09-17T17:59:59+00:00",
+        "duracion_s": 392.0,
+        "tasa_media_eps": 2556.2,
+        "atraso_max_s": 2.9008120050002617,
+        "duracion_originales_s": 359.95,
+        "tasa_originales_eps": 2783.6,
+        "ids_unicos": 992129,
+        "errores_entrega": 0,
+        "sin_confirmar": 0,
+        "desde": "2025-09-17T12:00:00Z",
+        "hasta": "2025-09-17T18:00:00Z",
+        "semilla": 42,
+        "prob_duplicado": 0.01,
+        "prob_tardio": 0.002,
+        "terminado_en": "2026-10-21T15:44:40.176952+00:00"
+      },
+      "verificacion": {
+        "corrida": "bench_60x",
+        "productor": {
+          "enviados": 1002041,
+          "originales": 992129,
+          "ids_unicos": 992129,
+          "duplicados": 9912,
+          "tardios_dentro_watermark": 1031,
+          "tardios_fuera_watermark": 946
+        },
+        "kafka_mensajes": 1002041,
+        "bronce": {
+          "filas": 1002041,
+          "offsets_unicos": 1002041,
+          "duplicados": 0,
+          "diferencia_vs_enviados": 0
+        },
+        "plata": {
+          "filas": 992129,
+          "ids_unicos": 992129,
+          "duplicados": 0,
+          "reenvios_que_pasaron": 1,
+          "tardios_dentro": 1031,
+          "tardios_fuera": 946,
+          "perdidos_vs_productor": 0
+        },
+        "oro_actividad_5min": {
+          "ultima_ventana_cerrada": "2025-09-17 17:45:00",
+          "ventanas": 1035,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 951199,
+          "eventos_en_oro": 950833,
+          "diferencia": 366,
+          "ventanas_con_diferencia": 160,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 913
+        },
+        "oro_repos_hora": {
+          "ultima_ventana_cerrada": "2025-09-17 17:00:00",
+          "ventanas": 401018,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 827615,
+          "eventos_en_oro": 827516,
+          "diferencia": 99,
+          "ventanas_con_diferencia": 98,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 803
+        },
+        "oro_lenguajes_hora": {
+          "filas": 732
+        },
+        "oro_picos_actividad": {
+          "filas": 17
+        },
+        "oro_picos_repos": {
+          "filas": 2
+        },
+        "exactamente_una_vez": true
+      },
+      "orquestacion": {
+        "corrida": "bench_60x",
+        "desde": "2025-09-17T12:00:00Z",
+        "hasta": "2025-09-17T18:00:00Z",
+        "factor": 60.0,
+        "trigger_s": 3,
+        "kills": [],
+        "inicio": "2026-10-21T15:37:40.641487+00:00",
+        "ts_productor_inicio": 1792597083.8442676,
+        "ts_productor_fin": 1792597480.8193643,
+        "ts_plata_alcanzada": 1792597490.8277316,
+        "fin": "2026-10-21T15:45:41.866553+00:00",
+        "exactamente_una_vez": true,
+        "terminada": true
+      },
+      "lotes_repetidos": 0,
+      "capas": {
+        "bronce": {
+          "lotes": 61,
+          "filas": 1002041,
+          "duracion_lote_mediana_s": 5.5,
+          "latencia_p50_s": 9.53,
+          "latencia_p95_s": 23.2,
+          "latencia_max_s": 24.1,
+          "segundos_activos": 395.4,
+          "eventos_por_s": 2534.0,
+          "eventos_por_s_lote_max": 11126.0
+        },
+        "oro_actividad_5min": {
+          "lotes": 28,
+          "filas": 1035,
+          "duracion_lote_mediana_s": 4.9,
+          "latencia_p50_s": 44.94,
+          "latencia_p95_s": 60.97,
+          "latencia_max_s": 62.0
+        },
+        "oro_lenguajes_hora": {
+          "lotes": 5,
+          "filas": 732,
+          "duracion_lote_mediana_s": 6.42,
+          "latencia_p50_s": 57.13,
+          "latencia_p95_s": 103.59,
+          "latencia_max_s": 110.67
+        },
+        "oro_repos_hora": {
+          "lotes": 5,
+          "filas": 400985,
+          "duracion_lote_mediana_s": 6.16,
+          "latencia_p50_s": 73.18,
+          "latencia_p95_s": 107.01,
+          "latencia_max_s": 110.34
+        },
+        "plata": {
+          "lotes": 54,
+          "filas": 992129,
+          "duracion_lote_mediana_s": 6.04,
+          "latencia_p50_s": 17.09,
+          "latencia_p95_s": 36.97,
+          "latencia_max_s": 37.85,
+          "segundos_activos": 391.0,
+          "eventos_por_s": 2537.0,
+          "eventos_por_s_lote_max": 6869.0
+        }
+      }
+    },
+    "bench_max": {
+      "corrida": "bench_max",
+      "productor": {
+        "corrida": "bench_max",
+        "factor": 0.0,
+        "enviados": 1002041,
+        "originales": 992129,
+        "duplicados": 9912,
+        "tardios_dentro_watermark": 1031,
+        "tardios_fuera_watermark": 946,
+        "primer_evento": "2025-09-17T12:00:02+00:00",
+        "ultimo_evento": "2025-09-17T17:59:59+00:00",
+        "duracion_s": 28.62,
+        "tasa_media_eps": 35011.3,
+        "atraso_max_s": 0.0,
+        "duracion_originales_s": 28.62,
+        "tasa_originales_eps": 35008.6,
+        "ids_unicos": 992129,
+        "errores_entrega": 0,
+        "sin_confirmar": 0,
+        "desde": "2025-09-17T12:00:00Z",
+        "hasta": "2025-09-17T18:00:00Z",
+        "semilla": 42,
+        "prob_duplicado": 0.01,
+        "prob_tardio": 0.002,
+        "terminado_en": "2026-10-21T15:51:09.012494+00:00"
+      },
+      "verificacion": {
+        "corrida": "bench_max",
+        "productor": {
+          "enviados": 1002041,
+          "originales": 992129,
+          "ids_unicos": 992129,
+          "duplicados": 9912,
+          "tardios_dentro_watermark": 1031,
+          "tardios_fuera_watermark": 946
+        },
+        "kafka_mensajes": 1002041,
+        "bronce": {
+          "filas": 1002041,
+          "offsets_unicos": 1002041,
+          "duplicados": 0,
+          "diferencia_vs_enviados": 0
+        },
+        "plata": {
+          "filas": 992129,
+          "ids_unicos": 992129,
+          "duplicados": 0,
+          "reenvios_que_pasaron": 0,
+          "tardios_dentro": 1031,
+          "tardios_fuera": 946,
+          "perdidos_vs_productor": 0
+        },
+        "oro_actividad_5min": {
+          "ultima_ventana_cerrada": "2025-09-17 17:45:00",
+          "ventanas": 1035,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 951199,
+          "eventos_en_oro": 951199,
+          "diferencia": 0,
+          "ventanas_con_diferencia": 0,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 913
+        },
+        "oro_repos_hora": {
+          "ultima_ventana_cerrada": "2025-09-17 17:00:00",
+          "ventanas": 401018,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 827615,
+          "eventos_en_oro": 827615,
+          "diferencia": 0,
+          "ventanas_con_diferencia": 0,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 803
+        },
+        "oro_lenguajes_hora": {
+          "filas": 732
+        },
+        "oro_picos_actividad": {
+          "filas": 17
+        },
+        "oro_picos_repos": {
+          "filas": 2
+        },
+        "exactamente_una_vez": true
+      },
+      "orquestacion": {
+        "corrida": "bench_max",
+        "desde": "2025-09-17T12:00:00Z",
+        "hasta": "2025-09-17T18:00:00Z",
+        "factor": 0.0,
+        "trigger_s": 3,
+        "kills": [],
+        "inicio": "2026-10-21T15:50:12.369642+00:00",
+        "ts_productor_inicio": 1792597835.4320073,
+        "ts_productor_fin": 1792597869.586446,
+        "ts_plata_alcanzada": 1792597914.6056402,
+        "fin": "2026-10-21T15:53:05.673655+00:00",
+        "exactamente_una_vez": true,
+        "terminada": true
+      },
+      "lotes_repetidos": 0,
+      "capas": {
+        "bronce": {
+          "lotes": 4,
+          "filas": 1002041,
+          "duracion_lote_mediana_s": 12.14,
+          "latencia_p50_s": 20.54,
+          "latencia_p95_s": 31.53,
+          "latencia_max_s": 31.84,
+          "segundos_activos": 48.2,
+          "eventos_por_s": 20801.0,
+          "eventos_por_s_lote_max": 27153.0
+        },
+        "oro_actividad_5min": {
+          "lotes": 4,
+          "filas": 1035,
+          "duracion_lote_mediana_s": 5.53,
+          "latencia_p50_s": 61.6,
+          "latencia_p95_s": 67.98,
+          "latencia_max_s": 68.32
+        },
+        "oro_lenguajes_hora": {
+          "lotes": 4,
+          "filas": 732,
+          "duracion_lote_mediana_s": 5.86,
+          "latencia_p50_s": 63.57,
+          "latencia_p95_s": 68.32,
+          "latencia_max_s": 68.88
+        },
+        "oro_repos_hora": {
+          "lotes": 4,
+          "filas": 401018,
+          "duracion_lote_mediana_s": 6.39,
+          "latencia_p50_s": 74.47,
+          "latencia_p95_s": 78.03,
+          "latencia_max_s": 78.6
+        },
+        "plata": {
+          "lotes": 4,
+          "filas": 992129,
+          "duracion_lote_mediana_s": 13.43,
+          "latencia_p50_s": 41.24,
+          "latencia_p95_s": 50.31,
+          "latencia_max_s": 50.61,
+          "segundos_activos": 57.1,
+          "eventos_por_s": 17368.0,
+          "eventos_por_s_lote_max": 20681.0
+        }
+      }
+    },
+    "falla_inyectada": {
+      "corrida": "falla_inyectada",
+      "productor": {
+        "corrida": "falla_inyectada",
+        "factor": 120.0,
+        "enviados": 485125,
+        "originales": 480329,
+        "duplicados": 4796,
+        "tardios_dentro_watermark": 493,
+        "tardios_fuera_watermark": 467,
+        "primer_evento": "2025-09-18T06:00:00+00:00",
+        "ultimo_evento": "2025-09-18T08:59:59+00:00",
+        "duracion_s": 107.81,
+        "tasa_media_eps": 4500.0,
+        "atraso_max_s": 2.362516683999729,
+        "duracion_originales_s": 90.0,
+        "tasa_originales_eps": 5389.6,
+        "ids_unicos": 480329,
+        "errores_entrega": 0,
+        "sin_confirmar": 0,
+        "desde": "2025-09-18T06:00:00Z",
+        "hasta": "2025-09-18T09:00:00Z",
+        "semilla": 42,
+        "prob_duplicado": 0.01,
+        "prob_tardio": 0.002,
+        "terminado_en": "2026-10-21T14:11:46.322512+00:00"
+      },
+      "verificacion": {
+        "corrida": "falla_inyectada",
+        "productor": {
+          "enviados": 485125,
+          "originales": 480329,
+          "ids_unicos": 480329,
+          "duplicados": 4796,
+          "tardios_dentro_watermark": 493,
+          "tardios_fuera_watermark": 467
+        },
+        "kafka_mensajes": 485125,
+        "bronce": {
+          "filas": 485125,
+          "offsets_unicos": 485125,
+          "duplicados": 0,
+          "diferencia_vs_enviados": 0
+        },
+        "plata": {
+          "filas": 480329,
+          "ids_unicos": 480329,
+          "duplicados": 0,
+          "reenvios_que_pasaron": 0,
+          "tardios_dentro": 493,
+          "tardios_fuera": 467,
+          "perdidos_vs_productor": 0
+        },
+        "oro_actividad_5min": {
+          "ultima_ventana_cerrada": "2025-09-18 08:45:00",
+          "ventanas": 495,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 442121,
+          "eventos_en_oro": 442097,
+          "diferencia": 24,
+          "ventanas_con_diferencia": 12,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 434
+        },
+        "oro_repos_hora": {
+          "ultima_ventana_cerrada": "2025-09-18 08:00:00",
+          "ventanas": 142159,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 321307,
+          "eventos_en_oro": 321277,
+          "diferencia": 30,
+          "ventanas_con_diferencia": 30,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 297
+        },
+        "oro_lenguajes_hora": {
+          "filas": 270
+        },
+        "oro_picos_actividad": {
+          "filas": 8
+        },
+        "oro_picos_repos": {
+          "filas": 0
+        },
+        "exactamente_una_vez": true
+      },
+      "orquestacion": {
+        "corrida": "falla_inyectada",
+        "desde": "2025-09-18T06:00:00Z",
+        "hasta": "2025-09-18T09:00:00Z",
+        "factor": 120,
+        "trigger_s": 3,
+        "kills": [
+          {
+            "falla": "plata:8",
+            "ts_kill": 1792591848.109574,
+            "ts_reanudado": 1792591884.078356,
+            "caida_s": 36.0
+          }
+        ],
+        "inicio": "2026-10-21T14:09:35.959970+00:00",
+        "ts_productor_inicio": 1792591795.945059,
+        "ts_productor_fin": 1792591906.8615124,
+        "ts_plata_alcanzada": 1792591931.8747747,
+        "fin": "2026-10-21T14:13:02.716643+00:00",
+        "exactamente_una_vez": true,
+        "terminada": true
+      },
+      "lotes_repetidos": 0,
+      "capas": {
+        "bronce": {
+          "lotes": 13,
+          "filas": 485125,
+          "duracion_lote_mediana_s": 4.12,
+          "latencia_p50_s": 37.3,
+          "latencia_p95_s": 57.54,
+          "latencia_max_s": 59.57,
+          "segundos_activos": 120.5,
+          "eventos_por_s": 4025.0,
+          "eventos_por_s_lote_max": 38790.0
+        },
+        "oro_actividad_5min": {
+          "lotes": 6,
+          "filas": 495,
+          "duracion_lote_mediana_s": 3.14,
+          "latencia_p50_s": 67.5,
+          "latencia_p95_s": 93.73,
+          "latencia_max_s": 95.16
+        },
+        "oro_lenguajes_hora": {
+          "lotes": 2,
+          "filas": 270,
+          "duracion_lote_mediana_s": 6.51,
+          "latencia_p50_s": 78.4,
+          "latencia_p95_s": 98.96,
+          "latencia_max_s": 103.05
+        },
+        "oro_repos_hora": {
+          "lotes": 2,
+          "filas": 142148,
+          "duracion_lote_mediana_s": 5.46,
+          "latencia_p50_s": 85.61,
+          "latencia_p95_s": 99.19,
+          "latencia_max_s": 99.4
+        },
+        "plata": {
+          "lotes": 11,
+          "filas": 480329,
+          "duracion_lote_mediana_s": 4.71,
+          "latencia_p50_s": 57.15,
+          "latencia_p95_s": 77.39,
+          "latencia_max_s": 79.42,
+          "segundos_activos": 118.1,
+          "eventos_por_s": 4068.0,
+          "eventos_por_s_lote_max": 14129.0
+        }
+      }
+    },
+    "principal": {
+      "corrida": "principal",
+      "productor": {
+        "corrida": "principal",
+        "factor": 120.0,
+        "enviados": 11539694,
+        "originales": 11425689,
+        "duplicados": 114005,
+        "tardios_dentro_watermark": 11433,
+        "tardios_fuera_watermark": 11103,
+        "primer_evento": "2025-09-16T00:00:00+00:00",
+        "ultimo_evento": "2025-09-18T23:59:59+00:00",
+        "duracion_s": 2178.17,
+        "tasa_media_eps": 5297.9,
+        "atraso_max_s": 1.1286740209998243,
+        "duracion_originales_s": 2159.99,
+        "tasa_originales_eps": 5342.4,
+        "ids_unicos": 11425689,
+        "errores_entrega": 0,
+        "sin_confirmar": 0,
+        "desde": "2025-09-16T00:00:00Z",
+        "hasta": "2025-09-19T00:00:00Z",
+        "semilla": 42,
+        "prob_duplicado": 0.01,
+        "prob_tardio": 0.002,
+        "terminado_en": "2026-10-21T15:33:58.849827+00:00"
+      },
+      "verificacion": {
+        "corrida": "principal",
+        "productor": {
+          "enviados": 11539694,
+          "originales": 11425689,
+          "ids_unicos": 11425689,
+          "duplicados": 114005,
+          "tardios_dentro_watermark": 11433,
+          "tardios_fuera_watermark": 11103
+        },
+        "kafka_mensajes": 11539694,
+        "bronce": {
+          "filas": 11539694,
+          "offsets_unicos": 11539694,
+          "duplicados": 0,
+          "diferencia_vs_enviados": 0
+        },
+        "plata": {
+          "filas": 11425689,
+          "ids_unicos": 11425689,
+          "duplicados": 0,
+          "reenvios_que_pasaron": 45,
+          "tardios_dentro": 11433,
+          "tardios_fuera": 11103,
+          "perdidos_vs_productor": 0
+        },
+        "oro_actividad_5min": {
+          "ultima_ventana_cerrada": "2025-09-18 23:45:00",
+          "ventanas": 12882,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 11390083,
+          "eventos_en_oro": 11389608,
+          "diferencia": 475,
+          "ventanas_con_diferencia": 212,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 11056
+        },
+        "oro_repos_hora": {
+          "ultima_ventana_cerrada": "2025-09-18 23:00:00",
+          "ventanas": 5007716,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 11278370,
+          "eventos_en_oro": 11278017,
+          "diferencia": 353,
+          "ventanas_con_diferencia": 353,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 10968
+        },
+        "oro_lenguajes_hora": {
+          "filas": 9385
+        },
+        "oro_picos_actividad": {
+          "filas": 241
+        },
+        "oro_picos_repos": {
+          "filas": 99
+        },
+        "exactamente_una_vez": true
+      },
+      "orquestacion": {
+        "corrida": "principal",
+        "desde": "2025-09-16T00:00:00Z",
+        "hasta": "2025-09-19T00:00:00Z",
+        "factor": 120.0,
+        "trigger_s": 3,
+        "kills": [],
+        "inicio": "2026-10-21T14:56:41.493012+00:00",
+        "ts_productor_inicio": 1792594636.1722505,
+        "ts_productor_fin": 1792596840.1156754,
+        "ts_plata_alcanzada": 1792596840.12639,
+        "fin": "2026-10-21T15:34:51.627527+00:00",
+        "exactamente_una_vez": true,
+        "terminada": true
+      },
+      "lotes_repetidos": 0,
+      "capas": {
+        "bronce": {
+          "lotes": 273,
+          "filas": 11539694,
+          "duracion_lote_mediana_s": 7.05,
+          "latencia_p50_s": 11.58,
+          "latencia_p95_s": 20.47,
+          "latencia_max_s": 26.12,
+          "segundos_activos": 2183.4,
+          "eventos_por_s": 5285.0,
+          "eventos_por_s_lote_max": 16001.0
+        },
+        "oro_actividad_5min": {
+          "lotes": 132,
+          "filas": 12882,
+          "duracion_lote_mediana_s": 5.94,
+          "latencia_p50_s": 51.17,
+          "latencia_p95_s": 74.49,
+          "latencia_max_s": 84.67
+        },
+        "oro_lenguajes_hora": {
+          "lotes": 71,
+          "filas": 9385,
+          "duracion_lote_mediana_s": 6.87,
+          "latencia_p50_s": 50.7,
+          "latencia_p95_s": 83.49,
+          "latencia_max_s": 88.73
+        },
+        "oro_repos_hora": {
+          "lotes": 71,
+          "filas": 5007603,
+          "duracion_lote_mediana_s": 6.09,
+          "latencia_p50_s": 61.19,
+          "latencia_p95_s": 87.04,
+          "latencia_max_s": 92.65
+        },
+        "plata": {
+          "lotes": 255,
+          "filas": 11425689,
+          "duracion_lote_mediana_s": 7.36,
+          "latencia_p50_s": 20.35,
+          "latencia_p95_s": 32.16,
+          "latencia_max_s": 37.05,
+          "segundos_activos": 2181.5,
+          "eventos_por_s": 5238.0,
+          "eventos_por_s_lote_max": 13375.0
+        }
+      }
+    },
+    "recuperacion": {
+      "corrida": "recuperacion",
+      "productor": {
+        "corrida": "recuperacion",
+        "factor": 240.0,
+        "enviados": 2911774,
+        "originales": 2882926,
+        "duplicados": 28848,
+        "tardios_dentro_watermark": 2844,
+        "tardios_fuera_watermark": 2826,
+        "primer_evento": "2025-09-17T00:00:00+00:00",
+        "ultimo_evento": "2025-09-17T17:59:59+00:00",
+        "duracion_s": 278.89,
+        "tasa_media_eps": 10440.7,
+        "atraso_max_s": 2.742307983000501,
+        "duracion_originales_s": 270.0,
+        "tasa_originales_eps": 10783.9,
+        "ids_unicos": 2882926,
+        "errores_entrega": 0,
+        "sin_confirmar": 0,
+        "desde": "2025-09-17T00:00:00Z",
+        "hasta": "2025-09-17T18:00:00Z",
+        "semilla": 42,
+        "prob_duplicado": 0.01,
+        "prob_tardio": 0.002,
+        "terminado_en": "2026-10-21T15:59:02.377301+00:00"
+      },
+      "verificacion": {
+        "corrida": "recuperacion",
+        "productor": {
+          "enviados": 2911774,
+          "originales": 2882926,
+          "ids_unicos": 2882926,
+          "duplicados": 28848,
+          "tardios_dentro_watermark": 2844,
+          "tardios_fuera_watermark": 2826
+        },
+        "kafka_mensajes": 2911774,
+        "bronce": {
+          "filas": 2911774,
+          "offsets_unicos": 2911774,
+          "duplicados": 0,
+          "diferencia_vs_enviados": 0
+        },
+        "plata": {
+          "filas": 2882926,
+          "ids_unicos": 2882926,
+          "duplicados": 0,
+          "reenvios_que_pasaron": 12,
+          "tardios_dentro": 2844,
+          "tardios_fuera": 2826,
+          "perdidos_vs_productor": 0
+        },
+        "oro_actividad_5min": {
+          "ultima_ventana_cerrada": "2025-09-17 17:45:00",
+          "ventanas": 3195,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 2841996,
+          "eventos_en_oro": 2841996,
+          "diferencia": 0,
+          "ventanas_con_diferencia": 0,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 2777
+        },
+        "oro_repos_hora": {
+          "ultima_ventana_cerrada": "2025-09-17 17:00:00",
+          "ventanas": 1248226,
+          "ventanas_duplicadas": 0,
+          "eventos_en_plata": 2718412,
+          "eventos_en_oro": 2718409,
+          "diferencia": 3,
+          "ventanas_con_diferencia": 3,
+          "ventanas_oro_mayor_que_plata": 0,
+          "tardios_fuera_watermark_en_esas_ventanas": 2657
+        },
+        "oro_lenguajes_hora": {
+          "filas": 2234
+        },
+        "oro_picos_actividad": {
+          "filas": 61
+        },
+        "oro_picos_repos": {
+          "filas": 18
+        },
+        "exactamente_una_vez": true
+      },
+      "orquestacion": {
+        "corrida": "recuperacion",
+        "desde": "2025-09-17T00:00:00Z",
+        "hasta": "2025-09-17T18:00:00Z",
+        "factor": 240,
+        "trigger_s": 3,
+        "kills": [
+          {
+            "t_productor_s": 45.0,
+            "ts_kill": 1792598102.7406027,
+            "ts_reanudado": 1792598140.6507838,
+            "caida_s": 37.9,
+            "filas_antes": {
+              "bronce": 368755,
+              "plata": 269098,
+              "oro_lenguajes_hora": 0,
+              "oro_repos_hora": 0,
+              "oro_actividad_5min": 15
+            }
+          },
+          {
+            "t_productor_s": 130.0,
+            "ts_kill": 1792598187.5395927,
+            "ts_reanudado": 1792598225.3052657,
+            "caida_s": 37.8,
+            "filas_antes": {
+              "bronce": 968749,
+              "plata": 662160,
+              "oro_lenguajes_hora": 226,
+              "oro_repos_hora": 0,
+              "oro_actividad_5min": 135
+            }
+          },
+          {
+            "t_productor_s": 215.0,
+            "ts_kill": 1792598272.6265438,
+            "ts_reanudado": 1792598311.390168,
+            "caida_s": 38.8,
+            "filas_antes": {
+              "bronce": 1268746,
+              "plata": 1256221,
+              "oro_lenguajes_hora": 438,
+              "oro_repos_hora": 72984,
+              "oro_actividad_5min": 270
+            }
+          }
+        ],
+        "inicio": "2026-10-21T15:53:53.668626+00:00",
+        "ts_productor_inicio": 1792598056.764571,
+        "ts_productor_fin": 1792598342.8264396,
+        "ts_plata_alcanzada": 1792598447.8786373,
+        "fin": "2026-10-21T16:01:58.779840+00:00",
+        "exactamente_una_vez": true,
+        "terminada": true
+      },
+      "lotes_repetidos": 0,
+      "capas": {
+        "bronce": {
+          "lotes": 15,
+          "filas": 2911774,
+          "duracion_lote_mediana_s": 12.24,
+          "latencia_p50_s": 102.16,
+          "latencia_p95_s": 154.29,
+          "latencia_max_s": 155.66,
+          "segundos_activos": 356.2,
+          "eventos_por_s": 8175.0,
+          "eventos_por_s_lote_max": 32352.0
+        },
+        "oro_actividad_5min": {
+          "lotes": 9,
+          "filas": 3195,
+          "duracion_lote_mediana_s": 12.32,
+          "latencia_p50_s": 210.47,
+          "latencia_p95_s": 284.63,
+          "latencia_max_s": 290.87
+        },
+        "oro_lenguajes_hora": {
+          "lotes": 11,
+          "filas": 2234,
+          "duracion_lote_mediana_s": 10.1,
+          "latencia_p50_s": 177.83,
+          "latencia_p95_s": 225.94,
+          "latencia_max_s": 229.59
+        },
+        "oro_repos_hora": {
+          "lotes": 5,
+          "filas": 1248225,
+          "duracion_lote_mediana_s": 12.43,
+          "latencia_p50_s": 194.59,
+          "latencia_p95_s": 274.18,
+          "latencia_max_s": 277.67
+        },
+        "plata": {
+          "lotes": 14,
+          "filas": 2882926,
+          "duracion_lote_mediana_s": 15.73,
+          "latencia_p50_s": 120.58,
+          "latencia_p95_s": 166.89,
+          "latencia_max_s": 168.26,
+          "segundos_activos": 370.1,
+          "eventos_por_s": 7790.0,
+          "eventos_por_s_lote_max": 26714.0
+        }
+      }
+    }
+  },
+  "falla_inyectada": {
+    "falla": [
+      {
+        "evento": "falla_inyectada",
+        "ts": "2026-10-21T14:10:47.380223+00:00",
+        "capa": "plata",
+        "lote": 8.0,
+        "filas": 23279.0
+      }
+    ],
+    "escrituras_omitidas_por_txn": [
+      {
+        "capa": "bronce",
+        "lote": 10,
+        "filas": 32179
+      },
+      {
+        "capa": "plata",
+        "lote": 8,
+        "filas": 23279
+      }
+    ]
+  },
+  "recuperacion": {
+    "caidas": [
+      {
+        "t_productor_s": 45.0,
+        "segundos_sin_procesar": 60.8,
+        "segundos_hasta_nuevo_driver": 27.1,
+        "primer_lote_bronce_tras_caida": {
+          "lote": 7,
+          "filas": 299997,
+          "latencia_max_s": 68.699
+        },
+        "lotes_reejecutados_tras_caida": []
+      },
+      {
+        "t_productor_s": 130.0,
+        "segundos_sin_procesar": 61.8,
+        "segundos_hasta_nuevo_driver": 26.9,
+        "primer_lote_bronce_tras_caida": {
+          "lote": 9,
+          "filas": 299997,
+          "latencia_max_s": 95.907
+        },
+        "lotes_reejecutados_tras_caida": []
+      },
+      {
+        "t_productor_s": 215.0,
+        "segundos_sin_procesar": 64.3,
+        "segundos_hasta_nuevo_driver": 27.1,
+        "primer_lote_bronce_tras_caida": {
+          "lote": 10,
+          "filas": 299997,
+          "latencia_max_s": 155.66
+        },
+        "lotes_reejecutados_tras_caida": []
+      }
+    ],
+    "escrituras_omitidas_por_txn": [
+      {
+        "capa": "oro_repos_hora",
+        "lote": 4,
+        "filas": 72984
+      },
+      {
+        "capa": "bronce",
+        "lote": 10,
+        "filas": 299997
+      }
+    ]
+  },
+  "oro": {
+    "hora_pico_utc": 14,
+    "hora_valle_utc": 23,
+    "picos_por_tipo": {
+      "ReleaseEvent": 33,
+      "IssuesEvent": 28,
+      "CreateEvent": 26,
+      "IssueCommentEvent": 21,
+      "DeleteEvent": 21,
+      "MemberEvent": 19,
+      "WatchEvent": 17,
+      "PublicEvent": 17,
+      "ForkEvent": 13,
+      "PullRequestReviewCommentEvent": 13,
+      "PullRequestEvent": 13,
+      "PullRequestReviewEvent": 12,
+      "PushEvent": 8
+    },
+    "hueco_fuente": {
+      "desde": "2025-09-18 16:05:00+00:00",
+      "eventos_min_5min": 10
+    },
+    "repo_top": {
+      "repo": "microsoft/markitdown",
+      "estrellas": 2269
+    },
+    "lenguaje_top": "TypeScript"
+  }
+}

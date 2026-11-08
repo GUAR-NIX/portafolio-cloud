@@ -1,0 +1,55 @@
+{
+  "corrida": "recuperacion",
+  "desde": "2025-09-17T00:00:00Z",
+  "hasta": "2025-09-17T18:00:00Z",
+  "factor": 240,
+  "trigger_s": 3,
+  "kills": [
+    {
+      "t_productor_s": 45.0,
+      "ts_kill": 1792598102.7406027,
+      "ts_reanudado": 1792598140.6507838,
+      "caida_s": 37.9,
+      "filas_antes": {
+        "bronce": 368755,
+        "plata": 269098,
+        "oro_lenguajes_hora": 0,
+        "oro_repos_hora": 0,
+        "oro_actividad_5min": 15
+      }
+    },
+    {
+      "t_productor_s": 130.0,
+      "ts_kill": 1792598187.5395927,
+      "ts_reanudado": 1792598225.3052657,
+      "caida_s": 37.8,
+      "filas_antes": {
+        "bronce": 968749,
+        "plata": 662160,
+        "oro_lenguajes_hora": 226,
+        "oro_repos_hora": 0,
+        "oro_actividad_5min": 135
+      }
+    },
+    {
+      "t_productor_s": 215.0,
+      "ts_kill": 1792598272.6265438,
+      "ts_reanudado": 1792598311.390168,
+      "caida_s": 38.8,
+      "filas_antes": {
+        "bronce": 1268746,
+        "plata": 1256221,
+        "oro_lenguajes_hora": 438,
+        "oro_repos_hora": 72984,
+        "oro_actividad_5min": 270
+      }
+    }
+  ],
+  "inicio": "2026-10-21T15:53:53.668626+00:00",
+  "ts_productor_inicio": 1792598056.764571,
+  "ts_productor_fin": 1792598342.8264396,
+  "ts_plata_alcanzada": 1792598447.8786373,
+  "fin": "2026-10-21T16:01:58.779840+00:00",
+  "exactamente_una_vez": true,
+  "terminada": true
+}

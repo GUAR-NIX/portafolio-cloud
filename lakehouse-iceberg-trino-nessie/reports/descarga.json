@@ -1,0 +1,18 @@
+{
+  "dias": [
+    "2026-07-18",
+    "2026-07-19",
+    "2026-07-20",
+    "2026-07-21"
+  ],
+  "archivos": 96,
+  "bytes_origen": 5247025368,
+  "bytes_guardados": 262270165,
+  "lineas_origen": 594798930,
+  "lineas_guardadas": 30677014,
+  "vistas_en_es": 978308629,
+  "vistas_guardadas": 677628742,
+  "segundos_esta_corrida": 2.0,
+  "pct_vistas_guardadas": 69.27,
+  "umbral_vistas": 5
+}

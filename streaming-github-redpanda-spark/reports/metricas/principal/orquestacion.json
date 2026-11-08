@@ -1,0 +1,15 @@
+{
+  "corrida": "principal",
+  "desde": "2025-09-16T00:00:00Z",
+  "hasta": "2025-09-19T00:00:00Z",
+  "factor": 120.0,
+  "trigger_s": 3,
+  "kills": [],
+  "inicio": "2026-10-21T14:56:41.493012+00:00",
+  "ts_productor_inicio": 1792594636.1722505,
+  "ts_productor_fin": 1792596840.1156754,
+  "ts_plata_alcanzada": 1792596840.12639,
+  "fin": "2026-10-21T15:34:51.627527+00:00",
+  "exactamente_una_vez": true,
+  "terminada": true
+}

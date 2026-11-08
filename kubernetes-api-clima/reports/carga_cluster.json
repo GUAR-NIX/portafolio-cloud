@@ -1,0 +1,218 @@
+{
+  "fecha_utc": "2026-10-26T04:40:21+00:00",
+  "entorno": "kind v0.30.0 (Kubernetes v1.34.0), 1 control-plane + 1 worker, Docker Desktop",
+  "generador": "Job de Locust locustio/locust:2.41.5 dentro del clúster (sin port-forward)",
+  "mezcla": "3/7 /indicadores/{ciudad}, 3/7 /clima (ciudad y fecha aleatorias), 1/7 /ciudades",
+  "recursos_api": {
+    "request_cpu": "200m",
+    "limit_cpu": "500m"
+  },
+  "hpa": {
+    "min": 1,
+    "max": 4,
+    "objetivo_cpu_pct": 60,
+    "behavior": {
+      "scaleDown": {
+        "policies": [
+          {
+            "periodSeconds": 30,
+            "type": "Pods",
+            "value": 1
+          }
+        ],
+        "selectPolicy": "Max",
+        "stabilizationWindowSeconds": 60
+      },
+      "scaleUp": {
+        "policies": [
+          {
+            "periodSeconds": 15,
+            "type": "Percent",
+            "value": 100
+          }
+        ],
+        "selectPolicy": "Max",
+        "stabilizationWindowSeconds": 0
+      }
+    }
+  },
+  "desfase_reloj_nodo_s": -0.01,
+  "escenarios": [
+    {
+      "objetivo": "http://clima-ecuador-api:8000",
+      "escenario": "fijo-1",
+      "usuarios": 50,
+      "duracion_segundos": 120,
+      "procesos_locust": 3,
+      "solicitudes": 8237,
+      "errores": 0,
+      "tasa_error_pct": 0.0,
+      "solicitudes_por_segundo": 68.5,
+      "latencia_p50_ms": 720,
+      "latencia_p95_ms": 970,
+      "latencia_p99_ms": 1100,
+      "latencia_maxima_ms": 1456.3,
+      "por_endpoint": {
+        "/ciudades": {
+          "solicitudes": 1152,
+          "errores": 0,
+          "p50_ms": 700,
+          "p95_ms": 970
+        },
+        "/clima": {
+          "solicitudes": 3589,
+          "errores": 0,
+          "p50_ms": 730,
+          "p95_ms": 980
+        },
+        "/indicadores/{ciudad}": {
+          "solicitudes": 3496,
+          "errores": 0,
+          "p50_ms": 710,
+          "p95_ms": 970
+        }
+      },
+      "advertencia_cpu_locust": false,
+      "inicio_carga_unix_nodo": 1792987794,
+      "fin_carga_unix_nodo": 1792987913,
+      "eventos": {},
+      "replicas": "1 fija(s)"
+    },
+    {
+      "objetivo": "http://clima-ecuador-api:8000",
+      "escenario": "fijo-4",
+      "usuarios": 50,
+      "duracion_segundos": 120,
+      "procesos_locust": 3,
+      "solicitudes": 57172,
+      "errores": 0,
+      "tasa_error_pct": 0.0,
+      "solicitudes_por_segundo": 476.3,
+      "latencia_p50_ms": 70,
+      "latencia_p95_ms": 140,
+      "latencia_p99_ms": 160,
+      "latencia_maxima_ms": 249.3,
+      "por_endpoint": {
+        "/ciudades": {
+          "solicitudes": 8239,
+          "errores": 0,
+          "p50_ms": 66,
+          "p95_ms": 140
+        },
+        "/clima": {
+          "solicitudes": 24496,
+          "errores": 0,
+          "p50_ms": 72,
+          "p95_ms": 150
+        },
+        "/indicadores/{ciudad}": {
+          "solicitudes": 24437,
+          "errores": 0,
+          "p50_ms": 70,
+          "p95_ms": 140
+        }
+      },
+      "advertencia_cpu_locust": false,
+      "inicio_carga_unix_nodo": 1792987950,
+      "fin_carga_unix_nodo": 1792988068,
+      "eventos": {},
+      "replicas": "4 fija(s)"
+    },
+    {
+      "escenario": "hpa",
+      "objetivo": "http://clima-ecuador-api:8000",
+      "usuarios": 50,
+      "duracion_segundos": 300,
+      "procesos_locust": 3,
+      "solicitudes": 39658,
+      "errores": 0,
+      "tasa_error_pct": 0.0,
+      "solicitudes_por_segundo": 132.2,
+      "latencia_p50_ms": 350,
+      "latencia_p95_ms": 460,
+      "latencia_p99_ms": 500,
+      "latencia_maxima_ms": 708.2,
+      "por_endpoint": {
+        "/ciudades": {
+          "solicitudes": 5733,
+          "errores": 0,
+          "p50_ms": 350,
+          "p95_ms": 450
+        },
+        "/clima": {
+          "solicitudes": 16944,
+          "errores": 0,
+          "p50_ms": 360,
+          "p95_ms": 460
+        },
+        "/indicadores/{ciudad}": {
+          "solicitudes": 16981,
+          "errores": 0,
+          "p50_ms": 350,
+          "p95_ms": 460
+        }
+      },
+      "advertencia_cpu_locust": false,
+      "inicio_carga_unix_nodo": 1792988699,
+      "fin_carga_unix_nodo": 1792988998,
+      "eventos": {},
+      "replicas": "HPA 1→4",
+      "hpa": {
+        "segundos_hasta_primera_decision_de_escalar": 23.3,
+        "segundos_hasta_maximo_de_replicas_listas": 44.4,
+        "replicas_maximas_listas": 4,
+        "cpu_pct_maximo_visto_por_hpa": 251,
+        "reducciones_de_replicas_durante_la_carga": 0,
+        "segundos_desde_fin_de_carga_hasta_1_replica": 129.1
+      }
+    },
+    {
+      "escenario": "hpa-ingress",
+      "objetivo": "http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api",
+      "usuarios": 50,
+      "duracion_segundos": 300,
+      "procesos_locust": 3,
+      "solicitudes": 109115,
+      "errores": 0,
+      "tasa_error_pct": 0.0,
+      "solicitudes_por_segundo": 363.7,
+      "latencia_p50_ms": 27,
+      "latencia_p95_ms": 370,
+      "latencia_p99_ms": 460,
+      "latencia_maxima_ms": 829.5,
+      "por_endpoint": {
+        "/api/ciudades": {
+          "solicitudes": 15442,
+          "errores": 0,
+          "p50_ms": 21,
+          "p95_ms": 360
+        },
+        "/clima": {
+          "solicitudes": 46903,
+          "errores": 0,
+          "p50_ms": 30,
+          "p95_ms": 370
+        },
+        "/indicadores/{ciudad}": {
+          "solicitudes": 46770,
+          "errores": 0,
+          "p50_ms": 26,
+          "p95_ms": 370
+        }
+      },
+      "advertencia_cpu_locust": false,
+      "inicio_carga_unix_nodo": 1792989165,
+      "fin_carga_unix_nodo": 1792989464,
+      "eventos": {},
+      "replicas": "HPA 1→4",
+      "hpa": {
+        "segundos_hasta_primera_decision_de_escalar": 22.5,
+        "segundos_hasta_maximo_de_replicas_listas": 43.6,
+        "replicas_maximas_listas": 4,
+        "cpu_pct_maximo_visto_por_hpa": 250,
+        "reducciones_de_replicas_durante_la_carga": 0,
+        "segundos_desde_fin_de_carga_hasta_1_replica": 144.2
+      }
+    }
+  ]
+}

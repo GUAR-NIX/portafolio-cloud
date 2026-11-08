@@ -1,0 +1,6 @@
+# terraform fmt -check + validate (hashicorp/terraform:1.9.8), 2026-10-21
+fmt: sin cambios
+Success! The configuration is valid.
+
+Terraform v1.9.8
+on linux_amd64

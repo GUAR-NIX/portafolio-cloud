@@ -1,0 +1,9 @@
+# Versiones fijadas (Dagster y dbt cambian rápido). Probadas con Python 3.12.
+dagster==1.13.24
+dagster-webserver==1.13.24
+dagster-dbt==0.29.24
+dbt-core==1.11.13
+dbt-duckdb==1.11.0
+duckdb==1.5.6
+pandas==2.3.3
+matplotlib==3.10.7

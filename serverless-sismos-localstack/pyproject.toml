@@ -1,0 +1,9 @@
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["integracion: requiere LocalStack en ejecución"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+

@@ -1,0 +1,406 @@
+{
+  "fecha_ejecucion": "2026-10-25T20:54:05+00:00",
+  "entorno": {
+    "emulador": "LocalStack 4.8.1 (community, Docker Desktop en Windows 11)",
+    "endpoint": "http://localhost:4566",
+    "lambda": "python3.12, 256 MB, contenedor creado por LocalStack",
+    "metodo_latencia": "Reloj del cliente: desde put_object en S3 hasta ver el item con get_item y hasta recibir la alerta en SQS (sondeo cada ~10 ms). Antes de cada medición se borra el item para que el evento real vuelva a ser nuevo y dispare alerta. Cada vuelta del sondeo (get_item + receive_message) tarda decenas de ms en el emulador, así que la resolución es de ~±100 ms y S3→DynamoDB puede verse mayor que S3→alerta.",
+    "metodo_arranque_frio": "update_function_configuration antes de la primera subida de cada ronda: LocalStack descarta el entorno caliente y crea un contenedor nuevo."
+  },
+  "volumen_y_duplicados": {
+    "archivo": "data/raw/usgs_semana.geojson",
+    "primera_entrega": {
+      "tipo": "resumen_lote",
+      "clave": "entrada/20261025T205124-semana-a.geojson",
+      "recibidos": 2080,
+      "validos": 2080,
+      "invalidos": 0,
+      "insertados": 2080,
+      "duplicados": 0,
+      "alertas": 3
+    },
+    "segunda_entrega_identica": {
+      "tipo": "resumen_lote",
+      "clave": "entrada/20261025T205124-semana-b.geojson",
+      "recibidos": 2080,
+      "validos": 2080,
+      "invalidos": 0,
+      "insertados": 0,
+      "duplicados": 2080,
+      "alertas": 0
+    },
+    "items_en_dynamodb": 2080,
+    "segundos_hasta_dynamodb_completo": 41.93,
+    "eventos_por_segundo": 49.6,
+    "alertas_recibidas_en_sqs": 3,
+    "alertas_recibidas_en_repeticion": 0,
+    "alertas": [
+      {
+        "id_evento": "us6000u3rr",
+        "magnitud": 5.0,
+        "lugar": "south of Panama",
+        "distancia_ecuador_km": 873.7,
+        "instante": "2026-10-21T01:20:02.961000+00:00"
+      },
+      {
+        "id_evento": "us6000u3nl",
+        "magnitud": 5.4,
+        "lugar": "192 km S of Burica, Panama",
+        "distancia_ecuador_km": 1029.1,
+        "instante": "2026-10-20T17:05:48.338000+00:00"
+      },
+      {
+        "id_evento": "us6000u2v8",
+        "magnitud": 5.2,
+        "lugar": "off the coast of Ecuador",
+        "distancia_ecuador_km": 861.4,
+        "instante": "2026-10-16T19:34:10.597000+00:00"
+      }
+    ]
+  },
+  "cuarentena": {
+    "archivo": "data/raw/usgs_ecuador_2024.geojson + 5 errores inyectados",
+    "errores_inyectados": [
+      "posición 10: magnitud nula",
+      "posición 30: latitud 120",
+      "posición 50: geometría Polygon",
+      "posición 70: sin identificador",
+      "posición 90: profundidad 900 km"
+    ],
+    "resumen_lambda": {
+      "tipo": "resumen_lote",
+      "clave": "entrada/20261025T205124-ecuador-2024-con-errores.geojson",
+      "recibidos": 100,
+      "validos": 95,
+      "invalidos": 5,
+      "insertados": 95,
+      "duplicados": 0,
+      "alertas": 5
+    },
+    "objeto_cuarentena": "cuarentena/20261025T205124-ecuador-2024-con-errores.geojson.errores.json",
+    "registros_en_cuarentena": 5,
+    "alertas_recibidas_en_sqs": 5,
+    "alertas": [
+      {
+        "id_evento": "us6000m2zs",
+        "magnitud": 5.0,
+        "lugar": "32 km ENE of Moyobamba, Peru",
+        "distancia_ecuador_km": 483.6,
+        "instante": "2024-01-10T23:54:46.124000+00:00"
+      },
+      {
+        "id_evento": "us6000mzyb",
+        "magnitud": 5.1,
+        "lugar": "3 km S of Piñas, Ecuador",
+        "distancia_ecuador_km": 267.5,
+        "instante": "2024-05-21T02:43:10.935000+00:00"
+      },
+      {
+        "id_evento": "us6000n077",
+        "magnitud": 5.0,
+        "lugar": "63 km W of Mosquera, Colombia",
+        "distancia_ecuador_km": 491.8,
+        "instante": "2024-05-22T05:34:19.975000+00:00"
+      },
+      {
+        "id_evento": "us7000mt41",
+        "magnitud": 5.5,
+        "lugar": "53 km SSW of Alianza Cristiana, Peru",
+        "distancia_ecuador_km": 284.2,
+        "instante": "2024-06-18T02:22:10.098000+00:00"
+      },
+      {
+        "id_evento": "us7000nqkx",
+        "magnitud": 5.1,
+        "lugar": "58 km E of Puyo, Ecuador",
+        "distancia_ecuador_km": 89.6,
+        "instante": "2024-11-08T10:37:42.623000+00:00"
+      }
+    ]
+  },
+  "latencias": {
+    "mediciones": [
+      {
+        "clave": "entrada/20261025T205124-latencia-00-00.geojson",
+        "id_evento": "us6000u3rr",
+        "s3_a_dynamodb_ms": 3447.5,
+        "s3_a_alerta_ms": 3566.4,
+        "arranque": "frio"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-00-01.geojson",
+        "id_evento": "us6000u3nl",
+        "s3_a_dynamodb_ms": 134.8,
+        "s3_a_alerta_ms": 232.2,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-00-02.geojson",
+        "id_evento": "us6000u2v8",
+        "s3_a_dynamodb_ms": 193.1,
+        "s3_a_alerta_ms": 284.3,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-00-03.geojson",
+        "id_evento": "us6000m2zs",
+        "s3_a_dynamodb_ms": 176.5,
+        "s3_a_alerta_ms": 117.4,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-00-04.geojson",
+        "id_evento": "us6000mzyb",
+        "s3_a_dynamodb_ms": 115.5,
+        "s3_a_alerta_ms": 212.3,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-00-05.geojson",
+        "id_evento": "us6000n077",
+        "s3_a_dynamodb_ms": 70.2,
+        "s3_a_alerta_ms": 164.1,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-00-06.geojson",
+        "id_evento": "us7000mt41",
+        "s3_a_dynamodb_ms": 116.7,
+        "s3_a_alerta_ms": 210.4,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-01-00.geojson",
+        "id_evento": "us7000nqkx",
+        "s3_a_dynamodb_ms": 4972.1,
+        "s3_a_alerta_ms": 4914.6,
+        "arranque": "frio"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-01-01.geojson",
+        "id_evento": "us6000u3rr",
+        "s3_a_dynamodb_ms": 140.3,
+        "s3_a_alerta_ms": 235.0,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-01-02.geojson",
+        "id_evento": "us6000u3nl",
+        "s3_a_dynamodb_ms": 208.2,
+        "s3_a_alerta_ms": 148.6,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-01-03.geojson",
+        "id_evento": "us6000u2v8",
+        "s3_a_dynamodb_ms": 70.3,
+        "s3_a_alerta_ms": 163.1,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-01-04.geojson",
+        "id_evento": "us6000m2zs",
+        "s3_a_dynamodb_ms": 66.6,
+        "s3_a_alerta_ms": 160.8,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-01-05.geojson",
+        "id_evento": "us6000mzyb",
+        "s3_a_dynamodb_ms": 59.5,
+        "s3_a_alerta_ms": 149.9,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-01-06.geojson",
+        "id_evento": "us6000n077",
+        "s3_a_dynamodb_ms": 62.6,
+        "s3_a_alerta_ms": 158.0,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-02-00.geojson",
+        "id_evento": "us7000mt41",
+        "s3_a_dynamodb_ms": 3357.0,
+        "s3_a_alerta_ms": 3457.9,
+        "arranque": "frio"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-02-01.geojson",
+        "id_evento": "us7000nqkx",
+        "s3_a_dynamodb_ms": 63.8,
+        "s3_a_alerta_ms": 169.4,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-02-02.geojson",
+        "id_evento": "us6000u3rr",
+        "s3_a_dynamodb_ms": 173.5,
+        "s3_a_alerta_ms": 269.9,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-02-03.geojson",
+        "id_evento": "us6000u3nl",
+        "s3_a_dynamodb_ms": 72.6,
+        "s3_a_alerta_ms": 165.6,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-02-04.geojson",
+        "id_evento": "us6000u2v8",
+        "s3_a_dynamodb_ms": 63.7,
+        "s3_a_alerta_ms": 159.4,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-02-05.geojson",
+        "id_evento": "us6000m2zs",
+        "s3_a_dynamodb_ms": 67.9,
+        "s3_a_alerta_ms": 165.0,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-02-06.geojson",
+        "id_evento": "us6000mzyb",
+        "s3_a_dynamodb_ms": 125.4,
+        "s3_a_alerta_ms": 220.8,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-03-00.geojson",
+        "id_evento": "us6000n077",
+        "s3_a_dynamodb_ms": 2842.6,
+        "s3_a_alerta_ms": 2941.4,
+        "arranque": "frio"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-03-01.geojson",
+        "id_evento": "us7000mt41",
+        "s3_a_dynamodb_ms": 131.8,
+        "s3_a_alerta_ms": 225.5,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-03-02.geojson",
+        "id_evento": "us7000nqkx",
+        "s3_a_dynamodb_ms": 175.9,
+        "s3_a_alerta_ms": 271.3,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-03-03.geojson",
+        "id_evento": "us6000u3rr",
+        "s3_a_dynamodb_ms": 62.1,
+        "s3_a_alerta_ms": 154.9,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-03-04.geojson",
+        "id_evento": "us6000u3nl",
+        "s3_a_dynamodb_ms": 58.1,
+        "s3_a_alerta_ms": 151.0,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-03-05.geojson",
+        "id_evento": "us6000u2v8",
+        "s3_a_dynamodb_ms": 61.3,
+        "s3_a_alerta_ms": 151.3,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-03-06.geojson",
+        "id_evento": "us6000m2zs",
+        "s3_a_dynamodb_ms": 59.3,
+        "s3_a_alerta_ms": 148.8,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-04-00.geojson",
+        "id_evento": "us6000mzyb",
+        "s3_a_dynamodb_ms": 2777.9,
+        "s3_a_alerta_ms": 2871.0,
+        "arranque": "frio"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-04-01.geojson",
+        "id_evento": "us6000n077",
+        "s3_a_dynamodb_ms": 70.7,
+        "s3_a_alerta_ms": 165.8,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-04-02.geojson",
+        "id_evento": "us7000mt41",
+        "s3_a_dynamodb_ms": 166.8,
+        "s3_a_alerta_ms": 261.2,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-04-03.geojson",
+        "id_evento": "us7000nqkx",
+        "s3_a_dynamodb_ms": 74.7,
+        "s3_a_alerta_ms": 168.0,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-04-04.geojson",
+        "id_evento": "us6000u3rr",
+        "s3_a_dynamodb_ms": 55.6,
+        "s3_a_alerta_ms": 150.7,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-04-05.geojson",
+        "id_evento": "us6000u3nl",
+        "s3_a_dynamodb_ms": 61.0,
+        "s3_a_alerta_ms": 156.1,
+        "arranque": "caliente"
+      },
+      {
+        "clave": "entrada/20261025T205124-latencia-04-06.geojson",
+        "id_evento": "us6000u2v8",
+        "s3_a_dynamodb_ms": 74.0,
+        "s3_a_alerta_ms": 166.0,
+        "arranque": "caliente"
+      }
+    ],
+    "frio": {
+      "s3_a_dynamodb": {
+        "n": 5,
+        "p50_ms": 3357.0,
+        "p95_ms": 4667.2,
+        "media_ms": 3479.4,
+        "min_ms": 2777.9,
+        "max_ms": 4972.1
+      },
+      "s3_a_alerta": {
+        "n": 5,
+        "p50_ms": 3457.9,
+        "p95_ms": 4645.0,
+        "media_ms": 3550.3,
+        "min_ms": 2871.0,
+        "max_ms": 4914.6
+      }
+    },
+    "caliente": {
+      "s3_a_dynamodb": {
+        "n": 30,
+        "p50_ms": 71.7,
+        "p95_ms": 185.6,
+        "media_ms": 101.1,
+        "min_ms": 55.6,
+        "max_ms": 208.2
+      },
+      "s3_a_alerta": {
+        "n": 30,
+        "p50_ms": 165.3,
+        "p95_ms": 270.7,
+        "media_ms": 185.2,
+        "min_ms": 117.4,
+        "max_ms": 284.3
+      }
+    }
+  }
+}

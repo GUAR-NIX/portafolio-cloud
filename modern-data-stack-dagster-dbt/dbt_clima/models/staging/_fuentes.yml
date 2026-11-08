@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+  - name: ghcn
+    description: >
+      NOAA GHCN-Daily (Global Historical Climatology Network, Daily) publicado en AWS Open Data.
+      Dagster lo deja en MinIO en Parquet (activos ghcn/*). En CI se lee la muestra de data/muestra.
+    tables:
+      - name: ghcn_crudo_parquet
+        description: Una fila por estación, día y elemento, tal como viene en los CSV por año.
+        meta:
+          external_location: "read_parquet('{{ env_var('UBICACION_CRUDO', 's3://ghcn/crudo') }}/ghcn_diario/*/*.parquet', hive_partitioning = true)"
+        loaded_at_field: "cast(make_date(fecha // 10000, (fecha // 100) % 100, fecha % 100) as timestamp)"
+        freshness:
+          warn_after: {count: 5, period: day}
+          error_after: {count: 15, period: day}
+        columns:
+          - name: id
+            description: Código de estación de 11 caracteres (los 2 primeros son el país FIPS).
+          - name: fecha
+            description: Fecha AAAAMMDD como entero.
+          - name: elemento
+            description: Variable medida (TMAX, TMIN, PRCP, SNOW, TAVG, ...).
+          - name: valor
+            description: Valor entero en la unidad de NOAA (décimas de °C o de mm para TMAX/TMIN/PRCP).
+          - name: q_flag
+            description: Bandera de calidad. Vacía = pasó todos los controles de NOAA.
+      - name: ghcn_estaciones
+        description: Catálogo de estaciones (ghcnd-stations.txt).
+        meta:
+          external_location: "read_parquet('{{ env_var('UBICACION_CRUDO', 's3://ghcn/crudo') }}/metadatos/estaciones.parquet')"
+      - name: ghcn_paises
+        description: Códigos de país FIPS (ghcnd-countries.txt).
+        meta:
+          external_location: "read_parquet('{{ env_var('UBICACION_CRUDO', 's3://ghcn/crudo') }}/metadatos/paises.parquet')"

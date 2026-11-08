@@ -1,0 +1,19 @@
+# Datos descargados (los dumps filtrados viven en el volumen Docker `pageviews`)
+/data/
+# Terraform (proveedores descargados para validate)
+terraform/**/.terraform/
+terraform/**/.terraform.lock.hcl
+terraform/**/*.tfstate*
+# Entorno local
+.env
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.pytest_tmp*/
+.ruff_cache/
+.ipynb_checkpoints/
+.vscode/
+Thumbs.db
+desktop.ini

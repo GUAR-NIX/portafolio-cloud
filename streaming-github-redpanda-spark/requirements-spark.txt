@@ -1,0 +1,13 @@
+# Imagen única del proyecto (docker/spark/Dockerfile): Spark, productor, dashboard y pruebas.
+# Python 3.11 porque PySpark 3.5 no soporta 3.14 (el Python global del equipo).
+pyspark==3.5.3
+delta-spark==3.2.1
+confluent-kafka==2.6.1
+orjson==3.10.12
+duckdb==1.2.2
+pandas==2.2.3
+pyarrow==18.1.0
+matplotlib==3.9.3
+streamlit==1.41.1
+pytest==8.3.4
+ruff==0.8.4

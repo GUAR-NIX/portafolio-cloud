@@ -1,0 +1,24 @@
+{"evento": "arranque", "ts": "2026-10-21T15:54:00.787495+00:00", "args": {"corrida": "recuperacion", "capas": "bronce,plata,oro", "trigger_s": 3.0, "trigger_oro_s": 10.0, "max_offsets": 300000, "disponible_ahora": false}}
+{"evento": "consulta_iniciada", "consulta": "bronce", "ts": "2026-10-21T15:54:11.216600+00:00"}
+{"evento": "consulta_iniciada", "consulta": "plata", "ts": "2026-10-21T15:54:13.165745+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_actividad_5min", "ts": "2026-10-21T15:54:13.895064+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_repos_hora", "ts": "2026-10-21T15:54:14.662468+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_lenguajes_hora", "ts": "2026-10-21T15:54:15.194625+00:00"}
+{"evento": "arranque", "ts": "2026-10-21T15:55:29.843691+00:00", "args": {"corrida": "recuperacion", "capas": "bronce,plata,oro", "trigger_s": 3.0, "trigger_oro_s": 10.0, "max_offsets": 300000, "disponible_ahora": false}}
+{"evento": "consulta_iniciada", "consulta": "bronce", "ts": "2026-10-21T15:55:37.621007+00:00"}
+{"evento": "consulta_iniciada", "consulta": "plata", "ts": "2026-10-21T15:55:38.593337+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_actividad_5min", "ts": "2026-10-21T15:55:39.011103+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_repos_hora", "ts": "2026-10-21T15:55:39.596928+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_lenguajes_hora", "ts": "2026-10-21T15:55:40.069026+00:00"}
+{"evento": "arranque", "ts": "2026-10-21T15:56:54.453341+00:00", "args": {"corrida": "recuperacion", "capas": "bronce,plata,oro", "trigger_s": 3.0, "trigger_oro_s": 10.0, "max_offsets": 300000, "disponible_ahora": false}}
+{"evento": "consulta_iniciada", "consulta": "bronce", "ts": "2026-10-21T15:57:02.004465+00:00"}
+{"evento": "consulta_iniciada", "consulta": "plata", "ts": "2026-10-21T15:57:02.966309+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_actividad_5min", "ts": "2026-10-21T15:57:03.384563+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_repos_hora", "ts": "2026-10-21T15:57:03.930684+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_lenguajes_hora", "ts": "2026-10-21T15:57:04.462999+00:00"}
+{"evento": "arranque", "ts": "2026-10-21T15:58:19.676598+00:00", "args": {"corrida": "recuperacion", "capas": "bronce,plata,oro", "trigger_s": 3.0, "trigger_oro_s": 10.0, "max_offsets": 300000, "disponible_ahora": false}}
+{"evento": "consulta_iniciada", "consulta": "bronce", "ts": "2026-10-21T15:58:28.239081+00:00"}
+{"evento": "consulta_iniciada", "consulta": "plata", "ts": "2026-10-21T15:58:29.474381+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_actividad_5min", "ts": "2026-10-21T15:58:29.867319+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_repos_hora", "ts": "2026-10-21T15:58:30.367490+00:00"}
+{"evento": "consulta_iniciada", "consulta": "oro_lenguajes_hora", "ts": "2026-10-21T15:58:30.805039+00:00"}

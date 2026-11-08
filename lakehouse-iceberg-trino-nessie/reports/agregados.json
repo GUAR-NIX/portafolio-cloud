@@ -1,0 +1,48 @@
+{
+  "pasos": [
+    {
+      "tabla": "iceberg.wiki.agg_vistas_hora",
+      "segundos": 3.1,
+      "filas": 384,
+      "bytes_leidos": 169011730
+    },
+    {
+      "tabla": "iceberg.wiki.agg_candidatos",
+      "segundos": 2.9,
+      "filas": 67467,
+      "bytes_leidos": 323585519
+    },
+    {
+      "tabla": "iceberg.wiki.agg_articulo_hora",
+      "segundos": 13.1,
+      "filas": 5163393,
+      "bytes_leidos": 324314412
+    },
+    {
+      "tabla": "iceberg.wiki.agg_top_hora",
+      "segundos": 1.0,
+      "filas": 1920,
+      "bytes_leidos": 41457367
+    },
+    {
+      "tabla": "iceberg.wiki.agg_top_dia",
+      "segundos": 1.2,
+      "filas": 400,
+      "bytes_leidos": 41457367
+    },
+    {
+      "tabla": "iceberg.wiki.agg_picos",
+      "segundos": 1.6,
+      "filas": 280,
+      "bytes_leidos": 41472912
+    }
+  ],
+  "verificacion_corte": {
+    "min_vistas_puesto10_hora": 508,
+    "cota_no_candidato_hora": 98,
+    "top_hora_exacto": true,
+    "min_vistas_puesto50_dia": 8143,
+    "cota_no_candidato_dia": 2352,
+    "top_dia_exacto": true
+  }
+}

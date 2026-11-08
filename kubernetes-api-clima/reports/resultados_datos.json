@@ -1,0 +1,106 @@
+{
+  "filas": 4392,
+  "ciudades": 12,
+  "desde": "2024-01-01",
+  "hasta": "2024-12-31",
+  "nulos": 0,
+  "duplicados": 0,
+  "resumen_ciudades": [
+    {
+      "ciudad": "Guayaquil",
+      "dias": 366,
+      "temperatura_media_c": 26.15,
+      "maxima_c": 36.9,
+      "minima_c": 18.9,
+      "precipitacion_mm": 878.6
+    },
+    {
+      "ciudad": "Esmeraldas",
+      "dias": 366,
+      "temperatura_media_c": 25.47,
+      "maxima_c": 31.9,
+      "minima_c": 20.7,
+      "precipitacion_mm": 1720.8
+    },
+    {
+      "ciudad": "Manta",
+      "dias": 366,
+      "temperatura_media_c": 24.95,
+      "maxima_c": 31.6,
+      "minima_c": 19.6,
+      "precipitacion_mm": 552.3
+    },
+    {
+      "ciudad": "Nueva Loja",
+      "dias": 366,
+      "temperatura_media_c": 24.95,
+      "maxima_c": 34.5,
+      "minima_c": 19.1,
+      "precipitacion_mm": 3266.8
+    },
+    {
+      "ciudad": "Santo Domingo",
+      "dias": 366,
+      "temperatura_media_c": 23.55,
+      "maxima_c": 32.5,
+      "minima_c": 17.9,
+      "precipitacion_mm": 2549.2
+    },
+    {
+      "ciudad": "Puerto Ayora",
+      "dias": 366,
+      "temperatura_media_c": 22.82,
+      "maxima_c": 30.5,
+      "minima_c": 17.0,
+      "precipitacion_mm": 1281.2
+    },
+    {
+      "ciudad": "Puyo",
+      "dias": 366,
+      "temperatura_media_c": 21.48,
+      "maxima_c": 30.3,
+      "minima_c": 14.3,
+      "precipitacion_mm": 2850.6
+    },
+    {
+      "ciudad": "Ibarra",
+      "dias": 366,
+      "temperatura_media_c": 17.18,
+      "maxima_c": 28.7,
+      "minima_c": 8.3,
+      "precipitacion_mm": 1298.3
+    },
+    {
+      "ciudad": "Loja",
+      "dias": 366,
+      "temperatura_media_c": 16.67,
+      "maxima_c": 27.4,
+      "minima_c": 8.9,
+      "precipitacion_mm": 1003.7
+    },
+    {
+      "ciudad": "Ambato",
+      "dias": 366,
+      "temperatura_media_c": 14.25,
+      "maxima_c": 23.6,
+      "minima_c": 5.6,
+      "precipitacion_mm": 2158.9
+    },
+    {
+      "ciudad": "Cuenca",
+      "dias": 366,
+      "temperatura_media_c": 14.18,
+      "maxima_c": 25.9,
+      "minima_c": 3.6,
+      "precipitacion_mm": 1850.1
+    },
+    {
+      "ciudad": "Quito",
+      "dias": 366,
+      "temperatura_media_c": 12.49,
+      "maxima_c": 22.9,
+      "minima_c": 5.1,
+      "precipitacion_mm": 3044.6
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+name: lakehouse-iceberg-trino-nessie
+
+on:
+  push:
+    paths: ["lakehouse-iceberg-trino-nessie/**", ".github/workflows/lakehouse-iceberg-trino-nessie.yml"]
+  pull_request:
+    paths: ["lakehouse-iceberg-trino-nessie/**", ".github/workflows/lakehouse-iceberg-trino-nessie.yml"]
+  workflow_dispatch:
+    inputs:
+      humo:
+        description: "Correr también la prueba de humo con docker compose (compila MinIO, ~10 min)"
+        type: boolean
+        default: false
+
+defaults:
+  run:
+    working-directory: lakehouse-iceberg-trino-nessie
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-dev.txt
+      - name: Lint
+        run: ruff check .
+      - name: Pruebas unitarias (sin contenedores ni red)
+        run: pytest -q -p no:cacheprovider
+
+  terraform:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.13.5
+      - run: terraform fmt -check -recursive
+        working-directory: lakehouse-iceberg-trino-nessie/terraform/aws
+      - run: terraform init -backend=false && terraform validate
+        working-directory: lakehouse-iceberg-trino-nessie/terraform/aws
+
+  humo:
+    if: github.event_name == 'workflow_dispatch' && inputs.humo
+    needs: pruebas
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Levantar MinIO + Nessie + Trino
+        run: docker compose up -d --build --wait
+      - name: Prueba de integración (rama Nessie → merge → Trino)
+        run: docker compose run --rm cargador pytest -m integracion -p no:cacheprovider -q
+      - name: Logs si falla
+        if: failure()
+        run: docker compose logs --tail 200
+      - run: docker compose down -v
+        if: always()

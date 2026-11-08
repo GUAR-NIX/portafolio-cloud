@@ -1,0 +1,46 @@
+/usr/local/lib/python3.12/site-packages/click/core.py:910: SupersessionWarning: Function `asset_materialize_command` is superseded and its usage is discouraged. Use 'dg launch --assets <selection>' instead.
+  return callback(*args, **kwargs)
+2026-10-25 18:20:38 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66154 - RUN_START - Started execution of run for "__ASSET_JOB".
+2026-10-25 18:20:38 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66154 - ENGINE_EVENT - Executing steps using multiprocess executor: parent process (pid: 66154)
+2026-10-25 18:20:38 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66154 - ghcn__ghcn_crudo_parquet - STEP_WORKER_STARTING - Launching subprocess for "ghcn__ghcn_crudo_parquet".
+2026-10-25 18:20:44 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - STEP_WORKER_STARTED - Executing step "ghcn__ghcn_crudo_parquet" in subprocess.
+2026-10-25 18:20:51 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2026-10-25 18:20:51 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2026-10-25 18:20:51 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - LOGS_CAPTURED - Capturing logs for process (pid: 66410).
+2026-10-25 18:20:51 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - STEP_START - Started execution of step "ghcn__ghcn_crudo_parquet".
+2026-10-25 18:21:47 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-10-25 18:21:47 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - ASSET_MATERIALIZATION - Materialized value ghcn ghcn_crudo_parquet.
+2026-10-25 18:21:47 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - STEP_OUTPUT - Yielded output "ghcn__ghcn_crudo_parquet_filas_minimas" of type "Any". (Type check passed).
+2026-10-25 18:21:47 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - ASSET_CHECK_EVALUATION - Asset check 'filas_minimas' on 'ghcn/ghcn_crudo_parquet' passed. Description: 'Al menos 1,000,000 observaciones en el año'
+2026-10-25 18:21:48 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - STEP_OUTPUT - Yielded output "ghcn__ghcn_crudo_parquet_fechas_dentro_del_anio" of type "Any". (Type check passed).
+2026-10-25 18:21:48 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - ASSET_CHECK_EVALUATION - Asset check 'fechas_dentro_del_anio' on 'ghcn/ghcn_crudo_parquet' passed. Description: 'Todas las fechas caen en el año de la partición'
+2026-10-25 18:21:48 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - STEP_OUTPUT - Yielded output "ghcn__ghcn_crudo_parquet_claves_sin_nulos" of type "Any". (Type check passed).
+2026-10-25 18:21:48 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - ASSET_CHECK_EVALUATION - Asset check 'claves_sin_nulos' on 'ghcn/ghcn_crudo_parquet' passed. Description: 'id, fecha, elemento y valor sin nulos'
+2026-10-25 18:21:48 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - STEP_OUTPUT - Yielded output "ghcn__ghcn_crudo_parquet_elementos_basicos_presentes" of type "Any". (Type check passed).
+2026-10-25 18:21:48 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - ASSET_CHECK_EVALUATION - Asset check 'elementos_basicos_presentes' on 'ghcn/ghcn_crudo_parquet' passed. Description: 'Hay TMAX, TMIN y PRCP'
+2026-10-25 18:21:48 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - STEP_OUTPUT - Yielded output "ghcn__ghcn_crudo_parquet_temperatura_en_rango_fisico" of type "Any". (Type check passed).
+2026-10-25 18:21:48 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - ASSET_CHECK_EVALUATION - Asset check 'temperatura_en_rango_fisico' on 'ghcn/ghcn_crudo_parquet' did not pass. Description: 'Ninguna TMAX/TMIN sin bandera QFLAG fuera de −90…60 °C'
+2026-10-25 18:21:48 -0500 - dagster - ERROR - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66410 - ghcn__ghcn_crudo_parquet - STEP_FAILURE - Execution of step "ghcn__ghcn_crudo_parquet" failed.
+
+dagster._core.errors.DagsterAssetCheckFailedError: 1 blocking asset check failed with ERROR severity:
+ghcn/ghcn_crudo_parquet: temperatura_en_rango_fisico
+
+Stack Trace:
+  File "/usr/local/lib/python3.12/site-packages/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "/usr/local/lib/python3.12/site-packages/dagster/_core/execution/plan/execute_step.py", line 543, in core_dagster_event_sequence_for_step
+    raise DagsterAssetCheckFailedError(
+
+2026-10-25 18:21:50 -0500 - dagster - DEBUG - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66154 - ENGINE_EVENT - Multiprocess executor: parent process exiting after 1m12s (pid: 66154)
+2026-10-25 18:21:51 -0500 - dagster - ERROR - __ASSET_JOB - 30dacd63-80d3-4cd0-91ae-b36ff07badb2 - 66154 - RUN_FAILURE - Execution of run for "__ASSET_JOB" failed. Steps failed: ['ghcn__ghcn_crudo_parquet'].
+
+dagster._core.errors.DagsterAssetCheckFailedError: 1 blocking asset check failed with ERROR severity:
+ghcn/ghcn_crudo_parquet: temperatura_en_rango_fisico
+
+Stack Trace:
+  File "/usr/local/lib/python3.12/site-packages/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "/usr/local/lib/python3.12/site-packages/dagster/_core/execution/plan/execute_step.py", line 543, in core_dagster_event_sequence_for_step
+    raise DagsterAssetCheckFailedError(
+
+Error: Materialization failed.

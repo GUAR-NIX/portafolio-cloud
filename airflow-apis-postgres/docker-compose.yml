@@ -1,0 +1,140 @@
+# Airflow 3.3 con LocalExecutor + Postgres 16, adaptado del docker-compose oficial de Airflow 3.3.2.
+# Cambios frente al oficial: sin Celery/Redis/worker/triggerer, memoria limitada por servicio (≈ 5,3 GB en total),
+# una sola instancia de Postgres con dos bases (metadatos de Airflow y `datos`), y el proyecto montado completo.
+#
+#   docker compose up -d --build        # levanta todo (http://localhost:8080)
+#   docker compose run --rm pruebas     # pytest dentro del mismo runtime de Airflow
+#   docker compose down                 # apaga (los datos quedan en el volumen; -v para borrarlos)
+
+x-airflow-comun: &airflow-comun
+  build: .
+  image: airflow-apis-ec:3.3.2
+  environment: &airflow-entorno
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__PARALLELISM: "8"
+    AIRFLOW__CORE__MAX_ACTIVE_TASKS_PER_DAG: "8"
+    AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/proyecto/dags
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__DEFAULT_TIMEZONE: America/Guayaquil
+    AIRFLOW__CORE__FERNET_KEY: ${FERNET_KEY:-}
+    # Solo para uso local: sin pantalla de inicio de sesión y todos administradores. En la nube, IAM / SSO.
+    AIRFLOW__CORE__AUTH_MANAGER: airflow.api_fastapi.auth.managers.simple.simple_auth_manager.SimpleAuthManager
+    AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "true"
+    AIRFLOW__CORE__EXECUTION_API_SERVER_URL: http://airflow-apiserver:8080/execution/
+    AIRFLOW__API_AUTH__JWT_SECRET: ${JWT_SECRET:-solo-local-cambiar-en-produccion}
+    AIRFLOW__API__WORKERS: "2"
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__DAG_PROCESSOR__REFRESH_INTERVAL: "30"
+    AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    AIRFLOW_CONN_DATOS_POSTGRES: postgresql://datos:datos@postgres:5432/datos
+    PYTHONPATH: /opt/airflow/proyecto/include
+    PYTHONDONTWRITEBYTECODE: "1"
+  volumes:
+    - .:/opt/airflow/proyecto
+    - ./logs:/opt/airflow/logs
+  user: "${AIRFLOW_UID:-50000}:0"
+  depends_on: &airflow-depende
+    postgres:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-datos:/var/lib/postgresql/data
+      - ./docker/postgres:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "127.0.0.1:5433:5432"  # solo local; para Power BI / DBeaver / scripts: localhost:5433, base `datos`
+    mem_limit: 768m
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    restart: unless-stopped
+
+  airflow-init:
+    <<: *airflow-comun
+    entrypoint: /bin/bash
+    user: "0:0"
+    command:
+      - -c
+      - |
+        set -e
+        mkdir -p /opt/airflow/logs && chown -R "${AIRFLOW_UID:-50000}:0" /opt/airflow/logs
+        /entrypoint airflow db migrate
+        /entrypoint airflow pools set api_open_meteo 1 "Open-Meteo: 1 petición a la vez (cuota de 5.000 llamadas/h)"
+        /entrypoint airflow pools set api_banco_mundial 3 "Banco Mundial: 3 indicadores en paralelo"
+        /entrypoint airflow version
+    mem_limit: 1g
+    restart: "no"
+
+  airflow-apiserver:
+    <<: *airflow-comun
+    command: api-server
+    ports:
+      - "8080:8080"
+    mem_limit: 1536m
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/api/v2/monitor/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+    depends_on:
+      <<: *airflow-depende
+      airflow-init:
+        condition: service_completed_successfully
+
+  airflow-scheduler:
+    <<: *airflow-comun
+    command: scheduler
+    mem_limit: 2g           # con LocalExecutor las tareas corren dentro de este contenedor
+    healthcheck:
+      test: ["CMD-SHELL", 'airflow jobs check --job-type SchedulerJob --hostname "$${HOSTNAME}"']
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+    depends_on:
+      <<: *airflow-depende
+      airflow-init:
+        condition: service_completed_successfully
+
+  airflow-dag-processor:
+    <<: *airflow-comun
+    command: dag-processor
+    mem_limit: 768m
+    healthcheck:
+      test: ["CMD-SHELL", 'airflow jobs check --job-type DagProcessorJob --hostname "$${HOSTNAME}"']
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+    depends_on:
+      <<: *airflow-depende
+      airflow-init:
+        condition: service_completed_successfully
+
+  # pytest con el mismo Python y la misma versión de Airflow que los DAG; usa la base `datos_pruebas`
+  pruebas:
+    <<: *airflow-comun
+    profiles: ["pruebas"]
+    entrypoint: /bin/bash
+    command: ["-c", "cd /opt/airflow/proyecto && python -m pytest -q"]
+    environment:
+      <<: *airflow-entorno
+      DATOS_PRUEBAS_URI: postgresql://datos:datos@postgres:5432/datos_pruebas
+    mem_limit: 1g
+    restart: "no"
+
+volumes:
+  postgres-datos:

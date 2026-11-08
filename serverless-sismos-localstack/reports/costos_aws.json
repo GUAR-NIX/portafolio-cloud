@@ -1,0 +1,24 @@
+{
+  "fecha_estimacion": "2026-10-22",
+  "moneda": "USD",
+  "region_referencia": "us-east-1",
+  "supuestos": {
+    "archivos_por_mes": 8640,
+    "eventos_nuevos_por_archivo": 10,
+    "invocaciones_lambda": 8640,
+    "memoria_lambda_mb": 256,
+    "duracion_media_ms": 200,
+    "almacenamiento_s3_gb": 0.3,
+    "alertas_sns_mes": 10
+  },
+  "estimacion_antes_de_capa_gratuita": {
+    "s3": 0.053,
+    "lambda": 0.009,
+    "dynamodb": 0.054,
+    "sns": 0.001,
+    "total": 0.117
+  },
+  "estimacion_con_capa_gratuita": 0.0,
+  "nota": "Estimación orientativa, no cotización; depende de región, tamaños, retención y canal de entrega."
+}
+

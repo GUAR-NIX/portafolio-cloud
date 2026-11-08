@@ -1,0 +1,161 @@
+# Plataforma de streaming local: Redpanda (Kafka) + MinIO (S3) + Spark Structured Streaming + Delta Lake.
+# Memoria limitada por servicio: ≈ 7,5 GB con el pipeline y el productor corriendo a la vez.
+#
+#   docker compose up -d redpanda redpanda-console minio minio-init     # infraestructura
+#   docker compose run --rm productor python -m streaming_gh.preparar  # una sola vez: eventos reducidos
+#   CORRIDA=principal docker compose up -d spark                        # pipeline (corre hasta detenerlo)
+#   CORRIDA=principal docker compose run --rm productor                 # reproduce los eventos
+#   docker compose run --rm pruebas                                     # pytest con Spark local
+#   docker compose up -d dashboard                                      # http://localhost:8501
+#   docker compose down                                                 # apaga (los datos quedan en volúmenes)
+
+x-proyecto: &proyecto
+  image: streaming-gh:local
+  build:
+    context: .
+    dockerfile: docker/spark/Dockerfile
+  volumes:
+    - .:/app
+  environment: &entorno
+    PROYECTO_RAIZ: /app
+    KAFKA_BOOTSTRAP: redpanda:9092
+    S3_ENDPOINT: http://minio:9000
+    S3_ACCESS_KEY: minioadmin     # MinIO local; en la nube se usa un rol de IAM, nunca claves en el código
+    S3_SECRET_KEY: minioadmin
+    BUCKET: lakehouse
+
+services:
+  redpanda:
+    image: docker.redpanda.com/redpandadata/redpanda:v24.2.7
+    command:
+      - redpanda
+      - start
+      - --mode=dev-container        # un nodo, sin fsync por mensaje: adecuado para local
+      - --smp=1
+      - --memory=1G
+      - --reserve-memory=0M
+      - --kafka-addr=internal://0.0.0.0:9092,externo://0.0.0.0:19092
+      - --advertise-kafka-addr=internal://redpanda:9092,externo://localhost:19092
+      - --pandaproxy-addr=0.0.0.0:8082
+      - --schema-registry-addr=0.0.0.0:8081
+    ports:
+      - "19092:19092"
+    volumes:
+      - redpanda-datos:/var/lib/redpanda/data
+    mem_limit: 1536m
+    healthcheck:
+      test: ["CMD-SHELL", "rpk cluster health | grep -E 'Healthy:.+true'"]
+      interval: 10s
+      retries: 10
+      start_period: 10s
+
+  redpanda-console:
+    image: docker.redpanda.com/redpandadata/console:v2.7.2
+    environment:
+      KAFKA_BROKERS: redpanda:9092
+    ports:
+      - "8080:8080"                 # http://localhost:8080: temas, particiones, mensajes, grupos
+    mem_limit: 256m
+    depends_on:
+      redpanda:
+        condition: service_healthy
+
+  minio:
+    image: minio-local:2025-10-15
+    build:
+      context: docker/minio
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "9000:9000"                 # API S3
+      - "9001:9001"                 # consola web
+    volumes:
+      - minio-datos:/data
+    mem_limit: 1g
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      retries: 10
+
+  minio-init:
+    image: minio-local:2025-10-15
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - mc alias set local http://minio:9000 minioadmin minioadmin && mc mb --ignore-existing local/lakehouse
+    mem_limit: 128m
+    depends_on:
+      minio:
+        condition: service_healthy
+
+  spark:
+    <<: *proyecto
+    command: >-
+      python -m streaming_gh.pipeline --corrida ${CORRIDA:-principal}
+      --trigger-s ${TRIGGER_S:-3} --trigger-oro-s ${TRIGGER_ORO_S:-10}
+    environment:
+      <<: *entorno
+      SPARK_DRIVER_MEMORY: 2g
+      SPARK_MASTER: local[4]
+      ROCKSDB_MAX_MB: "512"     # tope de memoria nativa de RocksDB (estado de dedup y ventanas)
+      MALLOC_ARENA_MAX: "2"     # glibc crea muchas arenas con RocksDB y la memoria nativa se fragmenta
+      FALLA_TRAS_ESCRIBIR: ${FALLA_TRAS_ESCRIBIR:-}   # inyección de fallos (ver pipeline.py); vacío = nada
+    ports:
+      - "4040:4040"                 # Spark UI (pestaña Structured Streaming)
+    mem_limit: 4g             # 2 GB de heap + RocksDB acotado + Python
+    stop_grace_period: 30s
+    depends_on:
+      redpanda:
+        condition: service_healthy
+      minio-init:
+        condition: service_completed_successfully
+
+  productor:
+    <<: *proyecto
+    command: >-
+      python -m streaming_gh.productor --corrida ${CORRIDA:-principal}
+      --desde ${DESDE:-2025-09-16T00:00:00Z} --hasta ${HASTA:-2025-09-19T00:00:00Z} --factor ${FACTOR:-120}
+    mem_limit: 768m
+    profiles: ["herramientas"]
+    depends_on:
+      redpanda:
+        condition: service_healthy
+
+  dashboard:
+    <<: *proyecto
+    command: >-
+      streamlit run dashboard/app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true
+      --browser.gatherUsageStats false
+    environment:
+      <<: *entorno
+      CORRIDA: ${CORRIDA:-principal}
+    ports:
+      - "8501:8501"
+    mem_limit: 768m
+    depends_on:
+      minio:
+        condition: service_healthy
+
+  tareas:                           # trabajos en lote: verificar conteos, consultar oro, figuras
+    <<: *proyecto
+    command: python -m streaming_gh.verificar --corrida ${CORRIDA:-principal}
+    environment:
+      <<: *entorno
+      SPARK_DRIVER_MEMORY: 1536m
+      SPARK_MASTER: local[3]
+    mem_limit: 2560m
+    profiles: ["herramientas"]
+
+  pruebas:
+    <<: *proyecto
+    command: pytest -q -rs
+    environment:
+      PROYECTO_RAIZ: /app
+      SPARK_DRIVER_MEMORY: 1g
+      SPARK_MASTER: local[2]
+    mem_limit: 2g
+    profiles: ["herramientas"]
+
+volumes:
+  redpanda-datos:
+  minio-datos:

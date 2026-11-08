@@ -1,0 +1,15 @@
+2026-10-20T21:28:21 INFO    DAG bundles loaded: dags-folder
+2026-10-20T21:28:21 INFO    Filling up the DagBag from /opt/airflow/proyecto/dags/ingesta_clima_ecuador.py
+2026-10-20T21:28:25 INFO    Worker startup parse complete
+2026-10-20T21:28:26 INFO    OK    filas_por_dia                            valor=13.0 rango=[13, 13]
+2026-10-20T21:28:26 INFO    OK    ciudades_distintas                       valor=13.0 rango=[13, 13]
+2026-10-20T21:28:26 INFO    OK    nulos_en_temperatura_o_lluvia            valor=0.0 rango=[0, 0]
+2026-10-20T21:28:26 INFO    OK    temp_min_media_max_ordenadas             valor=0.0 rango=[0, 0]
+2026-10-20T21:28:27 ERROR   FALLA temperatura_en_rango_fisico              valor=1.0 rango=[0, 0]
+2026-10-20T21:28:27 INFO    OK    precipitacion_en_rango                   valor=0.0 rango=[0, 0]
+2026-10-20T21:28:27 INFO    OK    humedad_en_rango                         valor=0.0 rango=[0, 0]
+2026-10-20T21:28:27 INFO    OK    costa_mas_calida_que_quito               valor=12.8 rango=[3, None]
+2026-10-20T21:28:27 INFO    OK    dato_provisional                         valor=0.0 rango=[0, 0]
+2026-10-20T21:28:27 ERROR   Task failed with exception
+    ErrorCalidad: 1 control(es) crítico(s) fallaron en staging.clima_diario/2026-01-15: [{"control": "temperatura_en_rango_fisico", "valor": 1.0, "minimo": 0, "maximo": 0}]
+2026-10-20T21:28:27 ERROR   ALERTA · DAG ingesta_clima_ecuador · tarea controles_calidad · run scheduled__2026-01-16T11:00:00+00:00 · intento 2 · 1 control(es) crítico(s) fallaron en staging.clima_diario/2026-01-15: [{"control": "temperatura_en_rango_fisico", "valor": 1.0, "minimo": 0, "maximo": 0}]

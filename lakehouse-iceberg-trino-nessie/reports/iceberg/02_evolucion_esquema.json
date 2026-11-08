@@ -1,0 +1,50 @@
+{
+  "sentencia": "ALTER TABLE iceberg.wiki.pageviews_limpio ADD COLUMN lote varchar",
+  "segundos": 0.12,
+  "antes": {
+    "archivos": {
+      "archivos": 96,
+      "bytes": 161015545,
+      "filas": 15263513,
+      "archivos_menores_16mb": 96,
+      "mb_promedio": 1.68
+    },
+    "snapshots": 1,
+    "columnas": [
+      "hora",
+      "dominio",
+      "idioma",
+      "plataforma",
+      "titulo",
+      "vistas"
+    ]
+  },
+  "despues": {
+    "archivos": {
+      "archivos": 96,
+      "bytes": 161015545,
+      "filas": 15263513,
+      "archivos_menores_16mb": 96,
+      "mb_promedio": 1.68
+    },
+    "snapshots": 1,
+    "columnas": [
+      "hora",
+      "dominio",
+      "idioma",
+      "plataforma",
+      "titulo",
+      "vistas",
+      "lote"
+    ]
+  },
+  "archivos_reescritos": false,
+  "filas_con_lote_nulo": 15263513,
+  "historial_metadatos": [
+    {
+      "timestamp": "2026-10-27 19:37:21.770000+00:00",
+      "latest_schema_id": 0,
+      "latest_sequence_number": 48
+    }
+  ]
+}
